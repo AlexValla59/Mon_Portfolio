@@ -1,37 +1,26 @@
-// .content{
-//   background-image: url("https://i.etsystatic.com/21549875/r/il/2a021a/4202257912/il_1588xN.4202257912_sjq1.jpg");
-//   height:100vh;
-//   width: 100%;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Oleo+Script+Swash+Caps&family=Poppins&display=swap');
 
 .content{
-  display: flex;
-  justify-content: center;
-  align-items:center;
   min-height: 100vh;
   background-color: black;
   overflow: hidden;
 }
 
 .infos {
-  // position: relative;
-  // display:flex;
-  // justify-content: center;
-  // align-items: center;
+  margin-top: 12%;
 }
 
 .infos h1{
   color:white;
   text-align: center;
-  font-size:90px;
+  font-size:120px;
   font-weight: 600;
-  letter-spacing: 0.1em;
-
-  text-shadow: 0 0 10px #00b3ff,
-                0 0 20px #00b3ff,
-                0 0 40px #00b3ff,
-                0 0 80px #00b3ff,
-                0 0 120px #00b3ff,
+  font-family: 'Meow Script', cursive;
+  text-shadow: 0 0 10px #e6007e,
+                0 0 20px #e6007e,
+                0 0 40px #e6007e,
+                0 0 80px #e6007e,
+                0 0 120px #e6007e,
 }
 
 .infos p{
@@ -39,11 +28,103 @@
   text-align: center;
   font-size:50px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff,
+}
 
-  text-shadow: 0 0 10px #ff00e1,
-                0 0 20px #ff00e1,
-                0 0 40px #ff00e1,
-                0 0 80px #ff00e1,
-                0 0 120px #ff00e1,
+
+.lighbar {
+  position: absolute;
+  top: 17%;
+  left: 25%;
+  width: 10px;
+  height: 45%;
+  border-radius: 10px;
+  background: white;
+  z-index: 2;
+  box-shadow: 0 0 10px #e6007e,
+              0 0 20px #e6007e,
+              0 0 40px #e6007e,
+              0 0 80px #e6007e,
+              0 0 120px #e6007e;
+              animation: animatelightbar 5s linear forwards;
+}
+@keyframes animatelightbar
+{
+  0%,5%
+  {
+    transform: scaleY(0) translateX(0);
+  }
+  10%
+  {
+    transform: scaleY(1) translateX(0);
+  }
+  90%
+  {
+    transform: scaleY(1) translateX(calc(800px - 10px));
+  }
+  95%,100%
+  {
+    transform: scaleY(0) translateX(calc(800px - 10px));
+  }
+
+}
+
+
+.content_top{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.toplayer{
+  position: absolute;
+  top: 17%;
+  left: 25%;
+  width: 800px;
+  height: 45%;
+  background: rgb(0, 0, 0);
+  animation: animatetoplayer 10s linear forwards;
+
+}
+
+@keyframes animatetoplayer {
+  0% {
+    transform: translateX(0);
+  }
+
+  5% {
+    transform: translateX(0);
+  }
+
+  45% {
+    transform: translateX(100%);
+
+  }
+  100%
+  {
+  transform: scaleY(0) translateX(calc(800px));
+  }
+}
+
+
+@media (max-width: 768px) {
+  .infos h1 {
+    font-size: 60px;
+  }
+
+  .infos p {
+    font-size: 30px;
+  }
+
+  .lighbar {
+    top: 38%;
+    left: 10%;
+    height: 10%;
+  }
 }
