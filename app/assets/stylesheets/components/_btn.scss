@@ -21,11 +21,6 @@
   }
 }
 
-.btn_portfolio:hover{
-  color: #e6007e;
-
-
-}
 
 .btn_portfolio span{
   position:absolute;
@@ -107,4 +102,15 @@
   50%,100%{
     bottom:100%;
   }
+}
+
+
+.btn_text{
+  color:white;
+  text-decoration: none;
+}
+
+.btn_text:hover{
+  color: #e6007e;
+
 }
