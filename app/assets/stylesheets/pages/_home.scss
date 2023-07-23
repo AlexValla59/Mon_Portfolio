@@ -2,7 +2,7 @@
 
 .content{
   min-height: 100vh;
-  background-color: black;
+  // background-color: black;
   overflow: hidden;
 }
 
@@ -13,45 +13,42 @@
 .infos h1{
   color:white;
   text-align: center;
-  font-size:120px;
+  font-size:90px;
   font-weight: 600;
-  font-family: 'Meow Script', cursive;
-  text-shadow: 0 0 10px #e6007e,
-                0 0 20px #e6007e,
-                0 0 40px #e6007e,
-                0 0 80px #e6007e,
-                0 0 120px #e6007e,
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  // text-shadow: 0 0 10px #e6007e,
+  //               0 0 20px #e6007e,
+  //               0 0 40px #e6007e,
+  //               0 0 80px #e6007e,
+  //               0 0 120px #e6007e,
 }
 
 .infos p{
-  color:white;
+  color: #e6007e;
   text-align: center;
   font-size:50px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  text-shadow: 0 0 10px #00b3ff,
-                0 0 20px #00b3ff,
-                0 0 40px #00b3ff,
-                0 0 80px #00b3ff,
-                0 0 120px #00b3ff,
+  // text-shadow: 0 0 10px #00b3ff,
+  //               0 0 20px #00b3ff,
+  //               0 0 40px #00b3ff,
+  //               0 0 80px #00b3ff,
+  //               0 0 120px #00b3ff,
 }
 
 
 .lighbar {
-  position: absolute;
-  top: 17%;
-  left: 25%;
+    position: absolute;
+  top: 20%;
+  left: 24%;
   width: 10px;
-  height: 45%;
+  height: 32%;
   border-radius: 10px;
   background: white;
   z-index: 2;
-  box-shadow: 0 0 10px #e6007e,
-              0 0 20px #e6007e,
-              0 0 40px #e6007e,
-              0 0 80px #e6007e,
-              0 0 120px #e6007e;
-              animation: animatelightbar 5s linear forwards;
+  box-shadow: 0 0 10px #e6007e, 0 0 20px #e6007e, 0 0 40px #e6007e, 0 0 80px #e6007e, 0 0 120px #e6007e;
+    animation: animatelightbar 5s linear forwards;
 }
 @keyframes animatelightbar
 {
@@ -85,10 +82,10 @@
 .toplayer{
   position: absolute;
   top: 17%;
-  left: 25%;
+  left: 24%;
   width: 800px;
   height: 45%;
-  background: rgb(0, 0, 0);
+  background: #081b29;
   animation: animatetoplayer 10s linear forwards;
 
 }
