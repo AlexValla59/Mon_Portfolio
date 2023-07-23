@@ -1,20 +1,25 @@
-
 <div class="container_nav">
   <div class="btn_navbar">
+    <%= link_to "ALEXANDRE.", root_path, class: "btn_nav2" %>
+
     <div class="a_propos">
-      <%= link_to "A propos", a_propos_path, class:"btn_nav" %>
+      <%= link_to "À propos", a_propos_path, class: "btn_nav active" %>
     </div>
-      <div class="Réalisation">
-        <%= link_to "Réalisations", creations_path, class:"btn_nav"%>
-      </div>
-      <div class="Formation">
-        <%= link_to "Formation", formation_path, class:"btn_nav" %>
-      </div>
-      <div class="Experiences">
-        <%= link_to "Experiences", experiences_path, class:"btn_nav" %>
-      </div>
-      <div class="Contact">
-        <%= link_to "Contact", contact_path, class:"btn_nav" %>
+
+    <div class="Réalisation">
+      <%= link_to "Réalisations", creations_path, class: "btn_nav" %>
+    </div>
+
+    <div class="Formation">
+      <%= link_to "Formation", formation_path, class: "btn_nav" %>
+    </div>
+
+    <div class="Experiences">
+      <%= link_to "Experiences", experiences_path, class: "btn_nav" %>
+    </div>
+
+    <div class="Contact">
+      <%= link_to "Contact", contact_path, class: "btn_nav" %>
     </div>
   </div>
 </div>
