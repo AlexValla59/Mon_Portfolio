@@ -13,15 +13,16 @@
   font-size: 18px;
   font-weight: bold;
   padding: 0 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn_nav:after {
   content: "";
   position: absolute;
-  background: linear-gradient(90deg, transparent, #e6007e);
+  background: linear-gradient(90deg, transparent, #00b3ff);
   height: 3px;
   width: 0;
-  bottom: -10px;
+  bottom: -8px;
   left: 0;
   transition: 0.3s;
 }
@@ -46,4 +47,10 @@
   font-size: 18px;
   font-weight: bold;
   margin-right: 40%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn_nav2:hover {
+  color:#00b3ff;
+  transition:0.6s;
 }
