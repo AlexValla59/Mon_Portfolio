@@ -1,15 +1,23 @@
-
 <div class="container">
-<%= render 'shared/navbar' %>
+  <%= render 'shared/navbar' %>
 
-<div class="content">
-  <div class="elements">
-    <div class="photo_alex">
-      <!-- Contenu du texte ici -->
-      <h2>Alexandre Valla.</h2>
-      <h3>Développeur Front-End</h3>
-      <p>Web développeur full-stack fraîchement formé au Wagon à Lille, je suis passionné par le design d'applications web et souhaite me reconvertir dans ce domaine. Fort d'une solide expérience en graphisme et en design, je cherche à combiner ces compétences avec mes nouvelles connaissances acquises au cours de ma formation. Créatif, curieux et avide d'apprendre, je suis constamment à la recherche de nouvelles opportunités pour mettre en pratique mes compétences techniques et artistiques. Prêt à relever de nouveaux défis, je suis ouvert aux collaborations et aux projets qui me permettront de continuer à grandir en tant que professionnel du développement front-end.</p>
+  <div class="content">
+    <div class="elements">
+      <div class="photo_alex">
+        <!-- Contenu du texte ici -->
+        <h2>Alexandre Valla.</h2>
+        <h3>Développeur Front-End</h3>
+        <p>Web développeur full-stack fraîchement formé au Wagon à Lille, je suis passionné par le design d'applications web et souhaite me reconvertir dans ce domaine. Fort d'une solide expérience en graphisme et en design, je cherche à combiner ces compétences avec mes nouvelles connaissances acquises au cours de ma formation.
+          Créatif, curieux et avide d'apprendre, je suis constamment à la recherche de nouvelles opportunités pour mettre en pratique mes compétences techniques et artistiques.
+          Prêt à relever de nouveaux défis, je suis ouvert aux collaborations et aux projets qui me permettront de continuer à grandir
+          en tant que professionnel du développement front-end.</p>
+        <div class="btn_box">
+            <%= link_to "Réalisations", creations_path, class:"un" %>
+            <%= link_to "Discutons", contact_path, class:"un"%>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
