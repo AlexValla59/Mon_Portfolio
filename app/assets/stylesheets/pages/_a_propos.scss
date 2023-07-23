@@ -1,8 +1,37 @@
 .photo_alex {
+  position: relative;
   background-image: url("background_apropos.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 800px;
   width: 100%;
+}
+
+.photo_alex h2 {
+  position: absolute;
+  top: 14%;
+  color: white;
+  font-size: 50px;
+  width: 100%;
+}
+
+.photo_alex h3 {
+  position: absolute;
+  top: 22%;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+}
+
+.photo_alex p{
+  position: absolute;
+  top: 30%;
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  text-align: justify;
+}
+.container{
+  background-color: black;
 }
