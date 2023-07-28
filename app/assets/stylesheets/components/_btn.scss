@@ -31,7 +31,7 @@
   left:0;
   width: 100%;
   height:2px;
-  background:linear-gradient(90deg, transparent,#e6007e) ;
+  background:linear-gradient(90deg, transparent,#00b3ff) ;
   animation: animate1 1s linear infinite;
 }
 
@@ -50,7 +50,7 @@
   right:0;
   width: 2px;
   height:100%;
-  background:linear-gradient(180deg, transparent,#e6007e) ;
+  background:linear-gradient(180deg, transparent,#00b3ff) ;
   animation: animate2 1s linear infinite;
   animation-delay: .25s;
 }
@@ -70,7 +70,7 @@
   right:0;
   width: 100%;
   height:2px;
-  background:linear-gradient(270deg, transparent,#e6007e) ;
+  background:linear-gradient(270deg, transparent,#00b3ff) ;
   animation: animate3 1s linear infinite;
   animation-delay: .50s;
 }
@@ -90,7 +90,7 @@
   left:0;
   width: 2px;
   height:100%;
-  background:linear-gradient(360deg, transparent,#e6007e) ;
+  background:linear-gradient(360deg, transparent,#00b3ff) ;
   animation: animate4 1s linear infinite;
   animation-delay: 0.75s;
 }
@@ -111,6 +111,6 @@
 }
 
 .btn_text:hover{
-  color: #e6007e;
+  color: #00b3ff;
 
 }
