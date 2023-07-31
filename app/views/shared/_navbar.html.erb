@@ -3,23 +3,23 @@
     <%= link_to "Alexandre.", root_path, class: "btn_nav2" %>
 
     <div class="a_propos">
-      <%= link_to "À propos", a_propos_path, class: "btn_nav active" %>
+      <%= link_to "À propos", a_propos_path, class: "btn_nav #{current_page?(a_propos_path) ? 'active' : ''}" %>
     </div>
 
     <div class="Réalisation">
-      <%= link_to "Réalisations", creations_path, class: "btn_nav" %>
+      <%= link_to "Réalisations", creations_path, class: "btn_nav #{current_page?(creations_path) ? 'active' : ''}" %>
     </div>
 
     <div class="Formation">
-      <%= link_to "Formation", formation_path, class: "btn_nav" %>
+      <%= link_to "Formation", formation_path, class: "btn_nav #{current_page?(formation_path) ? 'active' : ''}" %>
     </div>
 
     <div class="Experiences">
-      <%= link_to "Experiences", experiences_path, class: "btn_nav" %>
+      <%= link_to "Experiences", experiences_path, class: "btn_nav #{current_page?(experiences_path) ? 'active' : ''}" %>
     </div>
 
     <div class="Contact">
-      <%= link_to "Contact", contact_path, class: "btn_nav" %>
+      <%= link_to "Contact", contact_path, class: "btn_nav #{current_page?(contact_path) ? 'active' : ''}" %>
     </div>
   </div>
 </div>
