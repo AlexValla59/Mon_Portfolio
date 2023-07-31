@@ -1,1 +1,24 @@
-<h1>hello</h1>
+<div class="container">
+  <%= render 'shared/navbar' %>
+  <div class="all_cards">
+    <% @creations.each do |creation| %>
+      <a href="<%= creation_path(creation) %>">
+        <div class="card_container">
+          <div class="card_inner">
+            <div class="card_front">
+              <%= image_tag creation.photos, class: "card-image", alt: "" %>
+            </div>
+            <div class="card_back">
+              <div class="card_elements">
+                <h2><%= creation.nom %></h2>
+                <p><%= creation.description %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+</div>
+
+
