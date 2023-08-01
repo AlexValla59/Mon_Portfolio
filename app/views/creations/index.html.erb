@@ -4,14 +4,25 @@
     <% @creations.each do |creation| %>
       <a href="<%= creation_path(creation) %>">
         <div class="card_container">
+         
+
           <div class="card_inner">
-            <div class="card_front">
+            <div class="card_form">
               <%= image_tag creation.photos, class: "card-image", alt: "" %>
             </div>
             <div class="card_back">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
               <div class="card_elements">
-                <h2><%= creation.nom %></h2>
-                <p><%= creation.description %></p>
+                
+                <h2><%= creation.nom%></h2>
+                <p>Mission<br><%=creation.poste_occupe%></p>
+                <p>Logiciel utilisé<br><%=creation.logiciel%></p>
+                <p>Date<br><%=creation.date%></p>
+                <p>Entreprise<br><%=creation.entreprise%></p>
+                
               </div>
             </div>
           </div>
