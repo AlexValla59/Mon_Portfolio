@@ -40,33 +40,213 @@
   font-family: 'Poppins', sans-serif;
 }
 
+// -----------------------------------BOUTON MES REALISATIONS---------------------------------//
 
-
-.photo_alex .btn_box {
-  top: 58%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 345px;
+.photo_alex .btn_box_real{
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  overflow: hidden;
   height: 50px;
+  padding: 8px;
 }
 
+.btn_box_real span{
+  position:absolute;
+}
 
+.btn_box_real span:nth-child(1){
+  top:0;
+  left:0;
+  width: 100%;
+  height:2px;
+  background:linear-gradient(90deg, transparent,#00b3ff) ;
+  animation: animate1 1s linear infinite;
+}
 
-.btn_box .un {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 100%;
-  border:2px solid #00b3ff;
-  border-radius: 8px;
-  font-size: 18px;
+@keyframes animate1{
+  0%{
+    left: -100%;
+  }
+  50%, 100%{
+    left:100%;
+  }
+}
+
+.btn_box_real span:nth-child(2){
+  top:-100%;
+  right:0;
+  width: 2px;
+  height:100%;
+  background:linear-gradient(180deg, transparent,#00b3ff) ;
+  animation: animate2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes animate2{
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top:100%;
+  }
+}
+
+.btn_box_real span:nth-child(3){
+  bottom:0;
+  right:0;
+  width: 100%;
+  height:2px;
+  background:linear-gradient(270deg, transparent,#00b3ff) ;
+  animation: animate3 1s linear infinite;
+  animation-delay: .50s;
+}
+
+@keyframes animate3{
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right:100%;
+  }
+}
+
+.btn_box_real span:nth-child(4){
+  bottom:-100%;
+  left:0;
+  width: 2px;
+  height:100%;
+  background:linear-gradient(360deg, transparent,#00b3ff) ;
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom:100%;
+  }
+}
+
+.btn_box_real .un{
+  color:white;
   text-decoration: none;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 1px;
-  position: relative;
-  overflow: hidden;
+}
 
+.btn_box_real .un:hover{
+  color: #00b3ff;
+}
+
+// -----------------------------------BOUTON CONTACTEZ MOI---------------------------------//
+
+.photo_alex .btn_box_contact{
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  overflow: hidden;
+  left: 45px;
+  height: 50px;
+  width: 12%;
+  padding: 8px;
+}
+
+.btn_box_contact span{
+  position:absolute;
+}
+
+.btn_box_contact span:nth-child(1){
+  top:0;
+  left:0;
+  width: 100%;
+  height:2px;
+  background:linear-gradient(90deg, transparent,#00b3ff) ;
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+  0%{
+    left: -100%;
+  }
+  50%, 100%{
+    left:100%;
+  }
+}
+
+.btn_box_contact span:nth-child(2){
+  top:-100%;
+  right:0;
+  width: 2px;
+  height:100%;
+  background:linear-gradient(180deg, transparent,#00b3ff) ;
+  animation: animate2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes animate2{
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top:100%;
+  }
+}
+
+.btn_box_contact span:nth-child(3){
+  bottom:0;
+  right:0;
+  width: 100%;
+  height:2px;
+  background:linear-gradient(270deg, transparent,#00b3ff) ;
+  animation: animate3 1s linear infinite;
+  animation-delay: .50s;
+}
+
+@keyframes animate3{
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right:100%;
+  }
+}
+
+.btn_box_contact span:nth-child(4){
+  bottom:-100%;
+  left:0;
+  width: 2px;
+  height:100%;
+  background:linear-gradient(360deg, transparent,#00b3ff) ;
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom:100%;
+  }
+}
+
+.btn_box_contact .deux{
+  color:white;
+  text-decoration: none;
+}
+
+.btn_box_contact .deux:hover{
+  color: #00b3ff;
+
+}
+
+.buttons_propos{
+  display: flex;
+  align-items: center;
+  top: 58%;
+  position: absolute;
+  width: 90%;
 }
