@@ -4,7 +4,40 @@
     grid-gap: 84px;
     margin-top: 60px;
     margin-bottom: 60px;
-    
+}
+
+.animation{
+  position: relative;
+}
+
+
+.animation::before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 3s ease forwards, moveRight 1s ease forwards 2s;
+  z-index: 1;
+}
+
+@keyframes showRight {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes moveRight {
+ 
+  100% {
+    width: 0;
+  }
 }
 
 .card_form {
@@ -12,8 +45,6 @@
     width: 100%;
     height: 340px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
-    // border: solid #00b3ff 1px;
-    // border: solid white 0.5px;
 }
 
 .card_container {
@@ -43,9 +74,7 @@
   
   .card_back {
     transform: rotateY(180deg); /* Pour retourner la carte */
-    // background-color: rgb(6, 19, 28);
     background-color: #06131ce6;
-
     height:340px;
     overflow:hidden;
     display: flex;
@@ -135,18 +164,25 @@
     transform: rotateY(180deg); /* Pour retourner la carte quand on l a survole */
   }
 
+  .card_container .card_back .card_elements {
+    opacity: 0; 
+    transform: translateY(100%); 
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  
+  .card_container:hover .card_back .card_elements {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+
+
+
 .card-image{
     width: 100%;
     height:100%;
     border-radius: 12px;
 }
 
-.card_elements{
-  border: solid white;
-  border-radius: 12px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
 
 .card_elements h2{
     color:#00b3ff;
