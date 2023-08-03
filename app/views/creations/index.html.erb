@@ -1,3 +1,4 @@
+<div class="animation">
 <div class="container">
   <%= render 'shared/navbar' %>
   <div class="all_cards">
@@ -15,10 +16,17 @@
               <span></span>
               <div class="card_elements">
                 <h2><%= creation.nom %></h2>
-                <p><%= creation.creation_type %></p>
-                <p><%= creation.logiciel %></p>
-                <p><%= creation.entreprise %></p>
-                <p><%= creation.date %></p>
+                <i class="fa-solid fa-arrow-right" style="display: inline-block;"></i>
+                <p style="display: inline-block; margin-left: 5px;"><%= creation.creation_type %></p>
+                <br>
+                <i class="fa-solid fa-arrow-right" style="display: inline-block;"></i>
+                <p style="display: inline-block; margin-left: 5px;"><%= creation.logiciel %></p>
+                <br>
+                <i class="fa-solid fa-arrow-right" style="display: inline-block;"></i>
+                <p style="display: inline-block; margin-left: 5px;"><%= creation.entreprise %></p>
+                <br>
+                <i class="fa-solid fa-arrow-right" style="display: inline-block;"></i>
+                <p style="display: inline-block; margin-left: 5px;"><%= creation.date %></p>
               </div>
             </div>
           </div>
@@ -27,6 +35,4 @@
     <% end %>
   </div>
 </div>
-
-
-
+</div>
