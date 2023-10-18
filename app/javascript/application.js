@@ -2,4 +2,7 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "creations_card"
-import "timeline"
+
+
+
+
