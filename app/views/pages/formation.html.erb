@@ -1,63 +1,88 @@
 <div class="container">
     <%= render 'shared/navbar' %>
 </div>
+
 <div class="container2">
     <div class="content_train">
-    <div class="top-section">
-        <%# <h1>Formation</h1> %>
+        <div class="top-section"></div>
+
+        <div class="timeline">
+            <div class="line"></div>
+
+            <!-- Formation 1 -->
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content2">
+                    <div class="text_content">
+                        <%= image_tag 'wagon.png', class: "logo_form" %>
+                        <div>
+                            <h3>Le Wagon Lille</h3>
+                            <h6>04/2023 - 06/2023</h6>
+                        </div>
+                    </div>
+                    <p>
+                        J'ai suivi une formation intensive de développement web full-stack au cours de laquelle j'ai acquis des compétences dans plusieurs langages et outils. J'ai appris à utiliser Ruby, HTML, CSS, JavaScript, Ajax, Active Record, et SQL. En plus de la programmation, j'ai également maîtrisé l'utilisation de Figma pour créer des prototypes d'applications web. Cette formation m'a permis de développer une solide base de compétences en développement web, et j'ai obtenu la certification de concepteur et développeur d'applications web.
+                    </p>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+
+            <!-- Formation 2 -->
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content2">
+                    <div class="text_content">
+                        <%= image_tag 'marcorel.png', class: "logo_form" %>
+                        <div>
+                            <h3>Marcorel Paris</h3>
+                            <h6>06/2020 - 08/2020</h6>
+                        </div>
+                    </div>
+                    <p>
+                        En tant que concepteur-réalisateur en communication, mon parcours a été façonné par une formation dédiée à la création visuelle et à la gestion de la communication. J'ai développé mes compétences sur des logiciels de la suite Adobe, tels que Photoshop, Illustrator et InDesign, et j'ai obtenu la certification de concepteur et réalisateur en communication. Cette formation m'a ouvert des portes passionnantes dans le monde de la conception graphique et de la communication visuelle.
+                    </p>
+                    <span class="arrow2"></span>
+                </div>
+            </div>
+
+            <!-- Formation 3 -->
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content2">
+                    <div class="text_content">
+                        <%= image_tag 'esg.png', class: "logo_form" %>
+                        <div>
+                            <h3>ESG Paris</h3>
+                            <h6>2013 - 06/2014</h6>
+                        </div>
+                    </div>
+                    <p>
+                        J'ai obtenu un MBA en marketing et management du sport, acquérant des compétences essentielles en événementiel sportif, communication, et PAO. Mon programme d'études m'a permis de planifier et promouvoir des événements sportifs, d'élaborer des campagnes de communication stratégiques, et de maîtriser la création de supports visuels professionnels. Ces compétences me positionnent pour réussir dans l'industrie du sport et de la gestion d'événements.
+                    </p>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+
+            <!-- Formation 4 -->
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content2">
+                    <div class="text_content">
+                        <%= image_tag 'sup.jpg', class: "logo_form" %>
+                        <div>
+                            <h3>Sup de Pub Paris</h3>
+                            <h6>2008 - 06/2012</h6>
+                        </div>
+                    </div>
+                    <p>
+                        Mon parcours académique est constitué d'un BTS en communication des entreprises suivi d'un master en responsabilité de la communication et publicité. Au fil de ces formations, j'ai développé des compétences en communication d'entreprise, stratégie de communication, organisation d'événements, et création d'infographies en PAO. Ces diplômes m'ont permis de devenir un professionnel polyvalent de la communication, capable de gérer des campagnes, d'organiser des événements et de créer des supports visuels percutants.
+                    </p>
+                    <span class="arrow2"></span>
+                </div>
+            </div>
+
+            <div class="bead top-bead"></div>
+            <div class="bead bottom-bead"></div>
+        </div>
     </div>
- 
-    <div class="timeline" >
-        <div class="line"></div>
-        <div class="section">
-            <div class="bead"></div>
-            <div class="content2">
-                <h3>Le Wagon Lille</h3>
-               <h6>04/2023 - 06/2023</h6>
-                <p>Lorem ipsum dolo accusantium saepe eius, sit dolorem rerum similique id perferendis tempore in aliquam dolores optio, perspiciatis maxime quis architecto inventore! 
-                </p>
-                <span class="arrow"></span>
-            </div>
-        </div>
-   
-  <div class="section">
-            <div class="bead"></div>
-            <div class="content2">
-                <h3>Marcorel Paris</h3>
-                <h6>04/2023 - 06/2023</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, fugit commodi accusantium saepe eius, sit dolorem rerum similique id perferendis tempore in aliquam dolores optio, perspiciatis maxime quis architecto inventore!
-                </p>
-                <span class="arrow2"></span>
-            </div>
-        </div>
-  <div class="section">
-            <div class="bead"></div>
-            <div class="content2">
-                <h3>EGC Paris</h3>
-                <h6>04/2023 - 06/2023</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, fugit commodi accusantium saepe eius, sit dolorem rerum similique id perferendis tempore in aliquam dolores optio, perspiciatis maxime quis architecto inventore!
-                </p>
-                <span class="arrow"></span>
-            </div>
-        </div>
-  <div class="section">
-            <div class="bead"></div>
-            <div class="content2">
-                <h3>Sup de Pub Paris</h3>
-                <h6>04/2023 - 06/2023</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, fugit commodi accusantium saepe eius, sit dolorem rerum similique id perferendis tempore in aliquam dolores optio, perspiciatis maxime quis architecto inventore!
-                    
-                </p>
-                <span class="arrow2"></span>
-            </div>
-        </div>
-
-     <div class="bead top-bead"></div>
-     <div class="bead bottom-bead"></div>
-
-
-
-    </div>
-    </div>
-     
 </div>
