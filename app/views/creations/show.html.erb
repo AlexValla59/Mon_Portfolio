@@ -1,14 +1,88 @@
-<div class="body2">
-  <input class= "btnc" type="radio" name="position" checked />
-  <input type="radio" name="position" />
-  <input type="radio" name="position" />
-  <input type="radio" name="position" />
-  <input type="radio" name="position" />
-  <main id="carousel">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <main>
+<div class="container">
+  <%= render 'shared/navbar' %>
+</div>
+
+
+
+
+<% if @format == 'paysage' %>
+
+  <div class="container_carrousel2">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+    <div class="cards">
+      <label class="card2" for="item-1" id="song-1">
+        <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
+      </label>
+      <label class="card2" for="item-2" id="song-2">
+        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+      </label>
+      <label class="card2" for="item-3" id="song-3">
+        <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+      </label>
+    </div>
+  </div>
+
+
+
+<% elsif @format == 'portrait' %>
+  <div class="container_carrousel">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+    <div class="cards">
+      <label class="card" for="item-1" id="song-1">
+        <%= image_tag @creation.image_paths, alt: "song" %>
+      </label>
+      <label class="card" for="item-2" id="song-2">
+        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+      </label>
+      <label class="card" for="item-3" id="song-3">
+        <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+      </label>
+    </div>
+  
+  </div>
+  
+
+
+
+
+
+  <div class="web">
+<% elsif @format == 'web' %>
+ 
+  <div class="container_carrousel">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+    <input type="radio" name="slider" id="item-4">
+    <div class="cards">
+     
+      <label class="card3" for="item-1" id="song-1">
+        <%= image_tag @creation.image_paths.split(',')[0].strip, alt: "song" %>
+      </label>
+      <label class="card3" for="item-2" id="song-2">
+        <%= image_tag @creation.image_paths.split(',')[1].strip, alt: "song" %>
+      </label>
+      <label class="card3" for="item-3" id="song-3">
+        <%= image_tag @creation.image_paths.split(',')[2].strip, alt: "song" %>
+      </label>
+      <label class="card3" for="item-4" id="song-4">
+        <%= image_tag @creation.image_paths.split(',')[3].strip, alt: "song" %>
+      </label>
+    </div>
+
+  </div>
+      <div class="text_informations">
+
+
+<h2><%= @creation.nom %></h2>
+<p><%= @creation.description %></p>
+
+</div>
+<% end %>
+
+
 </div>

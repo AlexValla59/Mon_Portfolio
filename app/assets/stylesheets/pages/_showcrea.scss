@@ -1,100 +1,253 @@
-.body2 {
-    height: 600px;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 500px 100px;
-    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-    align-items: center;
-    justify-items: center;
-  }
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+  border:none;
+  outline:none;
+  background: none;
   
-  main#carousel {
-    grid-row: 1 / 2;
-    grid-column: 1 / 8;
-    width: 100vw;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    perspective: 600px;
-    --items: 5;
-    --middle: 3;
-    --position: 1;
-    pointer-events: none;
-  }
+  border-radius: 15px;
+}
+
+.card2 {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  right:0;
+  left:0;
+  margin:0 auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 15px;
   
-  div.item {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    background-color: coral;
-    --r: calc(var(--position) - var(--offset));
-    --abs: max(calc(var(--r) * -1), var(--r));
-    transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-      translateX(calc(-300px * var(--r)));
-    z-index: calc((var(--position) - var(--abs)));
-  }
   
-  div.item:nth-of-type(1) {
-    --offset: 1;
-    background-color: #90f1ef;
-  }
-  div.item:nth-of-type(2) {
-    --offset: 2;
-    background-color: #ff70a6;
-  }
-  div.item:nth-of-type(3) {
-    --offset: 3;
-    background-color: #ff9770;
-  }
-  div.item:nth-of-type(4) {
-    --offset: 4;
-    background-color: #ffd670;
-  }
-  div.item:nth-of-type(5) {
-    --offset: 5;
-    background-color: #e9ff70;
-  }
+}
+
+.card3 {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+  border:none;
+  outline:none;
+  background: none;
+  margin-left: 196px;
+  border-radius: 15px;
   
-  input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(1):checked ~ main#carousel {
-    --position: 1;
-  }
+}
+
+
+
+
+.container_carrousel {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  padding: 30px 10px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background .4s ease-in;
+  // margin:0 auto;
+  margin-top: -22px;
   
-  input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(2):checked ~ main#carousel {
-    --position: 2;
-  }
+}
+
+.container_carrousel2 {
+  width: 40%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  padding: 30px 10px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background .4s ease-in;
+  margin: 0 auto; /* Pour centrer horizontalement */
+  margin-top: 40px;
   
-  input:nth-of-type(3) {
-    grid-column: 4 /5;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(3):checked ~ main#carousel {
-    --position: 3;
-  }
+}
+
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 115%;
+  border-radius: 15px;
+  object-fit: cover;
+ 
+  // border:solid rgba(0, 179, 255,0.2);
+}
+
+// =======================CARROUSSEL WEB============================================
+
+.container_carrousel2 #item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-4 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.container_carrousel2 #item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel2 #item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-4,
+#item-3:checked ~ .cards #song-1,
+#item-4:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel2 #item-1:checked ~ .cards #song-4,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2,
+#item-4:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+// =======================CARROUSSEL PAYSAGE============================================
+
+
+
+
+
+.container_carrousel #item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-4 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.container_carrousel #item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel #item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-4,
+#item-3:checked ~ .cards #song-1,
+#item-4:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel #item-1:checked ~ .cards #song-4,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2,
+#item-4:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+
+// ===================================================================
+
+.text_informations{
+  position: absolute;
+  top: 15%;
+  left: 49%;
+  right: 7%;
+}
   
-  input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(4):checked ~ main#carousel {
-    --position: 4;
-  }
+
+.text_informations h2{
+  color:#00b3ff;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.text_informations p{
+  color:white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  // font-weight: 600;
+}
+
+// ===================================================================
+.text_informations2{
+  position: absolute;
+  top: 15%;
+  left: 49%;
+  right: 0%;
+}
   
-  input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(5):checked ~ main#carousel {
-    --position: 5;
-  }
+
+.text_informations2 h2{
+  color:#00b3ff;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.text_informations2 p{
+  color:white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  // font-weight: 600;
+}
