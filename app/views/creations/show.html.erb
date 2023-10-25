@@ -1,6 +1,7 @@
 <div class="container">
   <%= render 'shared/navbar' %>
-</div>
+  </div>
+
 
 
 
@@ -12,8 +13,13 @@
     <input type="radio" name="slider" id="item-2">
     <input type="radio" name="slider" id="item-3">
     <input type="radio" name="slider" id="item-4">
+    <input type="radio" name="slider" id="item-5">
+    <input type="radio" name="slider" id="item-6">
+    <input type="radio" name="slider" id="item-7">
+    <input type="radio" name="slider" id="item-8">
+    <input type="radio" name="slider" id="item-9">
 
-    <div class="cards">
+    <div class="cards2">
       <label class="card2" for="item-1" id="song-1">
         <%= image_tag @creation.image_paths.split(',')[0].strip, alt: "song" %>
       </label>
@@ -43,6 +49,13 @@
       </label>
     </div>
   </div>
+     <div class="text_informations3">
+
+
+<h2><%= @creation.nom %></h2>
+<p><%= @creation.description %></p>
+
+</div>
 
 
  <div class="portrait">
@@ -52,7 +65,7 @@
     <input type="radio" name="slider" id="item-2">
     <input type="radio" name="slider" id="item-3">
     <input type="radio" name="slider" id="item-4">
-    <div class="cards">
+    <div class="cards3">
    <label class="card" for="item-1" id="song-1">
         <%= image_tag @creation.image_paths.split(',')[0].strip, alt: "song" %>
       </label>
@@ -77,6 +90,58 @@
 
 </div>
 </div>
+
+
+<% elsif @format == 'portrait_foto' %>
+  <div class="container_carrousel4">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+    <input type="radio" name="slider" id="item-4">
+    <input type="radio" name="slider" id="item-5">
+
+    <div class="cards4">
+   <label class="card4" for="item-1" id="song-1">
+        <%= image_tag @creation.image_paths.split(',')[0].strip, alt: "song" %>
+      </label>
+      <label class="card4" for="item-2" id="song-2">
+        <%= image_tag @creation.image_paths.split(',')[1].strip, alt: "song" %>
+      </label>
+      <label class="card4" for="item-3" id="song-3">
+        <%= image_tag @creation.image_paths.split(',')[2].strip, alt: "song" %>
+      </label>
+      <label class="card4" for="item-4" id="song-4">
+        <%= image_tag @creation.image_paths.split(',')[3].strip, alt: "song" %>
+      </label>
+      <label class="card4" for="item-5" id="song-5">
+        <%= image_tag @creation.image_paths.split(',')[4].strip, alt: "song" %>
+      </label>
+  
+  </div>
+       
+  </div>
+   <div class="text_informations2">
+
+
+<h2><%= @creation.nom %></h2>
+<p><%= @creation.description %></p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
