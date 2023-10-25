@@ -44,7 +44,7 @@ Creation.create(
     creation_type: "Newsletters et t-shirts",
     format: "paysage",
     image_paths: "gorillas1.jpg, gorillas3.jpg, gorillas4.jpg, gorillas5.jpg, gorillas6.jpg, gorillas7.jpg, gorillas8.jpg, gorillas9.jpg, gorillas10.jpg",
-    description: 'zfezefzefzefzefzefzefzefze', 
+    description: "Au cours de mon expérience chez Gorillas, j'ai eu l'opportunité de mettre en lumière ma créativité. J'ai créé différentes infographies pour enrichir nos newsletters nationales, apportant ainsi une touche d'originalité à notre communication interne. De plus, j'ai eu le privilège de concevoir des t-shirts spécialement conçus pour notre opération d'acquisition client, offrant ainsi une approche unique pour attirer de nouveaux prospects de notre marque.", 
     photos: 'gorillas2.jpg', 
     date:'2021 à 2023', 
     logiciel:'Adobe ID, AI et PS', 
@@ -54,12 +54,26 @@ Creation.create(
 Creation.create(
     nom:'Plug & Play', 
     creation_type: "Catalogues produits",
-    description: 'efzfedzefezafzefzefze', 
+    format: "portrait_foto",
+    image_paths:"plug11.jpg, plug12.jpg, plug13.jpg, plug14.jpg, plug15.jpg",
+    description: "En tant qu'auto-entrepreneur, j'ai conçu des catalogues produits dynamiques et modernes pour l'entreprise Plug & Play. Mon objectif était de créer des outils de marketing visuellement attrayants et informatifs. J'ai méticuleusement élaboré des mises en page, des visuels et des descriptions de produits pour mettre en valeur le catalogue. Mon travail a permis à l'entreprise de présenter ses produits de manière professionnelle, améliorant ainsi son image de marque et facilitant la compréhension des clients. Ces catalogues ont été des atouts précieux pour Plug & Play, renforçant sa présence sur le marché et facilitant la promotion de ses produits.", 
     photos: 'plug2.jpg', 
     date:'2015 à 2019', 
     logiciel:'Adobe ID, AI et PS', 
     poste_occupe: 'Infographiste', 
     entreprise: 'Auto-entrepreneur')
+
+Creation.create(
+    nom:'FotoBorne', 
+    creation_type: "Supports Marketing",
+    format: "portrait_foto",
+    image_paths:"fotoborne_n.jpg, fotoborne_solo.jpg, fotoborne_wall.jpg, fotoborne4.jpg, bornes_site.jpg",
+    description: "En tant qu'infographiste chez FotoBORNE, j'ai joué un rôle clé en concevant la plaquette commerciale pour les formats imprimés et web, créant des stickers originaux pour les bornes photos, et élaborant des designs personnalisés pour les photos imprimées. En parallèle, j'ai géré et développé le contenu des réseaux sociaux de l'entreprise. Mon rôle polyvalent a contribué à renforcer l'identité visuelle de la marque et à promouvoir ses produits de manière créative. Mon expérience a été une fusion réussie de créativité, de design et de communication, contribuant à l'essor de l'entreprise FotoBORNE.",
+    photos: 'fotoborne2.jpg', 
+    date:'2015 à 2020', 
+    logiciel:'Adobe ID, AI et PS', 
+    poste_occupe: 'Infographiste', 
+    entreprise: 'Fotoborne Animation')
 
 Creation.create(
     nom:'Créations', 
@@ -71,15 +85,7 @@ Creation.create(
     poste_occupe: '', 
     entreprise: '')
 
-Creation.create(
-    nom:'FotoBorne', 
-    creation_type: "Supports Marketing",
-    description: 'efzfzefzefzefzfeezfezf', 
-    photos: 'fotoborne2.jpg', 
-    date:'2015 à 2020', 
-    logiciel:'Adobe ID, AI et PS', 
-    poste_occupe: 'Infographiste', 
-    entreprise: 'Fotoborne Animation')
+
 
 Creation.create(
     nom:'Mes dessins', 
@@ -92,15 +98,15 @@ Creation.create(
     poste_occupe: 'Infographiste', 
     entreprise: 'Auto-entrepreneur')
 
-Creation.create(
-    nom:'Autres', 
-    creation_type: "sdfz"   ,
-    description: 'efzfzefzefzefzfeezfezf', 
-    photos: '', 
-    date:'', 
-    logiciel:'',
-    poste_occupe: '', 
-    entreprise: '')
+# Creation.create(
+#     nom:'Autres', 
+#     creation_type: "sdfz"   ,
+#     description: 'efzfzefzefzefzfeezfezf', 
+#     photos: '', 
+#     date:'', 
+#     logiciel:'',
+#     poste_occupe: '', 
+#     entreprise: '')
 
 
 
