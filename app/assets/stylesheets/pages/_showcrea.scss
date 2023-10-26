@@ -126,13 +126,13 @@ img {
   height: 100%;
   transform-style: preserve-3d;
   display: flex;
-  justify-content: center; /* Centrer horizontalement */
-  align-items: center; /* Centrer verticalement */
+  justify-content: center;
+  align-items: center;
   padding: 30px 10px;
   font-family: 'DM Sans', sans-serif;
   transition: background .4s ease-in;
-  margin: 0 auto; /* Pour centrer horizontalement */
-  margin-top: 40px;
+  margin: 58px;
+  margin-top: 98px;
 }
 
 .card2 {
@@ -151,12 +151,20 @@ img {
   border-radius: 15px;
 }
 
+.card2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Pour ajuster l'image au div tout en conservant les proportions */
+}
+
 .cards2 {
   position: relative;
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
 }
+
+
 
 
 .container_carrousel2 #item-1:checked ~ .cards2 #song-1,
@@ -168,7 +176,7 @@ img {
 .container_carrousel2 #item-7:checked ~ .cards2 #song-7,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-8,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-9 {
-  transform: translateX(0) scale(1);
+  transform: translateY(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
@@ -182,7 +190,7 @@ img {
 .container_carrousel2 #item-7:checked ~ .cards2 #song-8,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-9,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-1 {
-  transform: translateX(40%) scale(0.8);
+  transform: translateY(25%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
@@ -196,7 +204,7 @@ img {
 .container_carrousel2 #item-7:checked ~ .cards2 #song-9,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-1,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-2 {
-  transform: translateX(0) scale(0.8);
+  transform: translateY(0) scale(0.8);
   opacity: 0.4;
   z-index: 0
 }
@@ -212,7 +220,7 @@ img {
 .container_carrousel2 #item-7:checked ~ .cards2 #song-1,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-2,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-3 {
-  transform: translateX(0) scale(0.8);
+  transform: translateY(0) scale(0.8);
 opacity: 0.4;
 z-index: 0
 }
@@ -226,7 +234,7 @@ z-index: 0
 .container_carrousel2 #item-7:checked ~ .cards2 #song-2,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-3,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-4 {
-  transform: translateX(0) scale(0.8);
+  transform: translateY(0) scale(0.8);
   opacity: 0.4;
   z-index: 0
 }
@@ -240,7 +248,7 @@ z-index: 0
 .container_carrousel2 #item-7:checked ~ .cards2 #song-3,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-4,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-5 {
-  transform: translateX(0) scale(0.8);
+  transform: translateY(0) scale(0.8);
 opacity: 0.4;
 z-index: 0
 }
@@ -254,7 +262,7 @@ z-index: 0
 .container_carrousel2 #item-7:checked ~ .cards2 #song-4,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-5,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-6 {
-  transform: translateX(0) scale(0.8);
+  transform: translateY(0) scale(0.8);
   opacity: 0.4;
   z-index: 0
 }
@@ -268,7 +276,7 @@ z-index: 0
 .container_carrousel2 #item-7:checked ~ .cards2 #song-5,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-6,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-7 {
-  transform: translateX(0) scale(0.8);
+  transform: translateY(0) scale(0.8);
 opacity: 0.4;
 z-index: 0
 }
@@ -282,7 +290,7 @@ z-index: 0
 .container_carrousel2 #item-7:checked ~ .cards2 #song-6,
 .container_carrousel2 #item-8:checked ~ .cards2 #song-7,
 .container_carrousel2 #item-9:checked ~ .cards2 #song-8 {
-  transform: translateX(-40%) scale(0.8);
+  transform: translateY(-25%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
@@ -512,6 +520,14 @@ z-index: 0
   // font-weight: 600;
 }
 
+.text_informations2 h3{
+  color:#00b3ff;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+
 
 
 .text_informations{
@@ -537,6 +553,16 @@ z-index: 0
   // font-weight: 600;
 }
 
+.text_informations h3{
+  color:#00b3ff;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+
+
+
 
 
 
@@ -561,4 +587,11 @@ z-index: 0
   font-family: "Poppins", sans-serif;
   text-align: justify;
   // font-weight: 600;
+}
+
+.text_informations3 h3{
+  color:#00b3ff;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }

@@ -19,11 +19,11 @@ Creation.create(
     creation_type: 'Application Web', 
     format: "web",
     image_paths:'city1.png, city2.png, city3.png, city4.png' , 
-    description: "City Break est une application web qui propose une expérience d'escape game en plein air à travers les rues de Lille. Cette application, développée avec Ruby on Rails, offre aux utilisateurs l'opportunité de découvrir la ville d'une manière inédite en résolvant une série d'énigmes pendant une heure. Conçue pour un large public, City Break mêle le jeu et la découverte de Lille, en invitant les participants à explorer la ville et à déverrouiller des indices pour résoudre des mystères. Cette expérience immersive permet de redécouvrir des quartiers familiers tout en apprenant de nouvelles facettes de l'histoire et de la culture de la ville.", 
+    description: "City Break est une application web qui propose une expérience d'escape game en plein air à travers les rues de Lille. Cette application offre aux utilisateurs l'opportunité de découvrir la ville d'une manière inédite en résolvant une série d'énigmes pendant une heure. Conçue pour un large public, City Break mêle le jeu et la découverte de Lille, en invitant les participants à explorer la ville et à déverrouiller des indices pour résoudre des mystères. Cette expérience immersive permet de redécouvrir des quartiers familiers tout en apprenant de nouvelles facettes de l'histoire et de la culture de la ville.", 
     photos: "cb2.jpg", 
     date: "Juin 2023", 
     logiciel:'Ruby on Rails', 
-    poste_occupe: "Création et développement d'un escape game extérieur", 
+    poste_occupe: "Pour créer l'application City Break, j'ai utilisé Ruby on Rails, combinant les langages Ruby, HTML, SCSS et JavaScript. J'ai suivi le modèle de développement web standard pour la création de l'application. En seulement deux semaines, j'ai réussi à concevoir une première version bêta. L'objectif était de proposer une expérience de voyage unique, permettant aux utilisateurs de planifier leurs city breaks de manière simplifiée et efficace. Grâce à ce projet, j'ai acquis une solide expérience en développement web tout en offrant une solution pratique aux amateurs de voyages.", 
     entreprise: 'Le Wagon')
 
 Creation.create(
