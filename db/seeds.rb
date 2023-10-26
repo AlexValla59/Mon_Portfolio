@@ -90,7 +90,8 @@ Creation.create(
 Creation.create(
     nom:'Mes dessins', 
     creation_type: "Dessins PAO", 
-    format:"paysage"  ,
+    format:"paysage", 
+    image_paths:"dessin9.png ,dessin7.png, dessin5.png, dessin4.png, dessin8.png, dessin1.png, dessin6.png, dessin2.png, dessin3.png",
     description: 'zefzefzefzefzefzefzefez', 
     photos: 'dessins.jpg', 
     date:'2010 à 2023', 
