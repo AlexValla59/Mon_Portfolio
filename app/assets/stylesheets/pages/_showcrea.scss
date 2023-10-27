@@ -297,8 +297,351 @@ z-index: 0
 
 //=======================================================================================
 
+// =======================CARROUSSEL CREATION============================================
 
 
+
+.container_carrousel5 {
+  width: 40%;
+  max-width: 800px;
+  max-height: 685px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background .4s ease-in;
+  margin: 72px;
+  margin-top: 98px;
+}
+
+.card5 {
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  top: 0;
+  right:0;
+  left:0;
+  margin:0 auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 15px;
+}
+
+.card5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Pour ajuster l'image au div tout en conservant les proportions */
+}
+
+.cards5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-1, 
+#item-2:checked ~ .cards5 #song-2,
+#item-3:checked ~ .cards5 #song-3,
+#item-4:checked ~ .cards5 #song-4,
+#item-5:checked ~ .cards5 #song-5,
+#item-6:checked ~ .cards5 #song-6,
+#item-7:checked ~ .cards5 #song-7,
+#item-8:checked ~ .cards5 #song-8,
+#item-9:checked ~ .cards5 #song-9,
+#item-10:checked ~ .cards5 #song-10,
+#item-11:checked ~ .cards5 #song-11,
+#item-12:checked ~ .cards5 #song-12,
+#item-13:checked ~ .cards5 #song-13,
+#item-14:checked ~ .cards5 #song-14 
+ {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-2,
+#item-2:checked ~ .cards5 #song-3,
+#item-3:checked ~ .cards5 #song-4,
+#item-4:checked ~ .cards5 #song-5,
+#item-5:checked ~ .cards5 #song-6,
+#item-6:checked ~ .cards5 #song-7,
+#item-7:checked ~ .cards5 #song-8,
+#item-8:checked ~ .cards5 #song-9,
+#item-9:checked ~ .cards5 #song-10,
+#item-10:checked ~.cards5 #song-11,
+#item-11:checked ~.cards5 #song-12,
+#item-12:checked ~.cards5 #song-13,
+#item-13:checked ~.cards5 #song-14,
+#item-14:checked ~.cards5 #song-1{
+  transform: translateY(25%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-3,
+#item-2:checked ~ .cards5 #song-4,
+#item-3:checked ~ .cards5 #song-5,
+#item-4:checked ~ .cards5 #song-6,
+#item-5:checked ~ .cards5 #song-7,
+#item-6:checked ~ .cards5 #song-8,
+#item-7:checked ~ .cards5 #song-9,
+#item-8:checked ~ .cards5 #song-10,
+#item-9:checked ~.cards5 #song-11,
+#item-10:checked ~.cards5 #song-12,
+#item-11:checked ~.cards5 #song-13,
+#item-12:checked ~.cards5 #song-14,
+#item-13:checked ~.cards5 #song-1, 
+#item-14:checked ~ .cards5 #song-2{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-4,
+#item-2:checked ~ .cards5 #song-5,
+#item-3:checked ~ .cards5 #song-6,
+#item-4:checked ~ .cards5 #song-7,
+#item-5:checked ~ .cards5 #song-8,
+#item-6:checked ~ .cards5 #song-9,
+#item-7:checked ~ .cards5 #song-10,
+#item-8:checked ~.cards5 #song-11,
+#item-9:checked ~.cards5 #song-12,
+#item-10:checked ~.cards5 #song-13,
+#item-11:checked ~.cards5 #song-14,
+#item-12:checked ~.cards5 #song-1, 
+#item-13:checked ~ .cards5 #song-2, 
+#item-14:checked ~ .cards5 #song-3{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-5,
+#item-2:checked ~ .cards5 #song-6,
+#item-3:checked ~ .cards5 #song-7,
+#item-4:checked ~ .cards5 #song-8,
+#item-5:checked ~ .cards5 #song-9,
+#item-6:checked ~ .cards5 #song-10, 
+#item-7:checked ~.cards5 #song-11,
+#item-8:checked ~.cards5 #song-12,
+#item-9:checked ~.cards5 #song-13,
+#item-10:checked ~.cards5 #song-14,
+#item-11:checked ~.cards5 #song-1, 
+#item-12:checked ~ .cards5 #song-2, 
+#item-13:checked ~ .cards5 #song-3,
+#item-14:checked ~ .cards5 #song-4{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-6,
+#item-2:checked ~ .cards5 #song-7,
+#item-3:checked ~ .cards5 #song-8,
+#item-4:checked ~ .cards5 #song-9,
+#item-5:checked ~ .cards5 #song-10,
+#item-60:checked ~.cards5 #song-11,
+#item-7:checked ~.cards5 #song-12,
+#item-8:checked ~.cards5 #song-13,
+#item-9:checked ~.cards5 #song-14,
+#item-10:checked ~.cards5 #song-1, 
+#item-11:checked ~ .cards5 #song-2, 
+#item-12:checked ~ .cards5 #song-3,
+#item-13:checked ~ .cards5 #song-4,
+#item-14:checked ~ .cards5 #song-5{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-7,
+#item-2:checked ~ .cards5 #song-8,
+#item-3:checked ~ .cards5 #song-9,
+#item-4:checked ~ .cards5 #song-10,
+#item-5:checked ~.cards5 #song-11,
+#item-6:checked ~.cards5 #song-12,
+#item-7:checked ~.cards5 #song-13,
+#item-8:checked ~.cards5 #song-14,
+#item-9:checked ~.cards5 #song-1, 
+#item-10:checked ~ .cards5 #song-2, 
+#item-11:checked ~ .cards5 #song-3,
+#item-12:checked ~ .cards5 #song-4,
+#item-13:checked ~ .cards5 #song-5,
+#item-14:checked ~ .cards5 #song-6{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-8,
+#item-2:checked ~ .cards5 #song-9,
+#item-3:checked ~ .cards5 #song-10, 
+#item-4:checked ~.cards5 #song-11,
+#item-5:checked ~.cards5 #song-12,
+#item-6:checked ~.cards5 #song-13,
+#item-7:checked ~.cards5 #song-14,
+#item-8:checked ~.cards5 #song-1, 
+#item-9:checked ~ .cards5 #song-2, 
+#item-10:checked ~ .cards5 #song-3,
+#item-11:checked ~ .cards5 #song-4,
+#item-12:checked ~ .cards5 #song-5,
+#item-13:checked ~ .cards5 #song-6,
+#item-14:checked ~ .cards5 #song-7{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+
+#item-1:checked ~ .cards5 #song-9,
+#item-2:checked ~ .cards5 #song-10, 
+#item-3:checked ~.cards5 #song-11,
+#item-4:checked ~.cards5 #song-12,
+#item-5:checked ~.cards5 #song-13,
+#item-6:checked ~.cards5 #song-14,
+#item-7:checked ~.cards5 #song-1, 
+#item-8:checked ~ .cards5 #song-2, 
+#item-9:checked ~ .cards5 #song-3,
+#item-10:checked ~ .cards5 #song-4,
+#item-11:checked ~ .cards5 #song-5,
+#item-12:checked ~ .cards5 #song-6,
+#item-13:checked ~ .cards5 #song-7,
+#item-14:checked ~ .cards5 #song-8{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~ .cards5 #song-10, 
+#item-2:checked ~.cards5 #song-11,
+#item-3:checked ~.cards5 #song-12,
+#item-4:checked ~.cards5 #song-13,
+#item-5:checked ~.cards5 #song-14,
+#item-6:checked ~.cards5 #song-1, 
+#item-7:checked ~ .cards5 #song-2, 
+#item-8:checked ~ .cards5 #song-3,
+#item-9:checked ~ .cards5 #song-4,
+#item-10:checked ~ .cards5 #song-5,
+#item-11:checked ~ .cards5 #song-6,
+#item-12:checked ~ .cards5 #song-7,
+#item-13:checked ~ .cards5 #song-8,
+#item-14:checked ~ .cards5 #song-9{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~.cards5 #song-11,
+#item-2:checked ~.cards5 #song-12,
+#item-3:checked ~.cards5 #song-13,
+#item-4:checked ~.cards5 #song-14,
+#item-5:checked ~.cards5 #song-1, 
+#item-6:checked ~ .cards5 #song-2, 
+#item-7:checked ~ .cards5 #song-3,
+#item-8:checked ~ .cards5 #song-4,
+#item-9:checked ~ .cards5 #song-5,
+#item-10:checked ~ .cards5 #song-6,
+#item-11:checked ~ .cards5 #song-7,
+#item-12:checked ~ .cards5 #song-8,
+#item-13:checked ~ .cards5 #song-9,
+#item-14:checked ~ .cards5 #song-10 {
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~.cards5 #song-12,
+#item-2:checked ~.cards5 #song-13,
+#item-3:checked ~.cards5 #song-14,
+#item-4:checked ~.cards5 #song-1, 
+#item-5:checked ~ .cards5 #song-2, 
+#item-6:checked ~ .cards5 #song-3,
+#item-7:checked ~ .cards5 #song-4,
+#item-8:checked ~ .cards5 #song-5,
+#item-9:checked ~ .cards5 #song-6,
+#item-10:checked ~ .cards5 #song-7,
+#item-11:checked ~ .cards5 #song-8,
+#item-12:checked ~ .cards5 #song-9,
+#item-13:checked ~ .cards5 #song-10,
+#item-14:checked ~.cards5 #song-11 {
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~.cards5 #song-13,
+#item-2:checked ~.cards5 #song-14,
+#item-3:checked ~.cards5 #song-1, 
+#item-4:checked ~ .cards5 #song-2, 
+#item-5:checked ~ .cards5 #song-3,
+#item-6:checked ~ .cards5 #song-4,
+#item-7:checked ~ .cards5 #song-5,
+#item-8:checked ~ .cards5 #song-6,
+#item-9:checked ~ .cards5 #song-7,
+#item-10:checked ~ .cards5 #song-8,
+#item-11:checked ~ .cards5 #song-9,
+#item-12:checked ~ .cards5 #song-10,
+#item-13:checked ~.cards5 #song-11,
+#item-14:checked ~.cards5 #song-12{
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel5 
+#item-1:checked ~.cards5 #song-14,
+#item-2:checked ~.cards5 #song-1, 
+#item-3:checked ~ .cards5 #song-2, 
+#item-4:checked ~ .cards5 #song-3,
+#item-5:checked ~ .cards5 #song-4,
+#item-6:checked ~ .cards5 #song-5,
+#item-7:checked ~ .cards5 #song-6,
+#item-8:checked ~ .cards5 #song-7,
+#item-9:checked ~ .cards5 #song-8,
+#item-10:checked ~ .cards5 #song-9,
+#item-11:checked ~ .cards5 #song-10,
+#item-12:checked ~.cards5 #song-11,
+#item-13:checked ~.cards5 #song-12,
+#item-14:checked ~.cards5 #song-13{
+  transform: translateY(-25%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//=======================================================================================
 
 
 // =======================CARROUSSEL PORTRAIT============================================

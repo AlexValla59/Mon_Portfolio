@@ -77,13 +77,15 @@ Creation.create(
 
 Creation.create(
     nom:'Créations', 
-    creation_type: "thdger"   ,
+    creation_type: "thdger",
+    format: "paysage_crea",
+    image_paths: "creation1.png, creation2.png, creation3.png, creation4.png, creation5.png, creation6.png, creation7.png, creation8.png, creation9.png, creation10.png, creation11.png, creation12.png, creation13.png, creation14.png",
     description: 'zefzefezfzefzfzefezfzefz', 
     photos: 'alexcrea2.jpg', 
-    date:'', 
-    logiciel:'', 
-    poste_occupe: '', 
-    entreprise: '')
+    date:'2015 à 2023', 
+    logiciel:'Adobe ID, AI et PS', 
+    poste_occupe: 'Infographiste', 
+    entreprise: 'Auto-entrepreneur')
 
 
 
@@ -92,7 +94,7 @@ Creation.create(
     creation_type: "Dessins PAO", 
     format:"paysage", 
     image_paths:"dessin9.png ,dessin7.png, dessin5.png, dessin4.png, dessin8.png, dessin1.png, dessin6.png, dessin2.png, dessin3.png",
-    description: 'zefzefzefzefzefzefzefez', 
+    description: "Après avoir suivi des formations, j'ai décidé de consacrer du temps à m'entraîner sur les logiciels Illustrator, notamment pour créer des illustrations originales, et InDesign, pour la mise en page. Mon objectif était de reproduire des scènes de films, des affiches, des animations, et même de créer des affiches personnalisées. Il est important de souligner que ces reproductions d'affiches ne sont pas destinées à la vente, mais servent exclusivement à mon perfectionnement personnel.", 
     photos: 'dessins.jpg', 
     date:'2010 à 2023', 
     logiciel:'Adobe IA, ID', 
