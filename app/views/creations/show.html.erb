@@ -1,6 +1,7 @@
 <div class="container">
   <%= render 'shared/navbar' %>
-  </div>
+ 
+ </div>
 
 <% if @format == 'paysage' %>
 
@@ -53,7 +54,7 @@
     </div>
 
 
- <div class="portrait">
+
 <% elsif @format == 'portrait' %>
   <div class="container_carrousel3">
     <input type="radio" name="slider" id="item-1" checked>
@@ -87,7 +88,7 @@
 
 </div>
 
-</div>
+
 
 
 <% elsif @format == 'portrait_foto' %>
@@ -131,7 +132,7 @@
 
 
 
-  <div class="web">
+  
 <% elsif @format == 'web' %>
  
   <div class="container_carrousel">
@@ -246,4 +247,3 @@
 <% end %>
 
 
-</div>

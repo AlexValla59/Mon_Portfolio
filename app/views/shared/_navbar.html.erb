@@ -31,5 +31,18 @@
 </div>
 
   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 80) { // Vous pouvez ajuster la position de défilement pour déclencher le changement de couleur de fond
+      $(".container_nav").addClass("expanded"); // Ajout de la classe "expanded" pour augmenter la taille
+    } else {
+      $(".container_nav").removeClass("expanded"); // Suppression de la classe "expanded" pour rétablir la taille initiale
+    }
+  });
+});
+</script>
+
 
 

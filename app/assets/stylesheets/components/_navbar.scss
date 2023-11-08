@@ -1,11 +1,29 @@
 
 .container_nav {
-
-	position: -webkit-sticky;
-	position: sticky;
-	top: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
   z-index: 100;
+  transition: background-color 0.3s ease, height 0.3s ease;/* Ajout de la transition pour la couleur de fond */
+  height: 40px; /* Hauteur initiale */
+ 
 }
+
+
+
+body .expanded {
+  height: 69px;
+  background-color: #081b29;
+  top: 0;
+  width: 100%;
+  padding-top: 1px;
+}
+ 
+  
+
+
+
+
 
 
 .btn_navbar {
@@ -14,15 +32,9 @@
   margin-top:15px;
   align-items: center;
   height:40px;
-
  
-  
+
 }
-
-
-
-
-
 
 
 .btn_nav {
