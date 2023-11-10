@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_23_111519) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_10_105327) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -28,6 +28,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_23_111519) do
     t.string "creation_type"
     t.string "format"
     t.string "image_paths"
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string "nom"
+    t.string "email"
+    t.string "sujet"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

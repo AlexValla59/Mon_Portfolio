@@ -8,5 +8,8 @@ Rails.application.routes.draw do
 
   resources :creations, only: [:index, :show]
 
+  post '/envoyer-message', to: 'messages#create', as: 'envoyer_message'
+  resources :messages, only: [:new, :create]
+
 
 end
