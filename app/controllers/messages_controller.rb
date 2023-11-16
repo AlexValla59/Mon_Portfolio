@@ -4,13 +4,13 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
-      # Appelle le mailer pour envoyer un e-mail de notification
-      MessageMailer.nouveau_message(@message).deliver_now
+      # Appelle le mailer pour envoyer un e-mail de notification avec le message de succès
+      MessageMailer.nouveau_message(@message, success_message: 'Votre message a été envoyé avec succès. Merci!').deliver_now
 
-      redirect_to new_message_path, notice: 'Message envoyé avec succès.'
+      redirect_to new_message_path, notice: 'Votre message a été envoyé avec succès. Merci!'
     else
-      # Redirige l'utilisateur vers la page de contact
-      redirect_to new_message_path, alert: "Erreur lors de l'envoi du message."
+      # Redirige l'utilisateur vers la page de contact avec le message d'erreur
+      redirect_to new_message_path, alert: "Désolé, une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
     end
   end
 
