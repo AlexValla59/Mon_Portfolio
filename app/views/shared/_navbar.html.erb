@@ -7,7 +7,7 @@
     <%= link_to "Portfolio.", root_path, class: "btn_nav2" %>
 
     <div class="a_propos">
-      <%= link_to "À propos", a_propos_path, class: "btn_nav #{current_page?(a_propos_path) ? 'active' : ''}" %>
+      <%= link_to "Profil", a_propos_path, class: "btn_nav #{current_page?(a_propos_path) ? 'active' : ''}" %>
     </div>
 
     <div class="Réalisation">
@@ -28,6 +28,7 @@
       <%= link_to "Contact", contact_path, class: "btn_nav #{current_page?(contact_path) ? 'active' : ''}" %>
     </div>
   </div>
+  <img src="<%= asset_path('BURGER.png') %>" alt="Burger Image", class="menu">
 </div>
 
   
@@ -42,6 +43,15 @@ $(document).ready(function() {
     }
   });
 });
+</script>
+
+<script>
+        const menuHamburger = document.querySelector(".menu")
+        const navLinks = document.querySelector(".btn_navbar")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
 </script>
 
 
