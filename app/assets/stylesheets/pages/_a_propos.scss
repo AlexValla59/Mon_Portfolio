@@ -45,11 +45,12 @@
 .photo_alex .btn_box_real{
   color: white;
   text-align: center;
-  position: relative;
-  font-size: 20px;
+  position: absolute;
+  font-size: 17px;
   overflow: hidden;
   height: 50px;
   padding: 8px;
+  top:55%;
 }
 
 .btn_box_real span{
@@ -145,13 +146,14 @@
 .photo_alex .btn_box_contact{
   color: white;
   text-align: center;
-  position: relative;
-  font-size: 20px;
+  position: absolute;
+  font-size: 17px;
   overflow: hidden;
-  left: 45px;
+  left: 15%;
   height: 50px;
   // width: 12%;
   padding: 8px;
+  top:55%;
 }
 
 .btn_box_contact span{
@@ -222,6 +224,7 @@
   background:linear-gradient(360deg, transparent,#00b3ff) ;
   animation: animate4 1s linear infinite;
   animation-delay: 0.75s;
+  
 }
 
 @keyframes animate4{
@@ -243,13 +246,6 @@
 
 }
 
-.buttons_propos{
-  display: flex;
-  align-items: center;
-  top: 58%;
-  position: absolute;
-  width: 90%;
-}
 
 
 
@@ -257,47 +253,105 @@
 
 
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
+@media screen and (min-width: 320px) and (max-width: 699px) {
 
   .photo_alex h2 {
-    font-size: 32px;
-    top: 40px;
+    font-size: 25px;
+    top: 50px;
   }
 
   .photo_alex h3 {
-    font-size: 17px;
+    font-size: 14px;
+    top: 85px;
+  }
+
+  .photo_alex p {
+    font-size: 13px;
+    width: 100%;
+    top: 15%;
+  }
+  
+
+  .photo_alex .btn_box_real{
+    font-size: 15px;
+    /* Ajustez cette valeur selon vos besoins */
+    width: 40%; /* Ajustez la largeur des boutons en pourcentage */
+     /* Ajustez la position horizontale des boutons en pourcentage */
+      top:auto;
+      bottom:42%
+  }
+
+  .photo_alex .btn_box_contact {
+    
+    font-size: 15px;
+    /* Ajustez cette valeur selon vos besoins */
+    width: 40%; /* Ajustez la largeur des boutons en pourcentage */
+     /* Ajustez la position horizontale des boutons en pourcentage */
+     margin-left: 35%;
+     top:auto;
+     bottom: 42%;
+  }
+
+  // .buttons_propos{
+  //   top: 56%;
+  // }
+
+  .photo_alex {
+    background-size: 800px 400px;
+    background-position: 88% 105%;
+}
+}
+// @media screen and (min-width: 768px) and (max-width:1200px)
+
+
+
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+
+  .photo_alex h2 {
+    font-size: 30px;
+    top: 50px;
+  }
+
+  .photo_alex h3 {
+    font-size: 18px;
     top: 90px;
   }
 
   .photo_alex p {
-    font-size: 14px; /* Ajuster la taille de la police pour les écrans plus petits */
+    font-size: 16px;
     width: 100%;
-    top: 18%;
+    top: 15%;
   }
+  
 
-  .photo_alex .btn_box_real {
-    width: 32%;
-    
-    font-size: 15px;
-    margin-right: 20px;
-    position: absolute;
-    top: -75px;
+  .photo_alex .btn_box_real{
+    font-size: 16px;
+    /* Ajustez cette valeur selon vos besoins */
+    width: 30%; /* Ajustez la largeur des boutons en pourcentage */
+     /* Ajustez la position horizontale des boutons en pourcentage */
+      top:auto;
+      bottom:45%
   }
 
   .photo_alex .btn_box_contact {
-    width: 32%;
     
-    font-size: 15px;
-    position: absolute;
-    top: -75px;
-    left: 150px;
-
+    font-size: 16px;
+    /* Ajustez cette valeur selon vos besoins */
+    width: 30%; /* Ajustez la largeur des boutons en pourcentage */
+     /* Ajustez la position horizontale des boutons en pourcentage */
+     margin-left: 25%;
+     top:auto;
+     bottom: 45%;
   }
+
+  // .buttons_propos{
+  //   top: 56%;
+  // }
 
   .photo_alex {
     background-size: 800px 400px;
-    background-position: 80% 110%;
+    background-position: 88% 105%;
 }
 }
-
-// @media screen and (min-width: 768px) and (max-width:1200px)
