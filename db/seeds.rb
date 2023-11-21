@@ -23,7 +23,7 @@ Creation.create(
     photos: "cb2.jpg", 
     date: "Juin 2023", 
     logiciel:'Ruby on Rails', 
-    poste_occupe: "Pour créer l'application City Break, j'ai utilisé Ruby on Rails, combinant les langages Ruby, HTML, SCSS et JavaScript. J'ai suivi le modèle de développement web standard pour la création de l'application. En seulement deux semaines, j'ai réussi à concevoir une première version bêta. L'objectif était de proposer une expérience de voyage unique, permettant aux utilisateurs de planifier leurs city breaks de manière simplifiée et efficace. Grâce à ce projet, j'ai acquis une solide expérience en développement web tout en offrant une solution pratique aux amateurs de voyages.", 
+    poste_occupe: "Ruby, HTML, SCSS, JavaScript, Figma, Développement web, Conception d'interface utilisateur (UI), Expérience utilisateur (UX), Intégration de bases de données, Sécurité web", 
     entreprise: 'Le Wagon')
 
 Creation.create(
@@ -35,7 +35,7 @@ Creation.create(
     photos: 'lions2.jpg', 
     date:'Mars 2023', 
     logiciel:'Adobe ID, AI et PS', 
-    poste_occupe: 'Infographiste', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Retouche photo, Contraintes techniques print et web , Communication visuelle, Création d'affiches, Conception pour panneaux publicitaires, Design web, Réseaux sociaux.", 
     entreprise: 'Auto-entrepreneur')
 
 
@@ -48,7 +48,7 @@ Creation.create(
     photos: 'gorillas2.jpg', 
     date:'2021 à 2023', 
     logiciel:'Adobe ID, AI et PS', 
-    poste_occupe: 'Warehouse Supervisor', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Mailchimp, Retouche photo, Vectorisation, Communication visuelle, Insertion graphique, Newsletter, Design web.", 
     entreprise: 'Gorillas')
 
 Creation.create(
@@ -60,7 +60,7 @@ Creation.create(
     photos: 'plug2.jpg', 
     date:'2015 à 2019', 
     logiciel:'Adobe ID, AI et PS', 
-    poste_occupe: 'Infographiste', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Retouche photo, Contraintes techniques print, Communication visuelle, Montage Catalogues, PAO", 
     entreprise: 'Auto-entrepreneur')
 
 Creation.create(
@@ -72,19 +72,19 @@ Creation.create(
     photos: 'fotoborne2.jpg', 
     date:'2015 à 2020', 
     logiciel:'Adobe ID, AI et PS', 
-    poste_occupe: 'Infographiste', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Mailchimp,  Retouche photo, Contraintes techniques print et web, Communication visuelle, Création d'affiches, Conception pour panneaux publicitaires, Design web, Contenu pour réseaux sociaux.", 
     entreprise: 'Fotoborne Animation')
 
 Creation.create(
     nom:'Créations', 
-    creation_type: "thdger",
+    creation_type: "Visuels",
     format: "paysage_crea",
     image_paths: "creation1.png, creation2.png, creation3.png, creation4.png, creation5.png, creation6.png, creation7.png, creation8.png, creation9.png, creation10.png, creation11.png, creation12.png, creation13.png, creation14.png",
-    description: 'zefzefezfzefzfzefezfzefz', 
+    description: "Au fil de mon parcours artistique, j'ai façonné divers supports visuels tels que des faire-part de mariage, des maquettes de disques, des présentations de mémoire et des CVs originaux. Chacune de ces créations a impliqué un processus méticuleux, combinant la retouche photo pour capturer l'essence des moments, la création d'illustrations pour ajouter une touche personnelle, et le montage habile sur InDesign pour donner vie à l'ensemble. Ces réalisations, bien que réalisées avec soin, ont été entreprises sans qu'une rémunération financière soit la motivation première. Ma démarche artistique repose davantage sur le désir de concrétiser les visions et les idées des personnes qui ont sollicité mon expertise.",
     photos: 'alexcrea2.jpg', 
     date:'2015 à 2023', 
     logiciel:'Adobe ID, AI et PS', 
-    poste_occupe: 'Infographiste', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Retouche photo, Contraintes techniques print, Communication visuelle, Création d'affiches, Vectorisation.", 
     entreprise: 'Auto-entrepreneur')
 
 
@@ -98,7 +98,7 @@ Creation.create(
     photos: 'dessins.jpg', 
     date:'2010 à 2023', 
     logiciel:'Adobe IA, ID', 
-    poste_occupe: 'Infographiste', 
+    poste_occupe: "Conception graphique, Illustrator, Contraintes techniques print, Création d'affiches, Vectorisation",  
     entreprise: 'Auto-entrepreneur')
 
 # Creation.create(
