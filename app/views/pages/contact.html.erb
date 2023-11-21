@@ -1,16 +1,28 @@
 <div class="container">
   <%= render 'shared/navbar' %>
 
-<%= form_with(model: @message, url: envoyer_message_path, method: :post) do |form| %>
-  <div>
+<%# <%= form_with(model: @message, url: envoyer_message_path, method: :post) do |form| %>
+  <%# <div>
     <%= image_tag('https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/mail-letter-offer-256.png', alt: 'icon') %>
-  </div>
+  <%# </div>
   <%= form.text_field :nom, placeholder: 'Nom (requis)', required: true %>
-  <%= form.email_field :email, placeholder: 'Adresse email (requis)', required: true %>
-  <%= form.text_field :sujet, placeholder: 'Sujet (requis)', required: true %>
-  <%= form.text_area :message, placeholder: 'Message (requis)', required: true %>
-  <%= form.submit 'Envoyer' %>
-<% end %>
+  <%# <%= form.email_field :email, placeholder: 'Adresse email (requis)', required: true %>
+  <%# <%= form.text_field :sujet, placeholder: 'Sujet (requis)', required: true %>
+  <%# <%= form.text_area :message, placeholder: 'Message (requis)', required: true %>
+  <%# <%= form.submit 'Envoyer' %>
+<%# <% end %> 
 
+
+
+<div class="overlay"></div>
+<div class="stars" aria-hidden="true"></div>
+<div class="starts2" aria-hidden="true"></div>
+<div class="stars3" aria-hidden="true"></div>
+<main class="main">
+	<section class="contact">
+		<h1 class="title">Page "Contact"</h1>
+		<h2 class="sub-title">Actuellement en construction</h2>
+	</section>
+</main>
 
 </div>
