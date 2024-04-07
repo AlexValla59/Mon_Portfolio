@@ -7,7 +7,9 @@
 }
 
 .infos {
-  margin-top: 12%;
+  margin:15% auto;
+  
+  
 }
 
 .infos h1{
@@ -39,11 +41,13 @@
 
 
 .lighbar {
-    position: absolute;
-  top: 18%;
-  left: 5%;
+    
+  position: absolute;
+  top: 20%; /* Centrer verticalement */
+  left: 5%; /* Centrer horizontalement */
+  transform: translate(-50%, -50%);
   width: 10px;
-  height: 32%;
+  height: 50%;
   border-radius: 10px;
   background: white;
   z-index: 2;
@@ -79,13 +83,16 @@
   overflow: hidden;
 }
 
-.toplayer{
-  position: absolute;
-  top: 14%;
-  left: 5%;
-  width: 85em;
-  height: 45%;
+
+  .toplayer {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 85em;
+    height: 50%;
   background: #081b29;
+
 
   animation: animatetoplayer 10s linear forwards;
 
@@ -111,161 +118,161 @@
 }
 
 
-@media (max-width: 768px) {
-  .infos h1 {
-    font-size: 60px;
-  }
+// @media (max-width: 768px) {
+//   .infos h1 {
+//     font-size: 60px;
+//   }
 
-  .infos p {
-    font-size: 30px;
-  }
+//   .infos p {
+//     font-size: 30px;
+//   }
 
-  .lighbar {
-    top: 38%;
-    left: 10%;
-    height: 10%;
-  }
-}
-
-
-@media (min-width: 1500px) {
+//   .lighbar {
+//     top: 38%;
+//     left: 10%;
+//     height: 10%;
+//   }
+// }
 
 
-  .lighbar {
-    position: absolute;
-  top: 19%;
-  left: 5%;
-  width: 10px;
-  height: 32%;
-  border-radius: 10px;
-  background: white;
-  z-index: 2;
-  box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
-    // animation: animatelightbar 5s linear forwards;
-}
-@keyframes animatelightbar
-{
-  0%,5%
-  {
-    transform: scaleY(0) translateX(0);
-  }
-  10%
-  {
-    transform: scaleY(1) translateX(0);
-  }
-  90%
-  {
-    transform: scaleY(1) translateX(calc(85em - 10px));
-  }
-  95%,100%
-  {
-    transform: scaleY(0) translateX(calc(85em - 10px));
-  }
-
-}
+// @media (min-width: 1500px) {
 
 
-  .toplayer{
-    position: absolute;
-    top: 17%;
-    left: 5%;
-    width: 85em;
-    height: 45%;
-    background: #081b29;
+//   .lighbar {
+//     position: absolute;
+//   top: 19%;
+//   left: 5%;
+//   width: 10px;
+//   height: 32%;
+//   border-radius: 10px;
+//   background: white;
+//   z-index: 2;
+//   box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+//     // animation: animatelightbar 5s linear forwards;
+// }
+// @keyframes animatelightbar
+// {
+//   0%,5%
+//   {
+//     transform: scaleY(0) translateX(0);
+//   }
+//   10%
+//   {
+//     transform: scaleY(1) translateX(0);
+//   }
+//   90%
+//   {
+//     transform: scaleY(1) translateX(calc(85em - 10px));
+//   }
+//   95%,100%
+//   {
+//     transform: scaleY(0) translateX(calc(85em - 10px));
+//   }
+
+// }
+
+
+//   .toplayer{
+//     position: absolute;
+//     top: 17%;
+//     left: 5%;
+//     width: 85em;
+//     height: 45%;
+//     background: #081b29;
   
 
-    animation: animatetoplayer 10s linear forwards;
+//     animation: animatetoplayer 10s linear forwards;
   
-  }
+//   }
   
-  @keyframes animatetoplayer {
-    0% {
-      transform: translateX(0);
-    }
+//   @keyframes animatetoplayer {
+//     0% {
+//       transform: translateX(0);
+//     }
   
-    5% {
-      transform: translateX(0);
-    }
+//     5% {
+//       transform: translateX(0);
+//     }
   
-    45% {
-      transform: translateX(100%);
+//     45% {
+//       transform: translateX(100%);
   
-    }
-    100%
-    {
-    transform: scaleY(0) translateX(calc(85em));
-    }
-  }
+//     }
+//     100%
+//     {
+//     transform: scaleY(0) translateX(calc(85em));
+//     }
+//   }
 
-}
+// }
 
-@media (min-width: 1800px) {
-
-
-  .lighbar {
-    position: absolute;
-  top: 22%;
-  left: 5%;
-  width: 10px;
-  height: 32%;
-  border-radius: 10px;
-  background: white;
-  z-index: 2;
-  box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
-    // animation: animatelightbar 5s linear forwards;
-}
-@keyframes animatelightbar
-{
-  0%,5%
-  {
-    transform: scaleY(0) translateX(0);
-  }
-  10%
-  {
-    transform: scaleY(1) translateX(0);
-  }
-  90%
-  {
-    transform: scaleY(1) translateX(calc(85em - 10px));
-  }
-  95%,100%
-  {
-    transform: scaleY(0) translateX(calc(85em - 10px));
-  }
-
-}
+// @media (min-width: 1800px) {
 
 
-  .toplayer{
-    position: absolute;
-    top: 17%;
-    left: 5%;
-    width: 85em;
-    height: 45%;
-    background: #081b29;
+//   .lighbar {
+//     position: absolute;
+//   top: 22%;
+//   left: 5%;
+//   width: 10px;
+//   height: 32%;
+//   border-radius: 10px;
+//   background: white;
+//   z-index: 2;
+//   box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+//     // animation: animatelightbar 5s linear forwards;
+// }
+// @keyframes animatelightbar
+// {
+//   0%,5%
+//   {
+//     transform: scaleY(0) translateX(0);
+//   }
+//   10%
+//   {
+//     transform: scaleY(1) translateX(0);
+//   }
+//   90%
+//   {
+//     transform: scaleY(1) translateX(calc(85em - 10px));
+//   }
+//   95%,100%
+//   {
+//     transform: scaleY(0) translateX(calc(85em - 10px));
+//   }
+
+// }
+
+
+//   .toplayer{
+//     position: absolute;
+//     top: 17%;
+//     left: 5%;
+//     width: 85em;
+//     height: 45%;
+//     background: #081b29;
   
 
-    animation: animatetoplayer 10s linear forwards;
+//     animation: animatetoplayer 10s linear forwards;
   
-  }
+//   }
   
-  @keyframes animatetoplayer {
-    0% {
-      transform: translateX(0);
-    }
+//   @keyframes animatetoplayer {
+//     0% {
+//       transform: translateX(0);
+//     }
   
-    5% {
-      transform: translateX(0);
-    }
+//     5% {
+//       transform: translateX(0);
+//     }
   
-    45% {
-      transform: translateX(100%);
+//     45% {
+//       transform: translateX(100%);
   
-    }
-    100%
-    {
-    transform: scaleY(0) translateX(calc(85em));
-    }
-  }
+//     }
+//     100%
+//     {
+//     transform: scaleY(0) translateX(calc(85em));
+//     }
+//   }
 
-}
+// }

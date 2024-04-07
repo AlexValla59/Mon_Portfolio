@@ -1,0 +1,17 @@
+.video {
+    text-align: center; /* Centrer le contenu horizontalement */
+    margin-top: 50px;
+}
+
+.video h2 {
+    color: white; /* Couleur du texte en blanc */
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    margin: 0; /* Réinitialiser les marges pour éviter tout décalage */
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.lien {
+    display: inline-block; /* Pour centrer la div horizontalement */
+    text-align: left; /* Pour aligner le contenu à gauche à l'intérieur de la div */
+}
