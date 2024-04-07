@@ -1,0 +1,39 @@
+<div class="container">
+    <%= render 'shared/navbar' %>
+ <div class="video"> 
+<h2>Mon CV en vidéo.</h2>
+<div class="lien">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/mb3K--9yRng" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+
+
+<script>
+    // Fonction appelée lorsque l'API est prête
+    function onYouTubeIframeAPIReady() {
+        // Création d'un nouveau lecteur YouTube
+        var player = new YT.Player('player', {
+            height: '450',
+            width: '800',
+            videoId: 'mb3K--9yRng', // Remplacez ceci par l'ID de votre vidéo
+            playerVars: {
+                controls: 0, // Désactiver les contrôles du lecteur
+                disablekb: 1, // Désactiver le clavier
+                modestbranding: 1, // Masquer le logo YouTube
+                showinfo: 0 // Masquer le nom du compte
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    // Fonction appelée lorsque le lecteur est prêt
+    function onPlayerReady(event) {
+        // Lancer automatiquement la vidéo
+        event.target.playVideo();
+    }
+</script>
+

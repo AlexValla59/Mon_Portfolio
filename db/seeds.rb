@@ -111,7 +111,7 @@ Creation.create(
 #     poste_occupe: '', 
 #     entreprise: '')
 
-
+Video.create!(path: "video/CV_Alexandre_Valla.mp4")
 
 
 
