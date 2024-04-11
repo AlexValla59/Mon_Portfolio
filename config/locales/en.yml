@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+
+
+en:
+  create:
+    message_has_been_sent: "Votre message a bien été envoyé ! "

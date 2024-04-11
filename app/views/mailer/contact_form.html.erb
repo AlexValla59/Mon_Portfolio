@@ -1,0 +1,17 @@
+<p>
+  Un nouveau message a été envoyé depuis le site :
+</p>
+<p>
+  <strong>Nom :</strong>
+  <%= @contact.lastname %>
+  <br>
+  <strong>Prénom :</strong>
+  <%= @contact.firstname %>
+  <br>
+  <strong>Adresse email :</strong>
+  <%= @contact.email %>
+  <br>
+  <strong>Message :</strong>
+  <br>
+  <%= simple_format(@contact.message) %>
+</p>
