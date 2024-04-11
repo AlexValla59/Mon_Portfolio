@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contacts/new'
+  get 'contacts/create'
   get 'videos/show'
   root to: "pages#home"
 
@@ -14,6 +16,9 @@ Rails.application.routes.draw do
   resources :messages, only: [:new, :create]
 
   resources :videos, only: [:show]
+
+  resources :contacts, only: [:new, :create]
+
 
 
 end

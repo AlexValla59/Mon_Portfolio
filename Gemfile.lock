@@ -101,6 +101,7 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    domain_name (0.6.20240107)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -112,6 +113,9 @@ GEM
       sassc (~> 2.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    http-accept (1.7.0)
+    http-cookie (1.0.5)
+      domain_name (~> 0.5)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -134,9 +138,17 @@ GEM
       net-imap
       net-pop
       net-smtp
+    mailjet (1.7.8)
+      activesupport (>= 5.0.0)
+      rack (>= 1.4.0)
+      rest-client (>= 2.1.0)
+      yajl-ruby
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    mime-types (3.5.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2024.0305)
     mini_mime (1.1.2)
     minitest (5.18.1)
     msgpack (1.7.2)
@@ -149,6 +161,7 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
+    netrc (0.11.0)
     nio4r (2.5.9)
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
@@ -193,6 +206,11 @@ GEM
     regexp_parser (2.8.1)
     reline (0.3.6)
       io-console (~> 0.5)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     rexml (3.2.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
@@ -240,6 +258,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yajl-ruby (1.4.3)
     zeitwerk (2.6.8)
 
 PLATFORMS
@@ -256,6 +275,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   jsbundling-rails
+  mailjet
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.5)

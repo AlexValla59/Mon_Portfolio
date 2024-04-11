@@ -13,11 +13,18 @@
 
   <%# <body oncontextmenu="return false"  > %>
     <%#  %>
-  
+  <body>
+    
+
    
     <%= yield %>
      <%= notice %>
     <%= alert %>
+<% if flash[:success].present? %>
+  <div class="alert alert-success">
+    <%= flash[:success] %>
+  </div>
+<% end %>
 
 
   </body>

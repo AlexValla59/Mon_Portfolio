@@ -1,19 +1,28 @@
 <div class="container">
   <%= render 'shared/navbar' %>
 
-<%# <%= form_with(model: @message, url: envoyer_message_path, method: :post) do |form| %>
-  <%# <div>
+<%= form_with(model: @contact, url: contacts_path, method: :post, local: true) do |form| %>
+  <div>
     <%= image_tag('https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/mail-letter-offer-256.png', alt: 'icon') %>
-  <%# </div>
-  <%= form.text_field :nom, placeholder: 'Nom (requis)', required: true %>
-  <%# <%= form.email_field :email, placeholder: 'Adresse email (requis)', required: true %>
-  <%# <%= form.text_field :sujet, placeholder: 'Sujet (requis)', required: true %>
-  <%# <%= form.text_area :message, placeholder: 'Message (requis)', required: true %>
-  <%# <%= form.submit 'Envoyer' %>
-<%# <% end %> 
+  </div>
+  <%= form.fields_for :contact do |contact_form| %>
+    <%= contact_form.text_field :lastname, placeholder: 'Nom (requis)', required: true %>
+    <%= contact_form.text_field :firstname, placeholder: 'Prénom (requis)', required: true %>
+    <%= contact_form.email_field :email, placeholder: 'Adresse email (requis)', required: true %>
+    <%= contact_form.text_area :message, placeholder: 'Message (requis)', required: true %>
+    <%= contact_form.hidden_field :active, value: true %> <!-- Ajoutez un champ caché pour le paramètre :active -->
+  <% end %>
+  <%= form.submit 'Envoyer' %>
+<% end %>
+
+
+</div>
 
 
 
+
+ 
+<%# 
 <div class="overlay"></div>
 <div class="stars" aria-hidden="true"></div>
 <div class="starts2" aria-hidden="true"></div>
@@ -25,4 +34,4 @@
 	</section>
 </main>
 
-</div>
+</div> %>
