@@ -96,6 +96,34 @@ body .expanded {
 }
 
 
+.back-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Supprimer les soulignements du lien */
+  font-size: 16px; /* Taille de la police */
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  color:#00b3ff;
+  transition:0.6s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Masquer le lien "Retour" pour les grands écrans */
+@media screen and (min-width: 1200px) {
+  .back-link {
+    display: none;
+  }
+}
+
 
 
 
@@ -112,8 +140,8 @@ body .expanded {
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100vh;
-    padding-bottom: 100%;
-    padding-top: 40%;
+    padding-bottom: 170px;
+    padding-top: 170px;
     margin-left: -200%;
    
   }
@@ -126,10 +154,10 @@ body .expanded {
 
   .btn_nav2{
    
-    position: absolute;
-    top: 0;
-    left: 0;
-   
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+   display:none;
   }
 
   .btn_nav{
@@ -137,4 +165,3 @@ body .expanded {
   }
 }
 
-  

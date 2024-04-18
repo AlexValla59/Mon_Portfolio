@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Oleo+Script+Swash+Caps&family=Poppins&display=swap');
 
-.content{
-  min-height: 100vh;
-  // background-color: black;
-  overflow: hidden;
-}
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrer verticalement */
+    height: 100%; /* Utiliser toute la hauteur de l'écran */
+  }
+
 
 .infos {
-  margin:15% auto;
+      margin: 0 auto; /* Centrer horizontalement */
+    text-align: center;
   
   
 }
@@ -15,7 +20,7 @@
 .infos h1{
   color:white;
   text-align: center;
-  font-size:90px;
+  font-size:80px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -41,13 +46,14 @@
 
 
 .lighbar {
-    
+  height: 50%;
+  margin:0 auto;
   position: absolute;
   top: 20%; /* Centrer verticalement */
   left: 5%; /* Centrer horizontalement */
   transform: translate(-50%, -50%);
   width: 10px;
-  height: 50%;
+  
   border-radius: 10px;
   background: white;
   z-index: 2;
@@ -124,37 +130,113 @@
 
 
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 290px) and (max-width: 1300px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrer verticalement */
+    height: 100%; /* Utiliser toute la hauteur de l'écran */
+  }
+  .infos {
+    // top: 15%;
+    // left: 5%;
+    // position: absolute;
+    margin: 0 auto; /* Centrer horizontalement */
+    text-align: center;
+    
+  }
+
+  .infos h1 {
+    font-size: 50px;
+    
+  }
+
+  .infos p {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right:10% ;
+}
+
+  .lighbar {
+    // top: 0%;
+    // left: 0%;
+    height: 50%;
+   margin:0 auto;
+  }
+  .toplayer {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 85em;
+    height: 100%;
+    // margin:50% auto;
+  background: #081b29;
+}
+
+.btn_portfolio {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 4px;
+  transition: .5s all;
+  font-size: 15px;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadein 1s ease-in-out 3s forwards;
+  margin: 0 30%;
+}
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrer verticalement */
+    height: 100%; /* Utiliser toute la hauteur de l'écran */
+  }
+  .infos {
+    // top: 15%;
+    // left: 5%;
+    // position: absolute;
+    margin: 0 auto; /* Centrer horizontalement */
+    text-align: center;
+    
+  }
+
   .infos h1 {
     font-size: 60px;
+    
   }
 
   .infos p {
     font-size: 30px;
-  }
-
-  .lighbar {
-    top: 38%;
-    left: 10%;
-    height: 10%;
-  }
+    margin-left: 10%;
+    margin-right:10% ;
 }
 
-
-@media (min-width: 1500px) {
-
+.btn_portfolio {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 4px;
+  transition: .5s all;
+  font-size: 15px;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadein 1s ease-in-out 3s forwards;
+  margin: 0 30%;
+}
 
   .lighbar {
-    position: absolute;
-  top: 25%;
-  left: 5%;
-  width: 10px;
-  height: 32%;
-  border-radius: 10px;
-  background: white;
-  z-index: 2;
-  box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
-    // animation: animatelightbar 5s linear forwards;
+    height: 50%;
+    margin:0 auto;
 }
 @keyframes animatelightbar
 {
@@ -183,7 +265,7 @@
     top: 17%;
     left: 5%;
     width: 85em;
-    height: 45%;
+    height: 100%;
     background: #081b29;
   
 
@@ -219,16 +301,8 @@
 
 
   .lighbar {
-    position: absolute;
-  top: 22%;
-  left: 5%;
-  width: 10px;
-  height: 32%;
-  border-radius: 10px;
-  background: white;
-  z-index: 2;
-  box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
-    // animation: animatelightbar 5s linear forwards;
+    height: 50%;
+    margin:0 auto;
 }
 @keyframes animatelightbar
 {
@@ -257,7 +331,7 @@
     top: 17%;
     left: 5%;
     width: 85em;
-    height: 45%;
+    height: 100%;
     background: #081b29;
   
 
