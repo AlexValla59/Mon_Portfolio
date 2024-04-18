@@ -53,7 +53,7 @@
 .card_container {
     width: 260px;
     height: 307px;
-    perspective: 1000px; /* fzire une perspective pour avoir un effet 3D */
+    perspective: 1000px; 
     
   }
   
@@ -238,8 +238,80 @@
 
 
 
+@media screen and (min-width: 310px) and (max-width: 699px) {
+  body {
+    display: flex;
+    justify-content: center; 
+  }
+
+  .all_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .card_container .card_inner {
+    cursor: pointer; 
+    transform: none !important; 
+  }
+  
+  .card_back {
+    display: none; 
+  }
+
+}
+
+ 
+
+
+@media screen and (min-width: 700px) and (max-width: 989px) {
+  body {
+    display: flex;
+    justify-content: center; 
+  }
+
+  .all_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+
+  .card_container .card_inner {
+    cursor: pointer; 
+    transform: none !important; 
+  }
+  
+  .card_back {
+    display: none; 
+  }
+
+}
+
+
   
   
+
+@media screen and (min-width: 990px) and (max-width: 1400px) {
+  body {
+    display: flex;
+    justify-content: center; 
+  }
+
+  .all_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+
+  .card_container .card_inner {
+    cursor: pointer; 
+    transform: none !important; 
+  }
   
+  .card_back {
+    display: none; 
+  }
+
+}
 
 

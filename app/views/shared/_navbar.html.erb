@@ -1,6 +1,8 @@
 
 
 <div class="container_nav">
+
+  
   
   <div class="btn_navbar">
   
@@ -29,29 +31,62 @@
     </div>
   </div>
   <img src="<%= asset_path('BURGER.png') %>" alt="Burger Image", class="menu">
+
+   <% if controller_name == "creations" && action_name == "show" %>
+  <%= link_to "Retour", creations_path, class: "back-link" %>
+<% end %>
+  
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuHamburger = document.querySelector(".menu");
+  const backButton = document.querySelector(".back-link");
+
+  menuHamburger.addEventListener('click', function() {
+    backButton.classList.toggle('hidden');
+  });
+
+  backButton.addEventListener('click', function() {
+    backButton.classList.add('hidden');
+  });
+});
+
+
+</script>
+
 
   
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 80) { // Vous pouvez ajuster la position de défilement pour déclencher le changement de couleur de fond
-      $(".container_nav").addClass("expanded"); // Ajout de la classe "expanded" pour augmenter la taille
-    } else {
-      $(".container_nav").removeClass("expanded"); // Suppression de la classe "expanded" pour rétablir la taille initiale
-    }
-  });
-});
-</script>
+  // Attend que le document soit chargé
+  $(document).ready(function() {
+    // Sélectionne le menu hamburger
+    const menuHamburger = $(".menu");
+    // Sélectionne le conteneur des liens de navigation
+    const navLinks = $(".btn_navbar");
 
-<script>
-        const menuHamburger = document.querySelector(".menu")
-        const navLinks = document.querySelector(".btn_navbar")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
+    // Ajoute un gestionnaire d'événement pour le clic sur le menu hamburger
+    menuHamburger.on("click", function() {
+      // Bascule la classe "mobile-menu" sur le conteneur des liens de navigation
+      navLinks.toggleClass("mobile-menu");
+    });
+
+    // Ajoute un gestionnaire d'événement pour le clic sur les liens de navigation mobiles
+    navLinks.find("a").on("click", function() {
+      // Retire la classe "mobile-menu" du conteneur des liens de navigation
+      navLinks.removeClass("mobile-menu");
+    });
+
+    // Gère le changement d'apparence de la barre de navigation lors du défilement
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 80) {
+        $(".container_nav").addClass("expanded");
+      } else {
+        $(".container_nav").removeClass("expanded");
+      }
+    });
+  });
 </script>
 
 

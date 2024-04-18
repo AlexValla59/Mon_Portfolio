@@ -15,3 +15,36 @@
     display: inline-block; /* Pour centrer la div horizontalement */
     text-align: left; /* Pour aligner le contenu à gauche à l'intérieur de la div */
 }
+
+@media screen and (min-width: 310px) and (max-width: 750px) {
+    .video h2 {
+        font-size: 22px; /* Réduire la taille de la police pour les petits écrans */
+    }
+
+    .lien {
+        text-align: center; /* Centrer le contenu des liens pour les petits écrans */
+    }
+
+   
+        .lien iframe {
+            width: 400px;
+            height: 225px;
+        }
+    }
+    
+
+    @media screen and (min-width: 751px) and (max-width: 1000px) {
+        .video h2 {
+            font-size: 28px; /* Réduire la taille de la police pour les petits écrans */
+        }
+    
+        .lien {
+            text-align: center; /* Centrer le contenu des liens pour les petits écrans */
+        }
+    
+       
+            .lien iframe {
+                width: 600px;
+                height: 340px;
+            }
+        }

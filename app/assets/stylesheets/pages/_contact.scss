@@ -1,30 +1,30 @@
 form {
-    padding-left:25px;
-    padding-right:25px;
-    padding-top:60px;
-    margin-top: 112px;
-    border: 2px solid white;
-    border-radius: 20px;
-    position:relative;
-    z-index:1;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 49%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  margin-top: 112px;
+  margin-left: 300px; /* Modifier cette ligne */
+  margin-right: 300px; /* Ajouter cette ligne */
+  border: 2px solid white;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif;
+}
   
-  padding-bottom:15px;
-  }
-  
-  form > div{
-    position:absolute;
-    top:0;
-    left:50%;
-    padding:0 20px;
-    transform:translate(-50%,-50%);
-    background-color:#081b29;
-    border: 2px solid white;
-    border-radius: 20px;
-    text-align:center;
-    font-family: 'Poppins', sans-serif;
-  }
+form > div {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 8px; /* Modifier cette ligne pour ajuster l'espace */
+  transform: translate(-50%, -50%);
+  background-color: #081b29;
+  border: 2px solid white;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
   
   form > div > img{
     filter:invert(1);
@@ -65,6 +65,42 @@ form > textarea:focus {
   outline: none; /* Désactive la bordure de focus par défaut */
   border-color: #00b3ff; /* Définissez la couleur de la bordure lorsque le champ est en focus */
 }
+
+
+@media screen and (min-width: 310px) and (max-width: 1200px) {
+  form {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    margin-top: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  form > div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #081b29;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+form > input,
+  form > textarea {
+    width: 80%; /* Ajustez cette valeur selon vos besoins */
+  }
 
 
 
