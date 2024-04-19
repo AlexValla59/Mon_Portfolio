@@ -8,7 +8,8 @@ class ContactsController < ApplicationController
   
     if @contact.valid?
       # Assurez-vous que l'adresse "From" est correctement spécifiée ici
-      Mailer.contact_form(@contact).deliver_now(from: "alexandrevalla1@gmail.com")
+      Mailer.contact_form(@contact).deliver_now
+
       redirect_to new_contact_path, flash: { success: t(:"create.message_has_been_sent") }
     else
       render :new

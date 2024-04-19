@@ -1,11 +1,11 @@
 class Mailer < ActionMailer::Base
-    layout 'mailer'
-  
-    def contact_form(contact)
-      @contact = contact
-      @to = "alexandrevalla1@gmail.com" # Remplacez <un email> par l'adresse e-mail à laquelle vous souhaitez envoyer le message.
-  
-      mail(to: @to, subject: "Nouveau contact depuis le site")
-    end
+  layout 'mailer'
+
+  def contact_form(contact)
+    @contact = contact
+    @to = "alexandrevalla1@gmail.com"
+    @from = "alexandrevalla1@gmail.com" # Spécifiez votre adresse "From" ici
+
+    mail(to: @to, from: @from, subject: "Nouveau contact depuis le site")
   end
-  
+end
