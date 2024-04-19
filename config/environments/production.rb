@@ -15,7 +15,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: 'in-v3.mailjet.com',
     port: 587,
-    domain: 'yourdomain.com', # Remplacez par votre propre domaine
+    domain: 'alexandrevalla.com', # Remplacez par votre propre domaine
     user_name: ENV['MAILJET_API_KEY'],
     password: ENV['MAILJET_API_SECRET'],
     authentication: :plain,
