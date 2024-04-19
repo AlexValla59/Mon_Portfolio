@@ -4,15 +4,17 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(contact_params)
-
+    @contact = Contact.new(params[:contact])
+  
     if @contact.valid?
-      Mailer.contact_form(@contact).deliver
+      # Assurez-vous que l'adresse "From" est correctement spécifiée ici
+      Mailer.contact_form(@contact).deliver_now(from: "alexandrevalla1@gmail.com")
       redirect_to new_contact_path, flash: { success: t(:"create.message_has_been_sent") }
     else
       render :new
     end
   end
+  
 
   private
 
