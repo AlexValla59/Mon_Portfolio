@@ -42,22 +42,26 @@ img {
 
 .card3 {
   position: absolute;
-  width: 17%;
-  height: 75%;
-  left: 0;
-  right: 0;
+  width: 15em;
+  height: 35em;
+  left: 0em;
+  right:0em;
   margin: auto;
-    margin-left: auto;
-  transition: transform .4s ease;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  margin-left: 196px;
-  border-radius: 15px;
+  margin-left: auto;
+margin-left: auto;
+transition: transform .4s ease;
+cursor: pointer;
+border: none;
+outline: none;
+background: none;
+margin-left: 5em;
+border-radius: 15px;
+}
+
+
 
   
-}
+
 
 .cards {
 
@@ -118,19 +122,17 @@ img {
 .card2 {
 
   position: absolute;
-  width: 510px;
-  height: 360px;
+  width: 29em;
+  height: 22em;
   left: 0;
   right: 0;
-  margin: 0% 8%;
-  
   transition: transform .4s ease;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  
   border-radius: 15px;
+  margin-left: 1em;
 }
 
 .card2 img {
@@ -289,17 +291,17 @@ z-index: 0
 
 .card5 {
   position: absolute;
-  width: 510px;
-  height: 360px;
+  width: 31em;
+  height: 22em;
   left: 0;
   right: 0;
-  margin: 0% 8%;
   transition: transform .4s ease;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
   border-radius: 15px;
+  margin-left: 1em;
 }
 
 .card5 img {
@@ -622,20 +624,22 @@ z-index: 0
 .card {
 
   position: absolute;
-  width: 358px;
-  height: 500px;
-  left: 0;
-  right: 0;
+  width: 20em;
+  height: 28em;
+  left: 0em;
+  right: 0em;
   margin: auto;
     margin-left: auto;
+  margin-left: auto;
   transition: transform .4s ease;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  margin-left: 180px;
+  margin-left: 5em;
   border-radius: 15px;
 }
+
 
 .cards3 {
 
@@ -707,18 +711,19 @@ z-index: 0
 
 .card4 {
   position: absolute;
-  width: 358px;
-  height: 500px;
+  width: 22em;
+  height: 30em;
   left: 0;
   right: 0;
   margin: auto;
     margin-left: auto;
+  margin-left: auto;
   transition: transform .4s ease;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  margin-left: 180px;
+  margin-left: 10em;
   border-radius: 15px;
 }
 
@@ -792,15 +797,16 @@ z-index: 0
 
 
 
-
+.container{
+  position: relative;
+}
 
 
 .text_informations2{
   position: absolute;
- 
-  top: 15%;
-  left: 49%;
-  right: 7%;
+  top: 6em;
+  left: 41em;
+  right: 1em;
 }
   
 
@@ -831,9 +837,9 @@ z-index: 0
 
 .text_informations{
   position: absolute;
-  top: 15%;
-  left: 49%;
-  right: 7%;
+  top: 6em;
+  left: 41em;
+  right: 1em;
 }
   
 
@@ -900,31 +906,34 @@ z-index: 0
 
 @media screen and (min-width: 310px) and (max-width: 840px) {
 
-  body {
-    display: flex;
-    justify-content: center; 
-  }
+  // .content_picture {
+  //   display: flex;
+  //   justify-content: center; 
+  // }
   
 
 //==================CITY BREAK==================
+.container{
+  position:relative;
+}
 
-
-  .container_carrousel {
-    margin: 0% auto;
-  }
+  // .container_carrousel {
+  //   margin: 0% auto;
+  // }
 
   .card3 {
-    width: 136px;
-    height: 320px;
-    margin: -10% auto;
+    width: 9em;
+    height: 20em;
+    margin: 1em auto;
     
   }
   
 
   .text_informations {
     position: absolute;
-    top: 45%;
-    left: 5%;
+    top: 25em;
+    left: 1em;
+    right: 1em;
    
   }
 
@@ -942,22 +951,26 @@ z-index: 0
 
   //==================LIONS CLUB ==================
 
-  .container_carrousel3 {
-    margin: -5% auto;
+  // .container_carrousel3 {
+  //   margin: -5% auto;
     
-  }
+  // }
   
   .card {
-    width: 210px;
-    height: 298px;
-    margin: 0 auto;
+    width: 12em;
+    height: 17em;
+    margin: 1em auto;
   }
-  
+  .container{
+    position:relative;
+  }
   
   .text_informations2 {
     position: absolute;
-    top: 60%;
-    left: 5%;
+    top: 25em;
+    left: 1em;
+    right: 1em;
+
    
   }
 
@@ -974,70 +987,81 @@ z-index: 0
   }
 
   //==================GORILLAS ==================
-
-  .container_carrousel2 {
-    margin: -5% auto;
+  .container{
+    position:relative;
   }
+  // .container_carrousel2 {
+  //   margin: -5% auto;
+  // }
   
   .card2 {
-    width: 325px;
-    height: 230px;
-    margin: 15% auto;
+    width: 17em;
+    height: 13em;
+    margin: 2em auto;
   }
 
    //==================CREATION ==================
-
-   .container_carrousel5 {
-    margin: -5% auto;
+   .container{
+    position:relative;
+  }
+  //  .container_carrousel5 {
+  //   margin: -5% auto;
   
-   }
+  //  }
 
   .card5 {
-    width: 325px;
-    height: 230px;
-    margin: 15% auto;
+    width: 18em;
+    height: 13em;
+    margin: 4em auto;
   }
   
  //==================FOTOBORNE ==================
-
-  .container_carrousel4{
-    margin: 0 auto;
-    left:0;
-  }
+ .container{
+  position:relative;
+}
+  // .container_carrousel4{
+  //   margin: 0 auto;
+  //   left:0;
+  // }
   
   .card4 {
-    width: 210px;
-    height: 298px;
-    margin: 0 auto;
+    width: 12em;
+    height: 17em;
+    margin: 1em auto;
   }
 
  
 
 }
 
-@media screen and (min-width: 840px) and (max-width: 1200px) {
-  body {
-    display: flex;
-    justify-content: center; 
-  }
-  .container_carrousel { 
-    margin: 0% auto;
-  }
+@media screen and (min-width: 840px) and (max-width: 1199px) {
+  // body {
+  //   display: flex;
+  //   justify-content: center; 
+  // }
+  // .container_carrousel { 
+  //   margin: 0% auto;
+  // }
+
+  
 
   .card3 {
-    width: 152px;
-    height: 360px;
-    margin: -10% auto;
+    width: 9em;
+    height: 20em;
+    margin: 1em auto;
     
   }
 
- 
+  .container{
+    position:relative;
+  }
 
 
   .text_informations {
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 23em;
+    left: 1em;
+    right: 1em;
    
   }
 
@@ -1052,21 +1076,22 @@ z-index: 0
   .text_informations p{
     font-size: 12px;
   }
-    .container_carrousel3 {
-      margin: -10% auto;
+    // .container_carrousel3 {
+    //   margin: -10% auto;
       
-    }
+    // }
     
     .card {
-      width: 204px;
-      height: 290px;
+      width: 14em;
+      height: 20em;
       margin: 0 auto;
     }
   
     .text_informations2 {
       position: absolute;
-      top: 50%;
-      left: 5%;
+    top: 27em;
+    left: 1em;
+    right: 1em;
      
     }
   
@@ -1084,64 +1109,75 @@ z-index: 0
 
     //==================GORILLAS ==================
 
-  .container_carrousel2 {
-    margin: -5% auto;
-  }
+  // .container_carrousel2 {
+  //   margin: -5% auto;
+  // }
   
   .card2 {
-    width: 325px;
-    height: 230px;
-    margin: 1% auto;
+    width: 21em;
+    height: 16em;
+    margin: 0 auto;
   }
 
      //==================CREATION ==================
 
-     .container_carrousel5 {
-      margin: -5% auto;
+    //  .container_carrousel5 {
+    //   margin: -5% auto;
     
-     }
+    //  }
   
     .card5 {
-      width: 325px;
-      height: 230px;
-    margin: 1% auto;
+      width: 23em;
+      height: 16em;
+      margin: 0 auto;
     }
 
    //==================FOTOBORNE ==================
 
-   .container_carrousel4{
-    margin: 0 auto;
-    left:0;
-  }
+  //  .container_carrousel4{
+  //   margin: 0 auto;
+  //   left:0;
+  // }
   
   .card4 {
-    width: 204px;
-    height: 290px;
-    margin: 0 auto;
+    width: 14em;
+      height: 20em;
+      margin: 0 auto;
   }
   
   }
 
 
-@media screen and (min-width: 1200px) and (max-width: 1400px)  {
-  body {
-    display: flex;
-    justify-content: center; 
+@media screen and (min-width: 1201px) and (max-width: 1400px)  {
+  // body {
+  //   display: flex;
+  //   justify-content: center; 
+  // }
+
+  .container{
+    position:relative;
   }
-  .container_carrousel {
-    margin: -4% auto;
-  }
+  // .container_carrousel {
+  //   margin: -4% auto;
+  // }
 
   
   .card3{
-    width: 211px;
-    height: 500px;
+    position: absolute;
+    height: 35em;
+    width: 15em;
+    margin-left: 5em;
+    margin-top: -1em;
     
   }
 
-  .cards{
-    margin:5% auto;
+
+  .text_informations{
+    position: absolute;
+    right: 2em;
+    left:35em;
   }
+  
   .text_informations h2{
     font-size: 24px;
   }
@@ -1160,16 +1196,22 @@ z-index: 0
   }
   
   .card {
-    width: 288px;
-    height: 400px;
+    width: 21em;
+    height: 30em;
+    margin-left: 5em;
+    margin-top: -8em;
     
     
   }
 
-  .cards3{
-    margin:6% auto;
+  // .cards3{
+  //   margin:6% auto;
+  // }
+  .text_informations2{
+    position: absolute;
+    right: 2em;
+    left:35em;
   }
-
 
   .text_informations2 h2{
     font-size: 24px;
@@ -1185,25 +1227,34 @@ z-index: 0
 
       //==================GORILLAS ==================
 
-      .container_carrousel2 {
-        margin: 0% auto;
-      }
+  
       
       .card2 {
-        width: 424px;
-        height: 300px;
+        width: 27em;
+        height: 20em;
+        margin-left: 1em;
+        margin-top: -1em;
       }
 
          //==================CREATION ==================
 
-     .container_carrousel5 {
-      margin: 0% auto;
-    
-     }
+   
   
     .card5 {
-      width: 424px;
-      height: 300px;
-    }
+      width: 28em;
+      height: 20em;
+      margin-left: 1em;
+      margin-top: -1em;
+    }*
+    .card4 {
+      width: 20em;
+ height: 27em;
+ margin-left: 10em;
       
+      }
+
+
+  
+        
+        
       }
