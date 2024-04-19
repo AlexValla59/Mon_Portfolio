@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(params[:contact])
+    @contact = Contact.new(contact_params)
   
     if @contact.valid?
       # Assurez-vous que l'adresse "From" est correctement spécifiée ici
@@ -14,6 +14,7 @@ class ContactsController < ApplicationController
       render :new
     end
   end
+  
   
 
   private
