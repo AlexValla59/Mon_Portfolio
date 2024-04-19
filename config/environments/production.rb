@@ -3,14 +3,25 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.action_mailer.delivery_method = :mailjet
-  config.action_mailer.mailjet_settings = {
-    api_key: ENV['181a17ae187d738bd2c16f26b2e4f4ed'],
-    secret_key: ENV['3caa71351f00be6075f164cc826f5d54']
-  }
+  # config.action_mailer.delivery_method = :mailjet
+  # config.action_mailer.mailjet_settings = {
+  #   api_key: ENV['181a17ae187d738bd2c16f26b2e4f4ed'],
+  #   secret_key: ENV['3caa71351f00be6075f164cc826f5d54']
+  # }
   
 
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'in-v3.mailjet.com',
+    port: 587,
+    domain: 'yourdomain.com', # Remplacez par votre propre domaine
+    user_name: ENV['MAILJET_API_KEY'],
+    password: ENV['MAILJET_API_SECRET'],
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
+  
 
   
   
