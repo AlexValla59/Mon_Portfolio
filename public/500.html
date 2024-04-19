@@ -91,7 +91,31 @@ a:hover {
     });
   });
 </script>
+
+<script>
+  function moveEye(x, y) {
+    var e = $('.eye');
+    var eyeX = e.offset().left + e.width() / 2;
+    var eyeY = e.offset().top + e.height() / 2;
+    var deltaX = x - eyeX;
+    var deltaY = y - eyeY;
+    var angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+    e.css({
+      '-webkit-transform': 'rotate(' + angle + 'deg)',
+      'transform': 'rotate(' + angle + 'deg)'
+    });
+  }
+
+  $('body').on('touchstart touchmove', function(event) {
+    var touch = event.originalEvent.touches[0];
+    moveEye(touch.pageX, touch.pageY);
+  });
+</script>
+
 </div>
+
+
+  
 
 
 
