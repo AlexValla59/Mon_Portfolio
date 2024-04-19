@@ -20,7 +20,7 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
   
-
+  config.http_client_timeout = 30
   
   
   # Code is not reloaded between requests.

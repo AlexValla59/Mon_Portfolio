@@ -1,6 +1,12 @@
 <div class="container">
   <%= render 'shared/navbar' %>
 
+<% if flash[:notice].present? %>
+  <div class="notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
 <%= form_with(model: @contact, url: contacts_path, method: :post, local: true) do |form| %>
   <div>
     <%= image_tag('https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/mail-letter-offer-256.png', alt: 'icon') %>
