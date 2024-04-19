@@ -9,7 +9,7 @@ Rails.application.configure do
     secret_key: ENV['181a17ae187d738bd2c16f26b2e4f4ed']
   }
   
-  # config.action_mailer.default_options = { from: "alexandrevalla1@gmail.com" }
+
 
 
   
