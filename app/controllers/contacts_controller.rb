@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
       # Assurez-vous que l'adresse "From" est correctement spécifiée ici
       Mailer.contact_form(@contact).deliver_now
 
-      redirect_to new_contact_path, flash: { success: t(:"create.message_has_been_sent") }
+      redirect_to contact_path, flash: { success: t(:"create.message_has_been_sent") }
     else
       render :new
     end
@@ -24,3 +24,5 @@ class ContactsController < ApplicationController
     params.require(:contact).permit(:firstname, :lastname, :email, :message, :active)
   end
 end
+
+# new_contact_path
