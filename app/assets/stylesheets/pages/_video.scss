@@ -1,45 +1,45 @@
 .video {
-    text-align: center; /* Centrer le contenu horizontalement */
+    text-align: center; 
     margin-top: 50px;
 }
 
 .video h2 {
-    color: white; /* Couleur du texte en blanc */
-    font-family: 'Poppins', sans-serif; /* Police Poppins */
-    margin: 0; /* Réinitialiser les marges pour éviter tout décalage */
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
     font-size: 40px;
     margin-bottom: 30px;
 }
 
 .lien {
-    display: inline-block; /* Pour centrer la div horizontalement */
-    text-align: left; /* Pour aligner le contenu à gauche à l'intérieur de la div */
+    display: inline-block; 
+    text-align: left; 
 }
 
 @media screen and (min-width: 310px) and (max-width: 750px) {
     .video h2 {
-        font-size: 22px; /* Réduire la taille de la police pour les petits écrans */
+        font-size: 22px;
     }
 
     .lien {
-        text-align: center; /* Centrer le contenu des liens pour les petits écrans */
+        text-align: center; 
     }
 
    
-        .lien iframe {
-            width: 400px;
-            height: 225px;
-        }
+    .lien iframe {
+        width: 100%; 
+        height: auto; 
+    }
     }
     
 
     @media screen and (min-width: 751px) and (max-width: 1000px) {
         .video h2 {
-            font-size: 28px; /* Réduire la taille de la police pour les petits écrans */
+            font-size: 28px; 
         }
     
         .lien {
-            text-align: center; /* Centrer le contenu des liens pour les petits écrans */
+            text-align: center; 
         }
     
        

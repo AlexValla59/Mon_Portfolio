@@ -4,8 +4,8 @@ form {
   padding-top: 60px;
   padding-bottom: 15px;
   margin-top: 112px;
-  margin-left: 300px; /* Modifier cette ligne */
-  margin-right: 300px; /* Ajouter cette ligne */
+  margin-left: 300px; 
+  margin-right: 300px; 
   border: 2px solid white;
   border-radius: 20px;
   position: relative;
@@ -17,7 +17,7 @@ form > div {
   position: absolute;
   top: 0;
   left: 50%;
-  padding: 8px; /* Modifier cette ligne pour ajuster l'espace */
+  padding: 8px; 
   transform: translate(-50%, -50%);
   background-color: #081b29;
   border: 2px solid white;
@@ -62,8 +62,8 @@ form > div {
   
   form > input:focus,
 form > textarea:focus {
-  outline: none; /* Désactive la bordure de focus par défaut */
-  border-color: #00b3ff; /* Définissez la couleur de la bordure lorsque le champ est en focus */
+  outline: none; 
+  border-color: #00b3ff; 
 }
 
 
@@ -99,7 +99,7 @@ form > textarea:focus {
 
 form > input,
   form > textarea {
-    width: 80%; /* Ajustez cette valeur selon vos besoins */
+    width: 80%; 
   }
 
 

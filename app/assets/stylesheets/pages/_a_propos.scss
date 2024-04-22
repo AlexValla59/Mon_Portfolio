@@ -118,11 +118,11 @@
 @keyframes MooveRight {
   0% {
     opacity: 1;
-    transform: translateX(0); /* Inversé pour commencer à la position initiale (à gauche) */
+    transform: translateX(0); 
   }
   100% {
     opacity: 0;
-    transform: translateX(100%); /* Inversé pour se décaler vers la droite */
+    transform: translateX(100%); 
   }
 }
 
@@ -226,7 +226,6 @@
   overflow: hidden;
   left: 15%;
   height: 50px;
-  // width: 12%;
   padding: 8px;
   top:55%;
 }
@@ -322,28 +321,6 @@
 }
 
 
-// .home-imgHover{
-//   position: absolute;
-//   top:0;
-//   right:0;
-//   width:600px;
-//   height:100%;
-//   background:transparent;
-//   transition:1s;
-
-// }
-
-// .home-imgHover:hover{
-//   background: #081b29;
-//   opacity:0.8;
-// }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 310px) and (max-width: 699px) {
 
@@ -425,9 +402,7 @@
  
   }
 
-  // .buttons_propos{
-  //   top: 56%;
-  // }
+
 
   .photo_alex {
     background-size: 1000px 500px;

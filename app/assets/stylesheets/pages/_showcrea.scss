@@ -138,7 +138,7 @@ border-radius: 15px;
 .card2 img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Pour ajuster l'image au div tout en conservant les proportions */
+  object-fit: cover; 
 }
 
 .cards2 {
@@ -307,7 +307,7 @@ z-index: 0
 .card5 img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Pour ajuster l'image au div tout en conservant les proportions */
+  object-fit: cover; 
 }
 
 .cards5 {
@@ -822,7 +822,7 @@ z-index: 0
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-align: justify;
-  // font-weight: 600;
+
 }
 
 .text_informations2 h3{
@@ -855,7 +855,7 @@ z-index: 0
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-align: justify;
-  // font-weight: 600;
+
 }
 
 .text_informations h3{
@@ -891,7 +891,7 @@ z-index: 0
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-align: justify;
-  // font-weight: 600;
+
 }
 
 .text_informations3 h3{
@@ -906,10 +906,6 @@ z-index: 0
 
 @media screen and (min-width: 310px) and (max-width: 840px) {
 
-  // .content_picture {
-  //   display: flex;
-  //   justify-content: center; 
-  // }
   
 
 //==================CITY BREAK==================
@@ -917,9 +913,6 @@ z-index: 0
   position:relative;
 }
 
-  // .container_carrousel {
-  //   margin: 0% auto;
-  // }
 
   .card3 {
     width: 9em;
@@ -951,10 +944,6 @@ z-index: 0
 
   //==================LIONS CLUB ==================
 
-  // .container_carrousel3 {
-  //   margin: -5% auto;
-    
-  // }
   
   .card {
     width: 12em;
@@ -990,10 +979,7 @@ z-index: 0
   .container{
     position:relative;
   }
-  // .container_carrousel2 {
-  //   margin: -5% auto;
-  // }
-  
+
   .card2 {
     width: 17em;
     height: 13em;
@@ -1004,10 +990,7 @@ z-index: 0
    .container{
     position:relative;
   }
-  //  .container_carrousel5 {
-  //   margin: -5% auto;
-  
-  //  }
+
 
   .card5 {
     width: 18em;
@@ -1019,10 +1002,7 @@ z-index: 0
  .container{
   position:relative;
 }
-  // .container_carrousel4{
-  //   margin: 0 auto;
-  //   left:0;
-  // }
+ 
   
   .card4 {
     width: 12em;
@@ -1035,13 +1015,6 @@ z-index: 0
 }
 
 @media screen and (min-width: 840px) and (max-width: 1199px) {
-  // body {
-  //   display: flex;
-  //   justify-content: center; 
-  // }
-  // .container_carrousel { 
-  //   margin: 0% auto;
-  // }
 
   
 
@@ -1076,10 +1049,8 @@ z-index: 0
   .text_informations p{
     font-size: 12px;
   }
-    // .container_carrousel3 {
-    //   margin: -10% auto;
-      
-    // }
+  
+  
     
     .card {
       width: 14em;
@@ -1109,9 +1080,6 @@ z-index: 0
 
     //==================GORILLAS ==================
 
-  // .container_carrousel2 {
-  //   margin: -5% auto;
-  // }
   
   .card2 {
     width: 21em;
@@ -1121,10 +1089,7 @@ z-index: 0
 
      //==================CREATION ==================
 
-    //  .container_carrousel5 {
-    //   margin: -5% auto;
-    
-    //  }
+ 
   
     .card5 {
       width: 23em;
@@ -1134,11 +1099,7 @@ z-index: 0
 
    //==================FOTOBORNE ==================
 
-  //  .container_carrousel4{
-  //   margin: 0 auto;
-  //   left:0;
-  // }
-  
+ 
   .card4 {
     width: 14em;
       height: 20em;
@@ -1149,17 +1110,12 @@ z-index: 0
 
 
 @media screen and (min-width: 1201px) and (max-width: 1400px)  {
-  // body {
-  //   display: flex;
-  //   justify-content: center; 
-  // }
+
 
   .container{
     position:relative;
   }
-  // .container_carrousel {
-  //   margin: -4% auto;
-  // }
+
 
   
   .card3{
@@ -1204,9 +1160,7 @@ z-index: 0
     
   }
 
-  // .cards3{
-  //   margin:6% auto;
-  // }
+  
   .text_informations2{
     position: absolute;
     right: 2em;
@@ -1248,13 +1202,8 @@ z-index: 0
     }*
     .card4 {
       width: 20em;
- height: 27em;
- margin-left: 10em;
+      height: 27em;
+      margin-left: 10em;
       
       }
-
-
-  
-        
-        
       }
