@@ -5,13 +5,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centrer verticalement */
-    height: 100%; /* Utiliser toute la hauteur de l'écran */
+    align-items: center; 
+    height: 100%; 
   }
 
 
 .infos {
-      margin: 0 auto; /* Centrer horizontalement */
+      margin: 0 auto; 
     text-align: center;
   
   
@@ -24,11 +24,7 @@
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   color: white;
-  // text-shadow: 0 0 10px #e6007e,
-  //               0 0 20px #e6007e,
-  //               0 0 40px #e6007e,
-  //               0 0 80px #e6007e,
-  //               0 0 120px #e6007e,
+
 }
 
 .infos p{
@@ -37,11 +33,7 @@
   font-size:38px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  // text-shadow: 0 0 10px #00b3ff,
-  //               0 0 20px #00b3ff,
-  //               0 0 40px #00b3ff,
-  //               0 0 80px #00b3ff,
-  //               0 0 120px #00b3ff,
+
 }
 
 
@@ -49,8 +41,8 @@
   height: 50%;
   margin:0 auto;
   position: absolute;
-  top: 20%; /* Centrer verticalement */
-  left: 5%; /* Centrer horizontalement */
+  top: 20%; 
+  left: 5%;
   transform: translate(-50%, -50%);
   width: 10px;
   
@@ -135,14 +127,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centrer verticalement */
-    height: 100%; /* Utiliser toute la hauteur de l'écran */
+    align-items: center; 
+    height: 100%; 
   }
   .infos {
-    // top: 15%;
-    // left: 5%;
-    // position: absolute;
-    margin: 0 auto; /* Centrer horizontalement */
+    margin: 0 auto;
     text-align: center;
     
   }
@@ -159,8 +148,6 @@
 }
 
   .lighbar {
-    // top: 0%;
-    // left: 0%;
     height: 50%;
    margin:0 auto;
   }
@@ -171,7 +158,6 @@
     transform: translate(-50%, -50%);
     width: 85em;
     height: 100%;
-    // margin:50% auto;
   background: #081b29;
 }
 
@@ -197,14 +183,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centrer verticalement */
-    height: 100%; /* Utiliser toute la hauteur de l'écran */
+    align-items: center; 
+    height: 100%; 
   }
   .infos {
-    // top: 15%;
-    // left: 5%;
-    // position: absolute;
-    margin: 0 auto; /* Centrer horizontalement */
+
+    margin: 0 auto; 
     text-align: center;
     
   }

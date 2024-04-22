@@ -1,11 +1,5 @@
-
-
 <div class="container_nav">
-
-  
-  
   <div class="btn_navbar">
-  
     <%= link_to "Portfolio.", root_path, class: "btn_nav2" %>
 
     <div class="a_propos">
@@ -16,13 +10,11 @@
       <%= link_to "Réalisations", creations_path, class: "btn_nav #{current_page?(creations_path) ? 'active' : ''}" %>
     </div>
 
-   
-
     <div class="Experiences">
       <%= link_to "Experiences", experiences_path, class: "btn_nav #{current_page?(experiences_path) ? 'active' : ''}" %>
     </div>
 
-     <div class="Formation">
+    <div class="Formation">
       <%= link_to "Formation", formation_path, class: "btn_nav #{current_page?(formation_path) ? 'active' : ''}" %>
     </div>
 
@@ -30,55 +22,34 @@
       <%= link_to "Contact", contact_path, class: "btn_nav #{current_page?(contact_path) ? 'active' : ''}" %>
     </div>
   </div>
-  <img src="<%= asset_path('BURGER.png') %>" alt="Burger Image", class="menu">
 
-   <% if controller_name == "creations" && action_name == "show" %>
-  <%= link_to "Retour", creations_path, class: "back-link" %>
-<% end %>
-  
+  <img src="<%= asset_path('BURGER.png') %>" alt="Burger Image" class="menu">
+
+  <% if controller_name == "creations" && action_name == "show" %>
+    <%= link_to "Retour", creations_path, class: "back-link" %>
+  <% end %>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const menuHamburger = document.querySelector(".menu");
-  const backButton = document.querySelector(".back-link");
-
-  menuHamburger.addEventListener('click', function() {
-    backButton.classList.toggle('hidden');
-  });
-
-  backButton.addEventListener('click', function() {
-    backButton.classList.add('hidden');
-  });
-});
 
 
-</script>
-
-
-  
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  // Attend que le document soit chargé
-  $(document).ready(function() {
-    // Sélectionne le menu hamburger
-    const menuHamburger = $(".menu");
-    // Sélectionne le conteneur des liens de navigation
-    const navLinks = $(".btn_navbar");
 
-    // Ajoute un gestionnaire d'événement pour le clic sur le menu hamburger
+
+<script>
+  
+
+  jQuery(document).ready(function() {
+    const menuHamburger = $(".menu");
+    const navLinks = $(".btn_navbar");
     menuHamburger.on("click", function() {
-      // Bascule la classe "mobile-menu" sur le conteneur des liens de navigation
       navLinks.toggleClass("mobile-menu");
     });
 
-    // Ajoute un gestionnaire d'événement pour le clic sur les liens de navigation mobiles
     navLinks.find("a").on("click", function() {
-      // Retire la classe "mobile-menu" du conteneur des liens de navigation
       navLinks.removeClass("mobile-menu");
     });
 
-    // Gère le changement d'apparence de la barre de navigation lors du défilement
+  
     $(window).scroll(function() {
       if ($(this).scrollTop() > 80) {
         $(".container_nav").addClass("expanded");
@@ -89,5 +60,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuHamburger = document.querySelector(".menu");
+    const backButton = document.querySelector(".back-link");
 
+    menuHamburger.addEventListener('click', function() {
+      backButton.classList.toggle('hidden');
+    });
 
+    backButton.addEventListener('click', function() {
+      backButton.classList.add('hidden');
+    });
+  });
+</script>
