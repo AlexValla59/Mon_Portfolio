@@ -15,6 +15,18 @@ p "--------------all creations deleted--------------"
 
 
 Creation.create(
+    nom:'Funenord', 
+    creation_type: 'Plaques Funéraires', 
+    format: "paysage",
+    image_paths:"catalogues_souv.jpg, catalogues_souv_page1.jpg, catalogues_souv_page2.jpg, photo_souv.jpg, fun1.jpg, fun2.jpg, fun3.jpg, fun4.jpg, fun5.jpg",
+    description: "Lors de mon expérience chez Funérarts, j'ai occupé le poste de pilote infographie et atelier. Mes principales responsabilités étaient les suivantes : J'ai dirigé l'équipe pour atteindre les objectifs fixés, en veillant à la coordination et à l'efficacité de chaque membre. J'ai conçu des plaques funéraires, en utilisant des techniques variées telles que l'infographie, la pose de vinyle, la découpe laser, le montage, l'emballage et l'envoi des colis. J'ai réalisé des impressions chromo sur de la porcelaine, garantissant une qualité optimale des produits finis. J'ai collaboré à la création de deux catalogues pour les marques Hochart et Dussaux. Mes tâches incluaient la retouche photo, ainsi que les réglages de couleurs et de luminosité pour assurer une présentation impeccable des produits.", 
+    photos: "fun.jpg", 
+    date: "Mai à Juillet 2024", 
+    logiciel:'Adobe ID, AI, PS', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Caldera, Impression Latex, Plans vectoriels, Impression Chromo sur porcelaine,  Retouche photo, Contraintes techniques print et web .",
+    entreprise: 'Funenord Diffusion')
+
+Creation.create(
     nom:'City Break', 
     creation_type: 'Application Web', 
     format: "web",
