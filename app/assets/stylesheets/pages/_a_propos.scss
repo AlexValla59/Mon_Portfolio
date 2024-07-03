@@ -91,16 +91,45 @@
 
 // -----------------------------------BOUTON MES REALISATIONS---------------------------------//
 
-.photo_alex .btn_box_real{
+.photo_alex .btn_box_real {
   color: white;
   text-align: center;
   position: absolute;
   font-size: 17px;
-  overflow: hidden;
+  text-decoration: none;
   height: 50px;
-  padding: 8px;
-  top:55%;
+  padding: 12px;
+  top: 55%;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  border: solid 1px #00b3ff;
 }
+
+.photo_alex .btn_box_real:hover {
+  background-color: #00b3ff;
+  color: white;
+  text-decoration: none; /* Assurez-vous que le texte n'est pas souligné */
+}
+
+.photo_alex .btn_box_real a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.photo_alex .btn_box_real a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
 
 .photo_alex .buttons_propos::before {
   content: "";
@@ -128,93 +157,93 @@
 
 
 
-.btn_box_real span{
-  position:absolute;
-}
+// .btn_box_real span{
+//   position:absolute;
+// }
 
-.btn_box_real span:nth-child(1){
-  top:0;
-  left:0;
-  width: 100%;
-  height:2px;
-  background:linear-gradient(90deg, transparent,#00b3ff) ;
-  animation: animate1 1s linear infinite;
-}
+// .btn_box_real span:nth-child(1){
+//   top:0;
+//   left:0;
+//   width: 100%;
+//   height:2px;
+//   background:linear-gradient(90deg, transparent,#00b3ff) ;
+//   animation: animate1 1s linear infinite;
+// }
 
-@keyframes animate1{
-  0%{
-    left: -100%;
-  }
-  50%, 100%{
-    left:100%;
-  }
-}
+// @keyframes animate1{
+//   0%{
+//     left: -100%;
+//   }
+//   50%, 100%{
+//     left:100%;
+//   }
+// }
 
-.btn_box_real span:nth-child(2){
-  top:-100%;
-  right:0;
-  width: 2px;
-  height:100%;
-  background:linear-gradient(180deg, transparent,#00b3ff) ;
-  animation: animate2 1s linear infinite;
-  animation-delay: .25s;
-}
+// .btn_box_real span:nth-child(2){
+//   top:-100%;
+//   right:0;
+//   width: 2px;
+//   height:100%;
+//   background:linear-gradient(180deg, transparent,#00b3ff) ;
+//   animation: animate2 1s linear infinite;
+//   animation-delay: .25s;
+// }
 
-@keyframes animate2{
-  0%{
-    top: -100%;
-  }
-  50%,100%{
-    top:100%;
-  }
-}
+// @keyframes animate2{
+//   0%{
+//     top: -100%;
+//   }
+//   50%,100%{
+//     top:100%;
+//   }
+// }
 
-.btn_box_real span:nth-child(3){
-  bottom:0;
-  right:0;
-  width: 100%;
-  height:2px;
-  background:linear-gradient(270deg, transparent,#00b3ff) ;
-  animation: animate3 1s linear infinite;
-  animation-delay: .50s;
-}
+// .btn_box_real span:nth-child(3){
+//   bottom:0;
+//   right:0;
+//   width: 100%;
+//   height:2px;
+//   background:linear-gradient(270deg, transparent,#00b3ff) ;
+//   animation: animate3 1s linear infinite;
+//   animation-delay: .50s;
+// }
 
-@keyframes animate3{
-  0%{
-    right: -100%;
-  }
-  50%,100%{
-    right:100%;
-  }
-}
+// @keyframes animate3{
+//   0%{
+//     right: -100%;
+//   }
+//   50%,100%{
+//     right:100%;
+//   }
+// }
 
-.btn_box_real span:nth-child(4){
-  bottom:-100%;
-  left:0;
-  width: 2px;
-  height:100%;
-  background:linear-gradient(360deg, transparent,#00b3ff) ;
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
+// .btn_box_real span:nth-child(4){
+//   bottom:-100%;
+//   left:0;
+//   width: 2px;
+//   height:100%;
+//   background:linear-gradient(360deg, transparent,#00b3ff) ;
+//   animation: animate4 1s linear infinite;
+//   animation-delay: 0.75s;
+// }
 
-@keyframes animate4{
-  0%{
-    bottom: -100%;
-  }
-  50%,100%{
-    bottom:100%;
-  }
-}
+// @keyframes animate4{
+//   0%{
+//     bottom: -100%;
+//   }
+//   50%,100%{
+//     bottom:100%;
+//   }
+// }
 
-.btn_box_real .un{
-  color:white;
-  text-decoration: none;
-}
+// .btn_box_real .un{
+//   color:white;
+//   text-decoration: none;
+// }
 
-.btn_box_real .un:hover{
-  color: #00b3ff;
-}
+// .btn_box_real .un:hover{
+//   color: #00b3ff;
+// }
 
 // -----------------------------------BOUTON CONTACTEZ MOI---------------------------------//
 
@@ -226,99 +255,137 @@
   overflow: hidden;
   left: 15%;
   height: 50px;
-  padding: 8px;
+  padding: 12px;
   top:55%;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  border: solid 1px #00b3ff;
 }
 
-.btn_box_contact span{
-  position:absolute;
+
+
+.photo_alex .btn_box_contact:hover {
+  background-color: #00b3ff;
+  color: white;
+  text-decoration: none; /* Assurez-vous que le texte n'est pas souligné */
 }
 
-.btn_box_contact span:nth-child(1){
-  top:0;
-  left:0;
-  width: 100%;
-  height:2px;
-  background:linear-gradient(90deg, transparent,#00b3ff) ;
-  animation: animate1 1s linear infinite;
+.photo_alex .btn_box_contact a {
+  color: white !important;
+  text-decoration: none !important;
 }
 
-@keyframes animate1{
-  0%{
-    left: -100%;
-  }
-  50%, 100%{
-    left:100%;
-  }
+.photo_alex .btn_box_contact a:hover {
+  color: white !important;
+  text-decoration: none !important;
 }
 
-.btn_box_contact span:nth-child(2){
-  top:-100%;
-  right:0;
-  width: 2px;
-  height:100%;
-  background:linear-gradient(180deg, transparent,#00b3ff) ;
-  animation: animate2 1s linear infinite;
-  animation-delay: .25s;
-}
 
-@keyframes animate2{
-  0%{
-    top: -100%;
-  }
-  50%,100%{
-    top:100%;
-  }
-}
 
-.btn_box_contact span:nth-child(3){
-  bottom:0;
-  right:0;
-  width: 100%;
-  height:2px;
-  background:linear-gradient(270deg, transparent,#00b3ff) ;
-  animation: animate3 1s linear infinite;
-  animation-delay: .50s;
-}
 
-@keyframes animate3{
-  0%{
-    right: -100%;
-  }
-  50%,100%{
-    right:100%;
-  }
-}
 
-.btn_box_contact span:nth-child(4){
-  bottom:-100%;
-  left:0;
-  width: 2px;
-  height:100%;
-  background:linear-gradient(360deg, transparent,#00b3ff) ;
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
+
+
+
+
+
+
+
+
+
+
+
+
+// .btn_box_contact span{
+//   position:absolute;
+// }
+
+// .btn_box_contact span:nth-child(1){
+//   top:0;
+//   left:0;
+//   width: 100%;
+//   height:2px;
+//   background:linear-gradient(90deg, transparent,#00b3ff) ;
+//   animation: animate1 1s linear infinite;
+// }
+
+// @keyframes animate1{
+//   0%{
+//     left: -100%;
+//   }
+//   50%, 100%{
+//     left:100%;
+//   }
+// }
+
+// .btn_box_contact span:nth-child(2){
+//   top:-100%;
+//   right:0;
+//   width: 2px;
+//   height:100%;
+//   background:linear-gradient(180deg, transparent,#00b3ff) ;
+//   animation: animate2 1s linear infinite;
+//   animation-delay: .25s;
+// }
+
+// @keyframes animate2{
+//   0%{
+//     top: -100%;
+//   }
+//   50%,100%{
+//     top:100%;
+//   }
+// }
+
+// .btn_box_contact span:nth-child(3){
+//   bottom:0;
+//   right:0;
+//   width: 100%;
+//   height:2px;
+//   background:linear-gradient(270deg, transparent,#00b3ff) ;
+//   animation: animate3 1s linear infinite;
+//   animation-delay: .50s;
+// }
+
+// @keyframes animate3{
+//   0%{
+//     right: -100%;
+//   }
+//   50%,100%{
+//     right:100%;
+//   }
+// }
+
+// .btn_box_contact span:nth-child(4){
+//   bottom:-100%;
+//   left:0;
+//   width: 2px;
+//   height:100%;
+//   background:linear-gradient(360deg, transparent,#00b3ff) ;
+//   animation: animate4 1s linear infinite;
+//   animation-delay: 0.75s;
   
-}
+// }
 
-@keyframes animate4{
-  0%{
-    bottom: -100%;
-  }
-  50%,100%{
-    bottom:100%;
-  }
-}
+// @keyframes animate4{
+//   0%{
+//     bottom: -100%;
+//   }
+//   50%,100%{
+//     bottom:100%;
+//   }
+// }
 
-.btn_box_contact .deux{
-  color:white;
-  text-decoration: none;
-}
+// .btn_box_contact .deux{
+//   color:white;
+//   text-decoration: none;
+// }
 
-.btn_box_contact .deux:hover{
-  color: #00b3ff;
+// .btn_box_contact .deux:hover{
+//   color: #00b3ff;
 
-}
+// }
 
 
 

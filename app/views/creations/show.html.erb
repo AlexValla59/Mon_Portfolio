@@ -51,6 +51,15 @@
       <p><%= @creation.description %></p>
       <h3>Compétences</h3>
       <p><%=@creation.poste_occupe%></p>
+
+          <% if @creation.nom == 'Gorillas' %>
+  <a href="https://gorillas.io/" class="access-button">Accéder au site</a>
+<% end %>
+
+<% if @creation.nom == 'Funenord' %>
+  <a href="https://www.funerarts-express.com/" class="access-button">Accéder au site</a>
+<% end %>
+
     </div>
 
 
@@ -85,6 +94,10 @@
 <p><%= @creation.description %></p>
 <h3>Compétences</h3>
 <p><%=@creation.poste_occupe%></p>
+
+<% if @creation.nom == 'Lions Club' %>
+  <a href="https://www.lions-france.org/" class="access-button">Accéder au site</a>
+<% end %>
 
 </div>
 
@@ -123,6 +136,14 @@
       <p><%= @creation.description %></p>
       <h3>Compétences</h3>
       <p><%=@creation.poste_occupe%></p>
+
+      <% if @creation.nom == 'FotoBorne' %>
+  <a href="https://www.fotoborne.fr/" class="access-button">Accéder au site</a>
+<% end %>
+
+<% if @creation.nom == 'Plug & Play' %>
+  <a href="https://www.plugandplay-event.com/" class="access-button">Accéder au site</a>
+<% end %>
 </div>
 
 
@@ -164,6 +185,10 @@
 <p><%= @creation.description %></p>
 <h3>Compétences</h3>
 <p><%=@creation.poste_occupe%></p>
+
+<% if @creation.nom == 'City Break' %>
+  <a href="https://citybreak.space/users/sign_in" class="access-button">Accéder à l'application</a>
+<% end %>
 
 </div>
 <% end %>
@@ -239,6 +264,10 @@
 <p><%= @creation.description %></p>
 <h3>Compétences</h3>
 <p><%=@creation.poste_occupe%></p>
+
+
+
+
 
 </div>
 
