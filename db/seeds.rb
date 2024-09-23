@@ -38,12 +38,27 @@ Creation.create(
     poste_occupe: "Ruby, HTML, SCSS, JavaScript, Figma, Développement web, Conception d'interface utilisateur (UI), Expérience utilisateur (UX), Intégration de bases de données, Sécurité web", 
     entreprise: 'Le Wagon')
 
+
+Creation.create(
+    nom:'Netcom', 
+    creation_type: 'Motion Design', 
+    format: "portrait", 
+    image_paths:'netcom1.jpg, netcom2.jpg, netcom3.jpg, netcom4.jpg' , 
+    description: "Dans le cadre de ma candidature chez Netcom Group, j'ai été amené à réaliser un exercice créatif consistant à concevoir une vidéo en motion design d'une durée d'une minute. L'objectif était de mettre en avant leur offre de fibre optique, tout en respectant une création libre sur le plan visuel et narratif.
+
+Ce projet m'a permis de démontrer ma capacité à synthétiser une offre technique de manière claire et engageante, tout en créant un contenu visuel dynamique qui reflète l'innovation et la modernité de Netcom Group.", 
+    photos: "netcom.jpg", 
+    date: "Février 2024", 
+    logiciel:'Adobe AE', 
+    poste_occupe: "After Effects, Motion Design, Animation graphique, Conception visuelle, Storyboarding, Création de contenu dynamique, Montage vidéo, Édition sonore, Communication visuelle", 
+    entreprise: 'Exercice candidature')
+
 Creation.create(
     nom:'Lions Club', 
     creation_type: "Affiches web et print", 
     format: "portrait", 
     image_paths:'affiche_lionsclub.jpg, affiche_lionsclub22.jpg, lions_sucette.jpg, lions_sucette2.jpg' ,
-    description: "J'ai collaboré avec le Lions Club pour créer une affiche de 2m² destinée au Trophée Caritatif de l'Hôpital de Debré. Cette affiche a été déployée dans les rues de Neuilly-sur-Seine sur les panneaux publicitaires de JCDecaux. En outre, nous avons adapté cette affiche en format A5 recto verso pour y inclure un formulaire d'inscription. De plus, nous avons créé une version au format web pour une diffusion étendue sur les réseaux sociaux, permettant ainsi d'atteindre un public encore plus large pour cette noble cause. Cette expérience a été une opportunité enrichissante de mettre en avant nos compétences en conception graphique et en communication pour soutenir une cause humanitaire importante.",
+    description: "J'ai collaboré avec le Lions Club pour créer une affiche destinée au Trophée Caritatif de l'Hôpital de Debré. Cette affiche a été déployée dans les rues de Neuilly-sur-Seine sur les panneaux publicitaires de JCDecaux. En outre, nous avons adapté cette affiche en format A5 recto verso pour y inclure un formulaire d'inscription. De plus, nous avons créé une version au format web pour une diffusion étendue sur les réseaux sociaux, permettant ainsi d'atteindre un public encore plus large pour cette noble cause. Cette expérience a été une opportunité enrichissante de mettre en avant nos compétences en conception graphique et en communication pour soutenir une cause humanitaire importante.",
     photos: 'lions2.jpg', 
     date:'Mars 2023', 
     logiciel:'Adobe ID, AI et PS', 
@@ -62,6 +77,19 @@ Creation.create(
     logiciel:'Adobe ID, AI et PS', 
     poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Mailchimp, Retouche photo, Vectorisation, Communication visuelle, Insertion graphique, Newsletter, Design web.", 
     entreprise: 'Gorillas')
+
+Creation.create(
+    nom:'Boulanger', 
+    creation_type: "Affiche Print & Web",
+    format: "portrait",
+    image_paths: "boulanger1.jpg, boulanger2.jpg, Boulanger3.jpg, Boulanger4.jpg",
+    description: "Lors de mon processus de candidature chez Boulanger, j'ai eu l'opportunité de réaliser plusieurs exercices créatifs dans le cadre du poste de graphiste. L'un des premiers défis consistait à concevoir une affiche pour promouvoir l'offre « Eco-reprise TV » pendant l'Euro 2021. Cette offre permettait aux clients d'échanger leur ancienne télévision contre un bon d'achat, tout en assurant le recyclage ou la revente en seconde main des télévisions de moins de 5 ans. En plus de cette affiche, j'ai conçu un logo spécifique pour l’offre « Eco-reprise », et j'ai décliné cette campagne sous plusieurs formats, notamment pour les réseaux sociaux et le site web de Boulanger. Enfin, j'ai également retouché des photos pour rendre les visuels plus attractifs et en adéquation avec l'image de la marque.
+                Ces exercices m'ont permis de démontrer ma capacité à créer des visuels cohérents pour des supports variés, tout en respectant l'identité visuelle et les valeurs environnementales de Boulanger.", 
+    photos: 'boulanger.jpg', 
+    date:'2020', 
+    logiciel:'Adobe ID, AI et PS', 
+    poste_occupe: "Adobe Illustrator, Adobe Photoshop, Conception graphique, Création d'affiches, Branding, Communication visuelle, Retouche photo, Gestion de projet, Déclinaison multicanal", 
+    entreprise: 'Exercice candidature')
 
 Creation.create(
     nom:'Plug & Play', 
