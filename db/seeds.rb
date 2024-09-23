@@ -26,6 +26,20 @@ Creation.create(
     poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Caldera, Impression Latex, Plans vectoriels, Impression Chromo sur porcelaine,  Retouche photo, Contraintes techniques print et web .",
     entreprise: 'Funenord Diffusion')
 
+    Creation.create(
+        nom:'Netcom', 
+        creation_type: 'Motion Design', 
+        format: "portrait", 
+        image_paths:'netcom1.jpg, netcom2.jpg, netcom3.jpg, netcom4.jpg' , 
+        description: "Dans le cadre de ma candidature chez Netcom Group, j'ai été amené à réaliser un exercice créatif consistant à concevoir une vidéo en motion design d'une durée d'une minute. L'objectif était de mettre en avant leur offre de fibre optique, tout en respectant une création libre sur le plan visuel et narratif.
+    
+    Ce projet m'a permis de démontrer ma capacité à synthétiser une offre technique de manière claire et engageante, tout en créant un contenu visuel dynamique qui reflète l'innovation et la modernité de Netcom Group.", 
+        photos: "netcom.jpg", 
+        date: "Février 2024", 
+        logiciel:'Adobe AE', 
+        poste_occupe: "After Effects, Motion Design, Animation graphique, Conception visuelle, Storyboarding, Création de contenu dynamique, Montage vidéo, Édition sonore, Communication visuelle", 
+        entreprise: 'Exercice candidature')
+
 Creation.create(
     nom:'City Break', 
     creation_type: 'Application Web', 
@@ -39,19 +53,7 @@ Creation.create(
     entreprise: 'Le Wagon')
 
 
-Creation.create(
-    nom:'Netcom', 
-    creation_type: 'Motion Design', 
-    format: "portrait", 
-    image_paths:'netcom1.jpg, netcom2.jpg, netcom3.jpg, netcom4.jpg' , 
-    description: "Dans le cadre de ma candidature chez Netcom Group, j'ai été amené à réaliser un exercice créatif consistant à concevoir une vidéo en motion design d'une durée d'une minute. L'objectif était de mettre en avant leur offre de fibre optique, tout en respectant une création libre sur le plan visuel et narratif.
 
-Ce projet m'a permis de démontrer ma capacité à synthétiser une offre technique de manière claire et engageante, tout en créant un contenu visuel dynamique qui reflète l'innovation et la modernité de Netcom Group.", 
-    photos: "netcom.jpg", 
-    date: "Février 2024", 
-    logiciel:'Adobe AE', 
-    poste_occupe: "After Effects, Motion Design, Animation graphique, Conception visuelle, Storyboarding, Création de contenu dynamique, Montage vidéo, Édition sonore, Communication visuelle", 
-    entreprise: 'Exercice candidature')
 
 Creation.create(
     nom:'Lions Club', 
