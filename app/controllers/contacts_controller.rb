@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-  
+
     if @contact.valid?
       # Assurez-vous que l'adresse "From" est correctement spécifiée ici
       Mailer.contact_form(@contact).deliver_now
@@ -15,8 +15,6 @@ class ContactsController < ApplicationController
       render :new
     end
   end
-  
-  
 
   private
 

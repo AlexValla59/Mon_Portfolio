@@ -15,6 +15,40 @@ p "--------------all creations deleted--------------"
 
 
 Creation.create(
+    nom:' Éclipse', 
+    creation_type: 'Affiches', 
+    format: "portrait3",
+    image_paths:"homme_parfum.jpg, femme_parfum.jpg, logo_eclipse_noir.jpg",
+    description: "Dans le cadre d'un exercice créatif, j'ai travaillé sur un brief fictif visant à concevoir une identité visuelle et une campagne publicitaire pour un parfum appelé 'Éclipse'. L'objectif était de développer un logo ainsi que deux affiches publicitaires, destinées à incarner l'esprit du parfum.
+
+Le concept créatif repose sur l'idée du contraste entre ombre et lumière, symbolisant à la fois le mystère et l'élégance. L'accroche choisi, 'Seduisez l'ombre... Attirez la lumière', met en avant le caractère captivant et magnétique de la fragrance.
+
+Les visuels présentent un design minimaliste et sophistiqué, mettant en avant le produit de manière évocatrice. Ce projet m'a permis d'explorer des techniques de design graphique et de branding", 
+    photos: "logo_eclipse.jpg", 
+    date: "Novembre 2024", 
+    logiciel:'Adobe ID, AI, PS', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Retouche photo, Création logo .",
+    entreprise: 'Brief fictif')
+
+
+Creation.create(
+    nom:'Flying Whales', 
+    creation_type: 'Affiches', 
+    format: "paysage4",
+    image_paths:"tortue.jpg, phoque.jpg, requin.jpg, logo_flying_whales.jpg",
+    description: "Dans le cadre d’un exercice de création, j’ai conçu une série de trois affiches fictives pour une campagne de sensibilisation visant à protéger les océans, commanditée par une organisation imaginaire appelée Flying Whales. L’objectif principal de cette campagne est d’alerter le public sur les dangers de la pollution marine pour la faune océanique, tout en incitant à agir pour un avenir plus durable.
+
+Chaque affiche présente un animal emblématique (tortue, phoque, requin) dans un visuel divisé entre deux réalités : un océan sain et un océan pollué. Ce contraste puissant est renforcé par l'accroche : 'Sauvés ou perdus : quel avenir pour nos océans ?'.
+
+Ces visuels ont été conçus pour interpeller, sensibiliser et inciter à agir grâce à un QR code dirigeant vers des actions concrètes. Ce projet m'a permis de travailler sur des visuels engagés tout en explorant des techniques graphiques pour des causes environnementales.", 
+    photos: "flying Whales.jpg", 
+    date: "Novembre 2024", 
+    logiciel:'Adobe ID, AI, PS', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Retouche photo, Création de logo.",
+    entreprise: 'Brief fictif')
+
+
+Creation.create(
     nom:'Funenord', 
     creation_type: 'Plaques Funéraires', 
     format: "paysage",
@@ -96,8 +130,8 @@ Creation.create(
 Creation.create(
     nom:'Plug & Play', 
     creation_type: "Catalogues produits",
-    format: "portrait_foto",
-    image_paths:"plug11.jpg, plug12.jpg, plug13.jpg, plug14.jpg, plug15.jpg",
+    format: "portrait",
+    image_paths:"plug11.jpg, plug12.jpg, plug13.jpg, plug15.jpg",
     description: "Auto-entrepreneur, j'ai conçu des catalogues produits dynamiques et modernes pour l'entreprise Plug & Play. Mon objectif était de créer des outils de marketing visuellement attrayants et informatifs. J'ai méticuleusement élaboré des mises en page, des visuels et des descriptions de produits pour mettre en valeur le catalogue. Mon travail a permis à l'entreprise de présenter ses produits de manière professionnelle, améliorant ainsi son image de marque et facilitant la compréhension des clients. Ces catalogues ont été des atouts précieux pour Plug & Play, renforçant sa présence sur le marché et facilitant la promotion de ses produits.", 
     photos: 'plug2.jpg', 
     date:'2015 à 2019', 
@@ -108,8 +142,8 @@ Creation.create(
 Creation.create(
     nom:'FotoBorne', 
     creation_type: "Supports Marketing",
-    format: "portrait_foto",
-    image_paths:"fotoborne_n.jpg, fotoborne_solo.jpg, fotoborne_wall.jpg, fotoborne4.jpg, bornes_site.jpg",
+    format: "portrait",
+    image_paths:"fotoborne_n.jpg, fotoborne_solo.jpg, fotoborne_wall.jpg, bornes_site.jpg",
     description: "En qualité d'infographiste chez FotoBORNE, j'ai joué un rôle clé en concevant la plaquette commerciale pour les formats imprimés et web, créant des stickers originaux pour les bornes photos, et élaborant des designs personnalisés pour les photos imprimées. En parallèle, j'ai géré et développé le contenu des réseaux sociaux de l'entreprise. Mon rôle polyvalent a contribué à renforcer l'identité visuelle de la marque et à promouvoir ses produits de manière créative. Mon expérience a été une fusion réussie de créativité, de design et de communication, contribuant à l'essor de l'entreprise FotoBORNE.",
     photos: 'fotoborne2.jpg', 
     date:'2015 à 2020', 
@@ -135,7 +169,7 @@ Creation.create(
     nom:'Mes dessins', 
     creation_type: "Dessins PAO", 
     format:"paysage", 
-    image_paths:"dessin9.png ,dessin7.png, dessin5.png, dessin4.png, dessin8.png, dessin1.png, dessin6.png, dessin2.png, dessin3.png",
+    image_paths:"Death_note.jpg ,dessin7.png, dessin5.png, dessin4.png, dessin8.png, dessin1.png, dessin6.png, dessin2.png, dessin3.png",
     description: "Après avoir suivi des formations, j'ai décidé de consacrer du temps à m'entraîner sur les logiciels Illustrator, notamment pour créer des illustrations originales, et InDesign, pour la mise en page. Mon objectif était de reproduire des scènes de films, des affiches, des animations, et même de créer des affiches personnalisées. Il est important de souligner que ces reproductions d'affiches ne sont pas destinées à la vente, mais servent exclusivement à mon perfectionnement personnel.", 
     photos: 'dessins.jpg', 
     date:'2010 à 2023', 
@@ -153,7 +187,7 @@ Creation.create(
 #     poste_occupe: '', 
 #     entreprise: '')
 
-Video.create!(path: "video/CV_Alexandre_Valla.mp4")
+
 
 
 
