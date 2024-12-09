@@ -753,6 +753,8 @@ z-index: 0
 
 
 
+
+
 .container_carrousel4
 #item-1:checked ~ .cards4 #song-1,
 #item-2:checked ~ .cards4 #song-2,
@@ -809,6 +811,302 @@ z-index: 0
   opacity: 0.4;
   z-index: 0;
 }
+
+
+
+
+
+
+.container_carrousel6 {
+
+ 
+}
+
+.card6 {
+
+  position: absolute;
+  width: 29em;
+  height: 22em;
+  left: 0;
+  right: 0;
+  transition: transform .4s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 15px;
+  margin-left: 1em;
+}
+
+.card6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.cards6 {
+
+  margin: 10% 0;
+
+}
+
+
+
+
+
+.container_carrousel6 #item-1:checked ~ .cards6 #song-1,
+.container_carrousel6 #item-2:checked ~ .cards6 #song-2,
+.container_carrousel6 #item-3:checked ~ .cards6 #song-3,
+.container_carrousel6 #item-4:checked ~ .cards6 #song-4 {
+
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.container_carrousel6 #item-1:checked ~ .cards6 #song-2,
+.container_carrousel6 #item-2:checked ~ .cards6 #song-3,
+.container_carrousel6 #item-3:checked ~ .cards6 #song-4,
+.container_carrousel6 #item-4:checked ~ .cards6 #song-1 {
+  transform: translateY(25%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel6 #item-1:checked ~ .cards6 #song-3,
+.container_carrousel6 #item-2:checked ~ .cards6 #song-4,
+.container_carrousel6 #item-3:checked ~ .cards6 #song-1,
+.container_carrousel6 #item-4:checked ~ .cards6 #song-2 {
+  transform: translateY(0) scale(0.8);
+  opacity: 0.4;
+  z-index: 0
+}
+
+
+
+.container_carrousel6 #item-1:checked ~ .cards6 #song-4,
+.container_carrousel6 #item-2:checked ~ .cards6 #song-1,
+.container_carrousel6 #item-3:checked ~ .cards6 #song-2,
+.container_carrousel6 #item-4:checked ~ .cards6 #song-3 {
+  transform: translateY(-25%) scale(0.8);
+opacity: 0.4;
+z-index: 0
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 60%;
+  max-height: 100%;
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+.lightbox2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox2.active {
+  display: flex;
+}
+
+.lightbox2-content {
+  position: relative;
+  max-width: 35%;
+  max-height: 100%;
+}
+
+.lightbox2-content img {
+  
+  height: 100%; /* Remplit la hauteur disponible */
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.close-lightbox2 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* Boutons de navigation */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1100;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// .prev-btn:hover, .next-btn:hover {
+//   background: rgba(255, 255, 255, 0.7);
+//   color: black;
+// }
+
+.prev-btn {
+  left: -60px; /* Position de la flèche gauche */
+}
+
+.next-btn {
+  right: -60px; /* Position de la flèche droite */
+}
+
+.zoom-icon {
+  position: absolute;
+  background: white;
+  top: 50%;  /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  font-size: 2rem;  /* Taille de l'icône */
+  color: #081b29;  /* Couleur de l'icône */
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translate(-50%, -50%);  /* Ajuste l'icône pour la centrer parfaitement */
+  transform-origin: center;  /* L'agrandissement se fait à partir du centre */
+
+  /* Crée un cercle parfait */
+  width: 60px;
+  height: 60px; /* Hauteur du cercle (égale à la largeur pour un cercle parfait) */
+  display: flex; /* Pour centrer l'icône à l'intérieur du cercle */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  border-radius: 50%;  /* Rend le fond circulaire */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  /* Ombre autour du cercle */
+}
+
+.zoom-icon:hover {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);  /* Zoom centré sur l'icône */
+}
+
+
+
+
+
+
+.container_carrousel7 {
+  display: flex;
+  justify-content: center;
+  margin:-10% auto;
+  
+}
+
+.card7 {
+
+  position: absolute;
+  width: 20em;
+  height: 28em;
+  left: 0em;
+  right: 0em;
+  margin: auto;
+    margin-left: auto;
+  margin-left: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 5em;
+  border-radius: 15px;
+}
+
+
+.cards7 {
+
+  margin: 15% 0;
+}
+
+
+
+
+
+.container_carrousel7 #item-1:checked ~ .cards7 #song-1,
+.container_carrousel7 #item-2:checked ~ .cards7 #song-2,
+.container_carrousel7 #item-3:checked ~ .cards7 #song-3{
+
+
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.container_carrousel7 #item-1:checked ~ .cards7 #song-2,
+.container_carrousel7 #item-2:checked ~ .cards7 #song-3,
+.container_carrousel7 #item-3:checked ~ .cards7 #song-1{
+
+  transform: translatex(25%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container_carrousel7 #item-1:checked ~ .cards7 #song-3,
+.container_carrousel7 #item-2:checked ~ .cards7 #song-1,
+.container_carrousel7 #item-3:checked ~ .cards7 #song-2{
+
+  transform: translatex(-25%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0
+}
+
+
+
 
 // ===================================================================
 
