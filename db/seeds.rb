@@ -13,6 +13,35 @@ Creation.destroy_all
 
 p "--------------all creations deleted--------------"
 
+Creation.create(
+    nom:' Taktel', 
+    creation_type: 'Affiches', 
+    format: "portrait3",
+    image_paths:"mobile_parachute.jpg, mobile_lune.jpg, logo_taktel.jpg",
+    description: "Dans le cadre d'un exercice créatif, j'ai travaillé sur la conception d'une identité visuelle et d'une campagne publicitaire pour une marque fictive de télécommunications appelée Taktel. L'objectif de ce projet était de mettre en lumière l'idée d'un réseau ultra-performant, capable de fonctionner dans les conditions les plus extrêmes.
+
+Pour illustrer ce concept, j'ai créé deux affiches publicitaires mettant en scène des environnements spectaculaires :
+
+Une première affiche, avec l'accroche 'Le réseau qui capte même dans les aiiirs !', exploite l'image d'un saut en parachute pour représenter une connexion stable, même en plein vol.
+
+    Une seconde affiche, avec l'accroche 'Le réseau qui capte même sur la Lune !', symbolise la fiabilité du réseau, même au-delà des limites terrestres.
+    
+
+Chaque accroche a été adaptée au contexte visuel pour renforcer l'impact et le storytelling, tout en conservant une cohérence globale dans l'identité graphique. Les visuels minimalistes et percutants s’appuient sur des contrastes forts et des mises en scène immersives pour exprimer l’innovation et la fiabilité technologique de la marque.
+
+Ce projet m’a permis d’explorer différentes techniques de design graphique et de communication publicitaire, tout en développant des messages adaptés à chaque situation.", 
+    photos: "taktel.jpg", 
+    date: "Décembre 2024", 
+    logiciel:'Adobe ID, AI, PS', 
+    poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Retouche photo, Création logo .",
+    entreprise: 'Brief fictif')
+
+
+
+
+
+
+
 
 Creation.create(
     nom:' Éclipse', 
