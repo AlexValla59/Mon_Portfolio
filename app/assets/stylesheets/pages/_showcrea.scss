@@ -1226,7 +1226,7 @@ z-index: 0
   
   .lightbox-content {
     position: relative;
-    max-width: 100%;
+    max-width: 80%;
     max-height: 100%;
   }
 
@@ -1238,11 +1238,11 @@ z-index: 0
 
 
   .prev-btn {
-    left: 12px; /* Position de la flèche gauche */
+    left: -20px; /* Position de la flèche gauche */
   }
   
   .next-btn {
-    right: 12px; /* Position de la flèche droite */
+    right: -20px; /* Position de la flèche droite */
   }
 
   .prev-btn, .next-btn {
@@ -1401,7 +1401,7 @@ z-index: 0
     
   .lightbox-content {
     position: relative;
-    max-width: 100%;
+    max-width: 80%;
     max-height: 100%;
   }
 
@@ -1413,11 +1413,11 @@ z-index: 0
 
 
   .prev-btn {
-    left: 12px; /* Position de la flèche gauche */
+    left: -20px; /* Position de la flèche gauche */
   }
   
   .next-btn {
-    right: 12px; /* Position de la flèche droite */
+    right: -20px; /* Position de la flèche droite */
   }
 
   .prev-btn, .next-btn {
