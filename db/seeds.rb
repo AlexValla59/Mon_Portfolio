@@ -16,16 +16,15 @@ p "--------------all creations deleted--------------"
 Creation.create(
     nom:' Taktel', 
     creation_type: 'Affiches', 
-    format: "portrait3",
-    image_paths:"mobile_parachute.jpg, mobile_lune.jpg, logo_taktel.jpg",
-    description: "Dans le cadre d'un exercice créatif, j'ai travaillé sur la conception d'une identité visuelle et d'une campagne publicitaire pour une marque fictive de télécommunications appelée Taktel. L'objectif de ce projet était de mettre en lumière l'idée d'un réseau ultra-performant, capable de fonctionner dans les conditions les plus extrêmes.
+    format: "portrait",
+    image_paths:"mobile_parachute.jpg, mobile_lune.jpg, mobile_eau.jpg, logo_taktel.jpg",
+    description: "Dans le cadre d’un exercice de création, entrepris de ma propre initiative, j'ai travaillé sur la conception d'une identité visuelle et d'une campagne publicitaire pour une marque fictive de télécommunications appelée Taktel. L'objectif de ce projet était de mettre en lumière l'idée d'un réseau ultra-performant, capable de fonctionner dans les conditions les plus extrêmes.
 
-Pour illustrer ce concept, j'ai créé deux affiches publicitaires mettant en scène des environnements spectaculaires :
+Pour illustrer ce concept, j'ai créé trois affiches publicitaires mettant en scène des environnements spectaculaires :
 
-Une première affiche, avec l'accroche 'Le réseau qui capte même dans les aiiirs !', exploite l'image d'un saut en parachute pour représenter une connexion stable, même en plein vol.
-
+    Une première affiche, avec l'accroche 'Le réseau qui capte même dans les aiiirs !', exploite l'image d'un saut en parachute pour représenter une connexion stable, même en plein vol.
     Une seconde affiche, avec l'accroche 'Le réseau qui capte même sur la Lune !', symbolise la fiabilité du réseau, même au-delà des limites terrestres.
-    
+    Une troisième affiche, avec l'accroche 'Le réseau qui capte même sous l’eau !', met en scène un plongeur utilisant son smartphone en immersion, illustrant la capacité du réseau à fonctionner dans les profondeurs marines.
 
 Chaque accroche a été adaptée au contexte visuel pour renforcer l'impact et le storytelling, tout en conservant une cohérence globale dans l'identité graphique. Les visuels minimalistes et percutants s’appuient sur des contrastes forts et des mises en scène immersives pour exprimer l’innovation et la fiabilité technologique de la marque.
 
@@ -48,7 +47,7 @@ Creation.create(
     creation_type: 'Affiches', 
     format: "portrait3",
     image_paths:"homme_parfum.jpg, femme_parfum.jpg, logo_eclipse_noir.jpg",
-    description: "Dans le cadre d'un exercice créatif, j'ai travaillé sur un brief fictif visant à concevoir une identité visuelle et une campagne publicitaire pour un parfum appelé 'Éclipse'. L'objectif était de développer un logo ainsi que deux affiches publicitaires, destinées à incarner l'esprit du parfum.
+    description: "Dans le cadre d’un exercice de création, entrepris de ma propre initiative, j'ai travaillé sur un brief fictif visant à concevoir une identité visuelle et une campagne publicitaire pour un parfum appelé 'Éclipse'. L'objectif était de développer un logo ainsi que deux affiches publicitaires, destinées à incarner l'esprit du parfum.
 
 Le concept créatif repose sur l'idée du contraste entre ombre et lumière, symbolisant à la fois le mystère et l'élégance. L'accroche choisi, 'Seduisez l'ombre... Attirez la lumière', met en avant le caractère captivant et magnétique de la fragrance.
 
@@ -65,7 +64,7 @@ Creation.create(
     creation_type: 'Affiches', 
     format: "paysage4",
     image_paths:"tortue.jpg, phoque.jpg, requin.jpg, logo_flying_whales.jpg",
-    description: "Dans le cadre d’un exercice de création, j’ai conçu une série de trois affiches fictives pour une campagne de sensibilisation visant à protéger les océans, commanditée par une organisation imaginaire appelée Flying Whales. L’objectif principal de cette campagne est d’alerter le public sur les dangers de la pollution marine pour la faune océanique, tout en incitant à agir pour un avenir plus durable.
+    description: "Dans le cadre d’un exercice de création, entrepris de ma propre initiative,, j’ai conçu une série de trois affiches fictives pour une campagne de sensibilisation visant à protéger les océans, commanditée par une organisation imaginaire appelée Flying Whales. L’objectif principal de cette campagne est d’alerter le public sur les dangers de la pollution marine pour la faune océanique, tout en incitant à agir pour un avenir plus durable.
 
 Chaque affiche présente un animal emblématique (tortue, phoque, requin) dans un visuel divisé entre deux réalités : un océan sain et un océan pollué. Ce contraste puissant est renforcé par l'accroche : 'Sauvés ou perdus : quel avenir pour nos océans ?'.
 
