@@ -13,6 +13,24 @@ Creation.destroy_all
 
 p "--------------all creations deleted--------------"
 
+
+Creation.create(
+    nom:"L'île aux cycles", 
+    creation_type: 'logo, site web', 
+    format: "paysage4",
+    image_paths:"lileauxcycles_1.jpg, lileauxcycles_2.jpg, lileauxcycles_3.jpg, lileauxcycles_4.jpg",
+    description: "J’ai conçu le logo et réalisé le site web d’un réparateur de vélos basé à Lille. Pour ce projet, j’ai utilisé Hostinger comme hébergement et intégré du code HTML, CSS et JavaScript afin de créer un site dynamique et responsive, parfaitement adapté aux besoins de mon client.
+
+L’objectif était d’offrir une interface fluide et intuitive, accessible sur tous les appareils. J’ai également optimisé le site pour le SEO, en travaillant sur la structure des balises, la vitesse de chargement et le contenu, afin d’améliorer sa visibilité sur les moteurs de recherche.
+
+Grâce à cette approche, le site combine design attractif, navigation optimisée et performance pour garantir une expérience utilisateur optimale.", 
+    photos: "lileauxcycles.jpg", 
+    date: "Janvier 2025", 
+    logiciel:'Adobe AI, Hostinger', 
+    poste_occupe: "Conception site web, html, css, javascript, adobe illustrator, seo .",
+    entreprise: 'auto-entrepreneur')
+
+
 Creation.create(
     nom:' Taktel', 
     creation_type: 'Affiches', 
