@@ -24,7 +24,7 @@ Creation.create(
 L’objectif était d’offrir une interface fluide et intuitive, accessible sur tous les appareils. J’ai également optimisé le site pour le SEO, en travaillant sur la structure des balises, la vitesse de chargement et le contenu, afin d’améliorer sa visibilité sur les moteurs de recherche.
 
 Grâce à cette approche, le site combine design attractif, navigation optimisée et performance pour garantir une expérience utilisateur optimale.", 
-    photos: "lileauxcycles.jpg", 
+    photos: "lileauxcycles_blanc.jpg", 
     date: "Janvier 2025", 
     logiciel:'Adobe AI, Hostinger', 
     poste_occupe: "Conception site web, html, css, javascript, adobe illustrator, seo .",
