@@ -18,7 +18,7 @@ Creation.create(
     nom:"L'île aux cycles", 
     creation_type: 'logo, site web', 
     format: "paysage4",
-    image_paths:"lileauxcycles_1.jpg, lileauxcycles_2.jpg, lileauxcycles_3.jpg, lileauxcycles_4.jpg",
+    image_paths:"site_wordpress-responsive-lileauxcycles.webp, lileauxcycles2.jpg, logo_lile_aux_cycles.webp, logo_lile_aux_cycles_white.webp",
     description: "J’ai conçu le logo et réalisé le site web d’un réparateur de vélos basé à Lille. Pour ce projet, j’ai utilisé Hostinger comme hébergement et intégré du code HTML, CSS et JavaScript afin de créer un site dynamique et responsive, parfaitement adapté aux besoins de mon client.
 
 L’objectif était d’offrir une interface fluide et intuitive, accessible sur tous les appareils. J’ai également optimisé le site pour le SEO, en travaillant sur la structure des balises, la vitesse de chargement et le contenu, afin d’améliorer sa visibilité sur les moteurs de recherche.
@@ -28,7 +28,7 @@ Grâce à cette approche, le site combine design attractif, navigation optimisé
     date: "Janvier 2025", 
     logiciel:'Adobe AI, Hostinger', 
     poste_occupe: "Conception site web, html, css, javascript, adobe illustrator, seo .",
-    entreprise: 'auto-entrepreneur')
+    entreprise: 'Alex Pensif')
 
 
 Creation.create(
@@ -138,21 +138,21 @@ Creation.create(
 Creation.create(
     nom:'Lions Club', 
     creation_type: "Affiches web et print", 
-    format: "portrait", 
-    image_paths:'affiche_lionsclub.jpg, affiche_lionsclub22.jpg, lions_sucette.jpg, lions_sucette2.jpg' ,
+    format: "portrait3", 
+    image_paths:'affiche_lionsclub.jpg, affiche_lionsclub22.jpg, Affiche_robert_debre_real.webp' ,
     description: "J'ai collaboré avec le Lions Club pour créer une affiche destinée au Trophée Caritatif de l'Hôpital de Debré. Cette affiche a été déployée dans les rues de Neuilly-sur-Seine sur les panneaux publicitaires de JCDecaux. En outre, nous avons adapté cette affiche en format A5 recto verso pour y inclure un formulaire d'inscription. De plus, nous avons créé une version au format web pour une diffusion étendue sur les réseaux sociaux, permettant ainsi d'atteindre un public encore plus large pour cette noble cause. Cette expérience a été une opportunité enrichissante de mettre en avant nos compétences en conception graphique et en communication pour soutenir une cause humanitaire importante.",
     photos: 'lions2.jpg', 
     date:'Mars 2023', 
     logiciel:'Adobe ID, AI et PS', 
     poste_occupe: "Conception graphique, Photoshop, Indesign, Retouche photo, Contraintes techniques print et web , Communication visuelle, Création d'affiches, Conception pour panneaux publicitaires, Design web, Réseaux sociaux.", 
-    entreprise: 'Auto-entrepreneur')
+    entreprise: 'Alex Pensif')
 
 
 Creation.create(
     nom:'Gorillas', 
     creation_type: "Newsletters et t-shirts",
     format: "paysage",
-    image_paths: "gorillas1.jpg, gorillas3.jpg, gorillas4.jpg, gorillas5.jpg, gorillas6.jpg, gorillas7.jpg, gorillas8.jpg, gorillas9.jpg, gorillas10.jpg",
+    image_paths: "tshirt_gorillas_large.webp, gorillas3.jpg, gorillas4.jpg, gorillas5.jpg, gorillas6.jpg, gorillas7.jpg, gorillas8.jpg, gorillas9.jpg, gorillas10.jpg",
     description: "Au cours de mon expérience chez Gorillas, j'ai eu l'opportunité de mettre en lumière ma créativité. J'ai créé différentes infographies pour enrichir nos newsletters nationales, apportant ainsi une touche d'originalité à notre communication interne. De plus, j'ai eu le privilège de concevoir des t-shirts spécialement conçus pour notre opération d'acquisition client, offrant ainsi une approche unique pour attirer de nouveaux prospects de notre marque.", 
     photos: 'gorillas2.jpg', 
     date:'2021 à 2023', 
@@ -176,20 +176,20 @@ Creation.create(
 Creation.create(
     nom:'Plug & Play', 
     creation_type: "Catalogues produits",
-    format: "portrait",
-    image_paths:"plug11.jpg, plug12.jpg, plug13.jpg, plug15.jpg",
-    description: "Auto-entrepreneur, j'ai conçu des catalogues produits dynamiques et modernes pour l'entreprise Plug & Play. Mon objectif était de créer des outils de marketing visuellement attrayants et informatifs. J'ai méticuleusement élaboré des mises en page, des visuels et des descriptions de produits pour mettre en valeur le catalogue. Mon travail a permis à l'entreprise de présenter ses produits de manière professionnelle, améliorant ainsi son image de marque et facilitant la compréhension des clients. Ces catalogues ont été des atouts précieux pour Plug & Play, renforçant sa présence sur le marché et facilitant la promotion de ses produits.", 
+    format: "paysage4",
+    image_paths:"catalogues_plugandplay_3.webp, catalogues_plugandplay_1.webp, catalogues_plugandplay_3.webp, catalogues_plugandplay_2.webp",
+    description: "Freelance,, j'ai conçu des catalogues produits dynamiques et modernes pour l'entreprise Plug & Play. Mon objectif était de créer des outils de marketing visuellement attrayants et informatifs. J'ai méticuleusement élaboré des mises en page, des visuels et des descriptions de produits pour mettre en valeur le catalogue. Mon travail a permis à l'entreprise de présenter ses produits de manière professionnelle, améliorant ainsi son image de marque et facilitant la compréhension des clients. Ces catalogues ont été des atouts précieux pour Plug & Play, renforçant sa présence sur le marché et facilitant la promotion de ses produits.", 
     photos: 'plug2.jpg', 
     date:'2015 à 2019', 
     logiciel:'Adobe ID, AI et PS', 
     poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Retouche photo, Contraintes techniques print, Communication visuelle, Montage Catalogues, PAO", 
-    entreprise: 'Auto-entrepreneur')
+    entreprise: 'Alex Pensif')
 
 Creation.create(
     nom:'FotoBorne', 
     creation_type: "Supports Marketing",
-    format: "portrait",
-    image_paths:"fotoborne_n.jpg, fotoborne_solo.jpg, fotoborne_wall.jpg, bornes_site.jpg",
+    format: "paysage4",
+    image_paths:"flyer_fotoborne_1.webp, flyer_fotoborne_2.webp, flyer_fotoborne_3.webp, bornes_site.jpg",
     description: "En qualité d'infographiste chez FotoBORNE, j'ai joué un rôle clé en concevant la plaquette commerciale pour les formats imprimés et web, créant des stickers originaux pour les bornes photos, et élaborant des designs personnalisés pour les photos imprimées. En parallèle, j'ai géré et développé le contenu des réseaux sociaux de l'entreprise. Mon rôle polyvalent a contribué à renforcer l'identité visuelle de la marque et à promouvoir ses produits de manière créative. Mon expérience a été une fusion réussie de créativité, de design et de communication, contribuant à l'essor de l'entreprise FotoBORNE.",
     photos: 'fotoborne2.jpg', 
     date:'2015 à 2020', 
@@ -207,7 +207,7 @@ Creation.create(
     date:'2015 à 2023', 
     logiciel:'Adobe ID, AI et PS', 
     poste_occupe: "Conception graphique, Photoshop, Indesign, Illustrator, Retouche photo, Contraintes techniques print, Communication visuelle, Création d'affiches, Vectorisation.", 
-    entreprise: 'Auto-entrepreneur')
+    entreprise: 'Alex Pensif')
 
 
 
@@ -221,7 +221,7 @@ Creation.create(
     date:'2010 à 2023', 
     logiciel:'Adobe IA, ID', 
     poste_occupe: "Conception graphique, Illustrator, Contraintes techniques print, Création d'affiches, Vectorisation",  
-    entreprise: 'Auto-entrepreneur')
+    entreprise: 'Alex Pensif')
 
 # Creation.create(
 #     nom:'Autres', 
