@@ -164,7 +164,7 @@ Creation.create(
     nom:'Boulanger', 
     creation_type: "Affiche Print & Web",
     format: "portrait",
-    image_paths: "boulanger1.jpg, boulanger2.jpg, Boulanger3.jpg, Boulanger4.jpg",
+    image_paths: "boulanger1.jpg, boulanger2.jpg, Boulanger3.jpg, Boulanger5.jpg",
     description: "Lors de mon processus de candidature chez Boulanger, j'ai eu l'opportunité de réaliser plusieurs exercices créatifs dans le cadre du poste de graphiste. L'un des premiers défis consistait à concevoir une affiche pour promouvoir l'offre « Eco-reprise TV » pendant l'Euro 2021. Cette offre permettait aux clients d'échanger leur ancienne télévision contre un bon d'achat, tout en assurant le recyclage ou la revente en seconde main des télévisions de moins de 5 ans. En plus de cette affiche, j'ai conçu un logo spécifique pour l’offre « Eco-reprise », et j'ai décliné cette campagne sous plusieurs formats, notamment pour les réseaux sociaux et le site web de Boulanger. Enfin, j'ai également retouché des photos pour rendre les visuels plus attractifs et en adéquation avec l'image de la marque.
                 Ces exercices m'ont permis de démontrer ma capacité à créer des visuels cohérents pour des supports variés, tout en respectant l'identité visuelle et les valeurs environnementales de Boulanger.", 
     photos: 'boulanger.jpg', 
