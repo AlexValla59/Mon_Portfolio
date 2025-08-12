@@ -1,37 +1,41 @@
 <div class="container">
-  
   <%= render 'shared/navbar' %>
 
   <div class="content_p">
     <div class="elements">
-      <div class="photo_alex">
-        <!-- Contenu du texte ici -->
-        <h2>Alexandre Valla.</h2>
-        <h3>Graphiste, Webdesigner et Chargé de comm'</h3>
-        <p>En tant que graphiste et webdesigner chevronné, ma passion pour le design m'a conduit à suivre la formation intensive du Wagon à Lille. 
-          Fraîchement formé en développement web full-stack, je combine maintenant mes compétences en design avec la maîtrise des langages de programmation. 
-          Créatif et curieux, je cherche constamment des défis pour mettre en pratique mon expertise technique et artistique. 
-          J'aspire à grandir en tant que professionnel du design et du développement front-end, ouvert à de nouvelles collaborations et opportunités innovantes dans le monde du graphisme.
-        </p>
-        <div class="buttons_propos">
-          <div class="btn_box_real">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <%= link_to "Mon site pro", "https://alexpensif.fr/", class: "un", target: "_blank", rel: "noopener" %>
 
+      <!-- Wrapper de la section + calque image -->
+      <div class="photo_section">
+        <div class="photo_bg" aria-hidden="true"></div>
+
+        <!-- Container de contenu, sans background -->
+        <div class="photo_alex">
+          <h2>Alexandre Valla.</h2>
+          <h3>Graphiste, Webdesigner et Chargé de comm'</h3>
+          <p>
+            En tant que graphiste et webdesigner chevronné, ma passion pour le design m'a conduit à suivre la formation intensive du Wagon à Lille. 
+            Fraîchement formé en développement web full-stack, je combine maintenant mes compétences en design avec la maîtrise des langages de programmation. 
+            Créatif et curieux, je cherche constamment des défis pour mettre en pratique mon expertise technique et artistique. 
+            J'aspire à grandir en tant que professionnel du design et du développement front-end, ouvert à de nouvelles collaborations et opportunités innovantes dans le monde du graphisme.
+          </p>
+
+          <div class="buttons_propos">
+            <div class="btn_box_real">
+              <span></span><span></span><span></span><span></span>
+              <%= link_to "Mon site pro", "https://alexpensif.fr/", class: "un", target: "_blank", rel: "noopener" %>
+            </div>
+
+            <div class="btn_box_contact">
+              <span></span><span></span><span></span><span></span>
+              <%= link_to "CV PDF et vidéo", video_path, class: "deux" %>
+            </div>
           </div>
-          <div class="btn_box_contact">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <%= link_to "CV PDF et vidéo", video_path, class: "deux" %>
-          </div>
+
+          <span class="home-imgHover"></span>
         </div>
-        <span class="home-imgHover"></span>
       </div>
+      <!-- /photo_section -->
+
     </div>
   </div>
 </div>
