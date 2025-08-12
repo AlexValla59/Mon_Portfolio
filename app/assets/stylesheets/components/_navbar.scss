@@ -83,7 +83,7 @@ body .expanded {
   border: 0;
   cursor: pointer;
 
-  display: block; /* affiché via MQ mobile (si tu veux) */
+  display: none; /* affiché via MQ mobile (si tu veux) */
 }
 
 /* Accessibilité focus clavier */
