@@ -71,12 +71,13 @@ body .expanded {
   right: calc(env(safe-area-inset-right, 0px) + 12px);
   cursor: pointer;
   z-index: 10001;
-  display: none;                 /* caché par défaut (desktop) */
+              /* caché par défaut (desktop) */
   flex-direction: column;
   justify-content: space-between;
   padding: 6px 4px;
   background: transparent;
   border: 0;
+  background:red;
 }
 
 .container_nav .menu span{
