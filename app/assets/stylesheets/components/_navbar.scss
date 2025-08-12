@@ -1,15 +1,11 @@
-
 .container_nav {
   position: -webkit-sticky;
   position: sticky;
   top: 15px;
   z-index: 100;
-  transition: background-color 0.3s ease, height 0.3s ease;/* Ajout de la transition pour la couleur de fond */
+  transition: background-color 0.3s ease, height 0.3s ease;
   height: 40px; /* Hauteur initiale */
- 
 }
-
-
 
 body .expanded {
   height: 69px;
@@ -18,29 +14,19 @@ body .expanded {
   width: 100%;
   padding-top: 1px;
 }
- 
-  
-
-
-
-
-
 
 .btn_navbar {
   display: flex;
   justify-content: space-between;
-  margin-top:15px;
+  margin-top: 15px;
   align-items: center;
-  height:40px;
- 
-
+  height: 40px;
 }
-
 
 .btn_nav {
   position: relative;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
   padding: 0 10px;
@@ -60,21 +46,16 @@ body .expanded {
 
 .btn_nav:active:after,
 .btn_nav:visited:after,
-.btn_nav.active:after {
-  width: 100%;
-}
-
+.btn_nav.active:after,
 .btn_nav:hover:after {
   width: 100%;
 }
 
-.btn_nav:hover {
-  color: white;
-}
+.btn_nav:hover { color: #fff; }
 
 .btn_nav2 {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
   margin-right: 40%;
@@ -82,87 +63,104 @@ body .expanded {
 }
 
 .btn_nav2:hover {
-  color:#00b3ff;
-  transition:0.6s;
+  color: #00b3ff;
+  transition: 0.6s;
 }
 
+/* Bouton burger */
 .container_nav .menu{
-  height: 60px;
-  width: 60px;
-  margin-top: 2px;
-  display:none;
+  height: 30px;
+  width: 40px;
+  display: none;                /* affiché uniquement en mobile via media query */
   position: absolute;
-  right: -10px;
+  right: 0px;
+ top: 0;
+  cursor: pointer;
+  z-index: 110;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 4px;
+  background: transparent;
+  border: 0;
 }
 
+.container_nav .menu span{
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+/* État actif → burger transformé en croix */
+.container_nav .menu.active span:nth-child(1){
+  transform: translateY(7px) rotate(45deg);
+}
+.container_nav .menu.active span:nth-child(2){
+  opacity: 0;
+}
+.container_nav .menu.active span:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
 
 .back-link {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: white; /* Couleur du texte */
-  text-decoration: none; /* Supprimer les soulignements du lien */
-  font-size: 16px; /* Taille de la police */
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   font-weight: bold;
 }
-
 .back-link:hover {
   color:#00b3ff;
   transition:0.6s;
 }
-
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
 /* Masquer le lien "Retour" pour les grands écrans */
 @media screen and (min-width: 1200px) {
-  .back-link {
-    display: none;
-  }
+  .back-link { display: none; }
 }
 
-
-
-
+/* Mobile */
 @media screen and (min-width: 320px) and (max-width: 1400px){
-  .container_nav .menu{
-    display: block;
-  }
+  .container_nav .menu{ display: flex; }
 
   .btn_navbar {
-    position: absolute;
+    position: fixed; /* plutôt que absolute */
+    top: -15px;
+    left: 0;
+
     display: flex;
     flex-direction: column;
+
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
+
     width: 100%;
-    height: 100vh;
+    height: 100%; /* couvre toute la zone visible */
+    min-height: 100vh; /* sécurité pour plein écran */
+
     padding-bottom: 15em;
     padding-top: 10em;
+
     margin-left: -200%;
     transition: all 0.5s ease;
-   
   }
-
 
   .btn_navbar.mobile-menu {
     margin-left: 0;
   }
- 
 
-  .btn_nav2{
-   
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-   display:none;
-  }
 
-  .btn_nav{
-    font-size: 25px;
-  }
+  .btn_navbar.mobile-menu { margin-left: 0; }
+
+  .btn_nav2 { display: none; }
+
+  .btn_nav { font-size: 25px; }
 }
-

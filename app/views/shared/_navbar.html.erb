@@ -1,5 +1,5 @@
 <div class="container_nav">
-  <div class="btn_navbar">
+  <div class="btn_navbar" id="primary-nav">
     <%= link_to "Portfolio.", root_path, class: "btn_nav2" %>
 
     <div class="a_propos">
@@ -23,7 +23,12 @@
     </div>
   </div>
 
-  <img src="<%= asset_path('BURGER.png') %>" alt="Burger Image" class="menu">
+  <!-- Bouton burger (remplace l'img) -->
+  <button class="menu" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
   <% if controller_name == "creations" && action_name == "show" %>
     <%= link_to "Retour", creations_path, class: "back-link" %>
@@ -32,25 +37,35 @@
 
 
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-  
+  jQuery(function($){
+    const $menuHamburger = $(".menu");
+    const $navLinks = $(".btn_navbar");
+    const $backButton = $(".back-link");
 
-  jQuery(document).ready(function() {
-    const menuHamburger = $(".menu");
-    const navLinks = $(".btn_navbar");
-    menuHamburger.on("click", function() {
-      navLinks.toggleClass("mobile-menu");
+    // Ouverture/fermeture du menu + animation burger→croix
+    $menuHamburger.on("click", function(){
+      $(this).toggleClass("active");
+      const isOpen = $(this).hasClass("active");
+      $(this).attr("aria-expanded", isOpen ? "true" : "false");
+      $navLinks.toggleClass("mobile-menu");
+      if ($backButton.length) $backButton.toggleClass("hidden");
     });
 
-    navLinks.find("a").on("click", function() {
-      navLinks.removeClass("mobile-menu");
+    // Fermer le menu quand on clique sur un lien
+    $navLinks.on("click", "a", function(){
+      $navLinks.removeClass("mobile-menu");
+      $menuHamburger.removeClass("active").attr("aria-expanded", "false");
+      if ($backButton.length) $backButton.addClass("hidden");
     });
 
-  
-    $(window).scroll(function() {
+    // Effet sticky/expanded au scroll
+    $(window).on("scroll", function(){
       if ($(this).scrollTop() > 80) {
         $(".container_nav").addClass("expanded");
       } else {
@@ -60,17 +75,3 @@
   });
 </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuHamburger = document.querySelector(".menu");
-    const backButton = document.querySelector(".back-link");
-
-    menuHamburger.addEventListener('click', function() {
-      backButton.classList.toggle('hidden');
-    });
-
-    backButton.addEventListener('click', function() {
-      backButton.classList.add('hidden');
-    });
-  });
-</script>
