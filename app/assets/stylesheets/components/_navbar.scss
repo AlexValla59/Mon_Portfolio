@@ -137,3 +137,22 @@ body .expanded {
   .btn_nav { font-size: 25px; }
   .container_nav { top: 0; }
 }
+
+
+/* Force le burger sur iOS (Safari) */
+@supports (-webkit-touch-callout: none) {
+  .container_nav .menu{
+    position: fixed !important;
+    top: 16px !important;
+    right: 16px !important;
+    width: 44px !important;
+    height: 34px !important;
+    display: flex !important;
+    z-index: 2147483647 !important;
+  }
+}
+
+/* Et on s'assure qu'il est bien caché sur grand écran */
+@media (min-width: 1401px){
+  .container_nav .menu{ display: none !important; }
+}
