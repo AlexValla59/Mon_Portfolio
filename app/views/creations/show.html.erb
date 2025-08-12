@@ -143,6 +143,9 @@
       <p><%= @creation.description %></p>
       <h3>Compétences</h3>
       <p><%= @creation.poste_occupe %></p>
+
+         <!-- Bouton retour -->
+  <%= link_to "Retour aux réalisations", creations_path, class: "access-button2" %>
         <!-- Ajout des liens -->
   <% if @creation.nom == 'Gorillas' %>
     <a href="https://gorillas.io/" class="access-button">Accéder au site</a>
@@ -161,6 +164,9 @@
     <% elsif @creation.nom == "L'île aux cycles" %>
     <a href="https://lileauxcycles.fr/" class="access-button">Accéder au site</a>
   <% end %>
+
+ 
+</div>
 </div>
     </div>
   </div>

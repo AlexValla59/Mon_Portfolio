@@ -19,15 +19,11 @@ Creation.create(
     creation_type: 'logo, site web', 
     format: "paysage4",
     image_paths:"site_wordpress-responsive-lileauxcycles.webp, lileauxcycles2.jpg, logo_lile_aux_cycles.webp, logo_lile_aux_cycles_white.webp",
-    description: "J’ai conçu le logo et réalisé le site web d’un réparateur de vélos basé à Lille. Pour ce projet, j’ai utilisé Hostinger comme hébergement et intégré du code HTML, CSS et JavaScript afin de créer un site dynamique et responsive, parfaitement adapté aux besoins de mon client.
-
-L’objectif était d’offrir une interface fluide et intuitive, accessible sur tous les appareils. J’ai également optimisé le site pour le SEO, en travaillant sur la structure des balises, la vitesse de chargement et le contenu, afin d’améliorer sa visibilité sur les moteurs de recherche.
-
-Grâce à cette approche, le site combine design attractif, navigation optimisée et performance pour garantir une expérience utilisateur optimale.", 
+    description: "J’ai créé l’identité visuelle complète d’un réparateur de vélos à Lille : logo sur-mesure, carte de visite design et site web dynamique. Développé en HTML, CSS et JavaScript, hébergé sur Hostinger, le site est responsive, optimisé pour le SEO et pensé pour offrir une navigation fluide sur tous les appareils. Résultat : un ensemble cohérent, moderne et performant qui reflète parfaitement l’image de l’entreprise.", 
     photos: "lileauxcycles_blanc.jpg", 
     date: "Janvier 2025", 
     logiciel:'Adobe AI, Hostinger', 
-    poste_occupe: "Conception site web, html, css, javascript, adobe illustrator, seo .",
+    poste_occupe: "Identité visuelle, Conception site web, html, css, javascript, adobe illustrator, seo .",
     entreprise: 'Alex Pensif')
 
 
@@ -36,17 +32,7 @@ Creation.create(
     creation_type: 'Affiches', 
     format: "portrait",
     image_paths:"mobile_parachute.jpg, mobile_lune.jpg, mobile_eau.jpg, logo_taktel.jpg",
-    description: "Dans le cadre d’un exercice de création, entrepris de ma propre initiative, j'ai travaillé sur la conception d'une identité visuelle et d'une campagne publicitaire pour une marque fictive de télécommunications appelée Taktel. L'objectif de ce projet était de mettre en lumière l'idée d'un réseau ultra-performant, capable de fonctionner dans les conditions les plus extrêmes.
-
-Pour illustrer ce concept, j'ai créé trois affiches publicitaires mettant en scène des environnements spectaculaires :
-
-    Une première affiche, avec l'accroche 'Le réseau qui capte même dans les aiiirs !', exploite l'image d'un saut en parachute pour représenter une connexion stable, même en plein vol.
-    Une seconde affiche, avec l'accroche 'Le réseau qui capte même sur la Lune !', symbolise la fiabilité du réseau, même au-delà des limites terrestres.
-    Une troisième affiche, avec l'accroche 'Le réseau qui capte même sous l’eau !', met en scène un plongeur utilisant son smartphone en immersion, illustrant la capacité du réseau à fonctionner dans les profondeurs marines.
-
-Chaque accroche a été adaptée au contexte visuel pour renforcer l'impact et le storytelling, tout en conservant une cohérence globale dans l'identité graphique. Les visuels minimalistes et percutants s’appuient sur des contrastes forts et des mises en scène immersives pour exprimer l’innovation et la fiabilité technologique de la marque.
-
-Ce projet m’a permis d’explorer différentes techniques de design graphique et de communication publicitaire, tout en développant des messages adaptés à chaque situation.", 
+    description: "Dans le cadre d’un projet créatif personnel, j’ai imaginé l’identité visuelle et une campagne publicitaire pour Taktel, marque fictive de télécommunications. Trois affiches illustrent un réseau ultra-performant dans des conditions extrêmes : en plein vol, sur la Lune et sous l’eau. Accroches percutantes, visuels minimalistes et contrastés traduisent innovation et fiabilité, tout en conservant une identité graphique cohérente.", 
     photos: "taktel.jpg", 
     date: "Décembre 2024", 
     logiciel:'Adobe ID, AI, PS', 
@@ -65,11 +51,7 @@ Creation.create(
     creation_type: 'Affiches', 
     format: "portrait3",
     image_paths:"homme_parfum.jpg, femme_parfum.jpg, logo_eclipse_noir.jpg",
-    description: "Dans le cadre d’un exercice de création, entrepris de ma propre initiative, j'ai travaillé sur un brief fictif visant à concevoir une identité visuelle et une campagne publicitaire pour un parfum appelé 'Éclipse'. L'objectif était de développer un logo ainsi que deux affiches publicitaires, destinées à incarner l'esprit du parfum.
-
-Le concept créatif repose sur l'idée du contraste entre ombre et lumière, symbolisant à la fois le mystère et l'élégance. L'accroche choisi, 'Seduisez l'ombre... Attirez la lumière', met en avant le caractère captivant et magnétique de la fragrance.
-
-Les visuels présentent un design minimaliste et sophistiqué, mettant en avant le produit de manière évocatrice. Ce projet m'a permis d'explorer des techniques de design graphique et de branding", 
+    description: "Projet créatif personnel : conception de l’identité visuelle et d’une campagne publicitaire pour le parfum fictif Éclipse. Inspiré du contraste ombre/lumière, le concept exprime mystère et élégance autour de l’accroche « Séduisez l’ombre… Attirez la lumière ». Visuels minimalistes et sophistiqués mettent en valeur le produit et son aura magnétique.", 
     photos: "logo_eclipse.jpg", 
     date: "Novembre 2024", 
     logiciel:'Adobe ID, AI, PS', 
@@ -82,11 +64,7 @@ Creation.create(
     creation_type: 'Affiches', 
     format: "paysage4",
     image_paths:"tortue.jpg, phoque.jpg, requin.jpg, logo_flying_whales.jpg",
-    description: "Dans le cadre d’un exercice de création, entrepris de ma propre initiative,, j’ai conçu une série de trois affiches fictives pour une campagne de sensibilisation visant à protéger les océans, commanditée par une organisation imaginaire appelée Flying Whales. L’objectif principal de cette campagne est d’alerter le public sur les dangers de la pollution marine pour la faune océanique, tout en incitant à agir pour un avenir plus durable.
-
-Chaque affiche présente un animal emblématique (tortue, phoque, requin) dans un visuel divisé entre deux réalités : un océan sain et un océan pollué. Ce contraste puissant est renforcé par l'accroche : 'Sauvés ou perdus : quel avenir pour nos océans ?'.
-
-Ces visuels ont été conçus pour interpeller, sensibiliser et inciter à agir grâce à un QR code dirigeant vers des actions concrètes. Ce projet m'a permis de travailler sur des visuels engagés tout en explorant des techniques graphiques pour des causes environnementales.", 
+    description: "Projet personnel : création de trois affiches fictives pour Flying Whales, campagne de sensibilisation à la protection des océans. Chaque visuel, partagé entre un océan sain et un océan pollué, met en scène une tortue, un phoque et un requin autour de l’accroche « Sauvés ou perdus : quel avenir pour nos océans ? ». Objectif : interpeller, sensibiliser et inciter à agir via un QR code menant à des actions concrètes.", 
     photos: "flying Whales.jpg", 
     date: "Novembre 2024", 
     logiciel:'Adobe ID, AI, PS', 
@@ -99,7 +77,7 @@ Creation.create(
     creation_type: 'Plaques Funéraires', 
     format: "paysage",
     image_paths:"catalogues_souv.jpg, catalogues_souv_page1.jpg, catalogues_souv_page2.jpg, photo_souv.jpg, fun1.jpg, fun2.jpg, fun3.jpg, fun4.jpg, fun5.jpg",
-    description: "Lors de mon expérience chez Funérarts, j'ai occupé le poste de pilote infographie et atelier. Mes principales responsabilités étaient les suivantes : J'ai dirigé l'équipe pour atteindre les objectifs fixés, en veillant à la coordination et à l'efficacité de chaque membre. J'ai conçu des plaques funéraires, en utilisant des techniques variées telles que l'infographie, la pose de vinyle, la découpe laser, le montage, l'emballage et l'envoi des colis. J'ai réalisé des impressions chromo sur de la porcelaine, garantissant une qualité optimale des produits finis. J'ai collaboré à la création de deux catalogues pour les marques Hochart et Dussaux. Mes tâches incluaient la retouche photo, ainsi que les réglages de couleurs et de luminosité pour assurer une présentation impeccable des produits.", 
+    description: "Chez Funérarts, j’ai occupé le poste de pilote infographie et atelier, encadrant l’équipe pour atteindre les objectifs de production. J’ai conçu des plaques funéraires (infographie, pose de vinyle, découpe laser, montage, emballage, expédition) et réalisé des impressions chromo sur porcelaine avec un haut niveau de qualité. J’ai participé à la création de deux catalogues pour les marques Hochart et Dussaux (retouche photo, réglages colorimétriques) et élaboré un kit de création commercial destiné aux équipes de vente.", 
     photos: "fun.jpg", 
     date: "Mai à Juillet 2024", 
     logiciel:'Adobe ID, AI, PS', 
@@ -140,7 +118,7 @@ Creation.create(
     creation_type: "Affiches web et print", 
     format: "portrait3", 
     image_paths:'affiche_lionsclub.jpg, affiche_lionsclub22.jpg, Affiche_robert_debre_real.webp' ,
-    description: "J'ai collaboré avec le Lions Club pour créer une affiche destinée au Trophée Caritatif de l'Hôpital de Debré. Cette affiche a été déployée dans les rues de Neuilly-sur-Seine sur les panneaux publicitaires de JCDecaux. En outre, nous avons adapté cette affiche en format A5 recto verso pour y inclure un formulaire d'inscription. De plus, nous avons créé une version au format web pour une diffusion étendue sur les réseaux sociaux, permettant ainsi d'atteindre un public encore plus large pour cette noble cause. Cette expérience a été une opportunité enrichissante de mettre en avant nos compétences en conception graphique et en communication pour soutenir une cause humanitaire importante.",
+    description: "En collaboration avec le Lions Club, j’ai conçu l’affiche du Trophée Caritatif de l’Hôpital Debré, diffusée sur les panneaux JCDecaux à Neuilly-sur-Seine. L’affiche a été déclinée en format A5 avec formulaire d’inscription et en version web pour les réseaux sociaux, afin de maximiser la visibilité de l’événement et soutenir cette cause humanitaire.",
     photos: 'lions2.jpg', 
     date:'Mars 2023', 
     logiciel:'Adobe ID, AI et PS', 
@@ -165,8 +143,7 @@ Creation.create(
     creation_type: "Affiche Print & Web",
     format: "portrait",
     image_paths: "boulanger1.jpg, boulanger2.jpg, Boulanger3.jpg, Boulanger5.jpg",
-    description: "Lors de mon processus de candidature chez Boulanger, j'ai eu l'opportunité de réaliser plusieurs exercices créatifs dans le cadre du poste de graphiste. L'un des premiers défis consistait à concevoir une affiche pour promouvoir l'offre « Eco-reprise TV » pendant l'Euro 2021. Cette offre permettait aux clients d'échanger leur ancienne télévision contre un bon d'achat, tout en assurant le recyclage ou la revente en seconde main des télévisions de moins de 5 ans. En plus de cette affiche, j'ai conçu un logo spécifique pour l’offre « Eco-reprise », et j'ai décliné cette campagne sous plusieurs formats, notamment pour les réseaux sociaux et le site web de Boulanger. Enfin, j'ai également retouché des photos pour rendre les visuels plus attractifs et en adéquation avec l'image de la marque.
-                Ces exercices m'ont permis de démontrer ma capacité à créer des visuels cohérents pour des supports variés, tout en respectant l'identité visuelle et les valeurs environnementales de Boulanger.", 
+    description: "Dans le cadre de ma candidature chez Boulanger, j’ai conçu une affiche pour l’offre Eco-reprise TV lors de l’Euro 2021, ainsi qu’un logo dédié et ses déclinaisons pour le web et les réseaux sociaux. J’ai également retouché des photos pour harmoniser les visuels avec l’identité de marque, tout en valorisant ses engagements environnementaux.", 
     photos: 'boulanger.jpg', 
     date:'2020', 
     logiciel:'Adobe ID, AI et PS', 
@@ -178,7 +155,7 @@ Creation.create(
     creation_type: "Catalogues produits",
     format: "paysage4",
     image_paths:"catalogues_plugandplay_3.webp, catalogues_plugandplay_1.webp, catalogues_plugandplay_3.webp, catalogues_plugandplay_2.webp",
-    description: "Freelance,, j'ai conçu des catalogues produits dynamiques et modernes pour l'entreprise Plug & Play. Mon objectif était de créer des outils de marketing visuellement attrayants et informatifs. J'ai méticuleusement élaboré des mises en page, des visuels et des descriptions de produits pour mettre en valeur le catalogue. Mon travail a permis à l'entreprise de présenter ses produits de manière professionnelle, améliorant ainsi son image de marque et facilitant la compréhension des clients. Ces catalogues ont été des atouts précieux pour Plug & Play, renforçant sa présence sur le marché et facilitant la promotion de ses produits.", 
+    description: "Freelance, j'ai conçu des catalogues produits dynamiques et modernes pour l'entreprise Plug & Play. Mon objectif était de créer des outils de marketing visuellement attrayants et informatifs. J'ai méticuleusement élaboré des mises en page, des visuels et des descriptions de produits pour mettre en valeur le catalogue. Mon travail a permis à l'entreprise de présenter ses produits de manière professionnelle, améliorant ainsi son image de marque et facilitant la compréhension des clients. Ces catalogues ont été des atouts précieux pour Plug & Play, renforçant sa présence sur le marché et facilitant la promotion de ses produits.", 
     photos: 'plug2.jpg', 
     date:'2015 à 2019', 
     logiciel:'Adobe ID, AI et PS', 
