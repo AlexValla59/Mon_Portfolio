@@ -62,36 +62,91 @@ body .expanded {
 
 .btn_nav2:hover { color: #00b3ff; transition: 0.6s; }
 
-/* ===== Bouton burger ===== */
+/* ===== Bouton burger — version propre & centrée ===== */
 .container_nav .menu{
-  width: 40px;
-  height: 30px;
+  /* Variables faciles à régler */
+  --w: 34px;        /* largeur du bouton */
+  --h: 34px;        /* hauteur du bouton */
+  --thick: 3px;     /* épaisseur des barres */
+  --gap: 8px;       /* écart entre les barres (mode burger) */
+  --dur: .35s;      /* durée des transitions */
+
   position: fixed;
   top: calc(env(safe-area-inset-top, 0px) + 12px);
   right: calc(env(safe-area-inset-right, 0px) + 12px);
-  cursor: pointer;
   z-index: 10001;
-              /* caché par défaut (desktop) */
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 6px 4px;
+
+  width: var(--w);
+  height: var(--h);
+  padding: 0;
   background: transparent;
   border: 0;
-  background:red;
+  cursor: pointer;
+
+  display: block; /* affiché via MQ mobile (si tu veux) */
 }
 
+/* Accessibilité focus clavier */
+.container_nav .menu:focus-visible{
+  outline: 2px solid #00b3ff;
+  outline-offset: 3px;
+}
+
+/* Barres : absolument centrées, largeur pleine, pivot sur le centre */
 .container_nav .menu span{
-  display: block;
-  height: 4px;
-  border-radius: 2px;
+  position: absolute;
+  left: 0; right: 0;
+  margin: 0 auto;
+
+  width: 100%;
+  height: var(--thick);
   background: #fff;
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  border-radius: 999px;
+
+  top: 50%;
+  transform: translateY(-50%);           /* centre verticalement */
+  transform-origin: center;
+  transition: transform var(--dur) ease, opacity var(--dur) ease;
+  will-change: transform, opacity;
+  box-shadow: 0 0 1px rgba(0,0,0,.15);   /* léger relief */
 }
 
-/* Burger -> croix */
-.container_nav .menu.active span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
-.container_nav .menu.active span:nth-child(2){ opacity: 0; }
-.container_nav .menu.active span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
+/* Position “burger” : haut/milieu/bas autour du centre */
+.container_nav .menu span:nth-child(1){
+  transform: translateY(calc(-50% - var(--gap)));
+}
+.container_nav .menu span:nth-child(2){
+  /* reste au centre */
+}
+.container_nav .menu span:nth-child(3){
+  transform: translateY(calc(-50% + var(--gap)));
+}
+
+/* État actif → croix parfaitement droite et centrée */
+.container_nav .menu.active span:nth-child(1){
+  transform: translateY(-50%) rotate(45deg);
+}
+.container_nav .menu.active span:nth-child(2){
+  opacity: 0;
+}
+.container_nav .menu.active span:nth-child(3){
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Optionnel : hover léger (desktop seulement) */
+@media (hover:hover){
+  .container_nav .menu:hover span{
+    box-shadow: 0 0 6px rgba(0,179,255,.35);
+  }
+}
+
+/* Respecte les préférences “réduire les animations” */
+@media (prefers-reduced-motion: reduce){
+  .container_nav .menu span{
+    transition: none;
+  }
+}
+
 
 .back-link {
   position: absolute;
