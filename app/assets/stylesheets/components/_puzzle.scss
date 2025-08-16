@@ -31,7 +31,15 @@ canvas.polypiece.dragging { transition: none !important; }
   display:none;
 }
 
-/* le bouton doit rester au-dessus du lock */
-#puzzle-restart{
-  z-index:10002;
+
+
+#puzzle-lock{
+  pointer-events: none;   /* ← très important : le lock ne bloque rien */
 }
+
+#puzzle-restart{
+  pointer-events: auto;   /* ← s'assure que le bouton reste cliquable */
+  z-index: 10002;
+  position: relative;     /* au cas où il hérite d'un positionnement */
+}
+
