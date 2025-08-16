@@ -6,14 +6,22 @@ html, body {
 }
 
 .photo_alex {
- position: absolute;
-  background-image: url("background_apropos2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start; /* aligne en haut */
+  justify-content: space-between; /* espace texte à gauche / puzzle à droite */
+  position: relative;
   height: 800px;
   width: 100%;
+  padding: 20px;
 }
+
+.photo_alex .puzzle-square {
+  flex-shrink: 0; /* empêche le puzzle de rétrécir */
+  margin-left: 40px; /* espace avec le texte */
+}
+
+
+
 
 .photo_alex::before{
   content:"";
@@ -193,119 +201,166 @@ html, body {
 
 
 
-@media screen and (min-width: 310px) and (max-width: 699px) {
-
-  .photo_alex h2 {
-    font-size: 25px;
-    top: 50px;
+/* ========= MOBILE : 310–699px ========= */
+@media screen and (min-width: 310px) and (max-width: 699px){
+  .photo_alex{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 20px 16px;
+    gap: 16px;
   }
 
-  .photo_alex h3 {
-    font-size: 14px;
-    top: 85px;
-  }
-
-  .photo_alex p {
-  font-size: 13px;
-  width: 90%;           /* un peu moins large que l’écran */
-  margin: 0 auto;       /* centre horizontalement */
-  top: 15%;
-  text-align: justify;
-}
-
-  
-
-  .photo_alex .btn_box_real{
-    font-size: 15px;
-    width: 40%; 
-    margin:-12% auto;
-  }
-
-  .photo_alex .btn_box_contact {
-    
-    font-size: 15px;
-    width: 40%; 
-    margin:-12% 30%;
-    
-  }
-
-  .photo_alex {
-    background-size: 800px 400px;
-    background-position: 88% 105%;
-}
-}
-
-
-
-
-
-@media screen and (min-width: 700px) and (max-width: 1199px) {
-
-  .photo_alex h2 {
-    font-size: 30px;
-    top: 50px;
-  }
-
-  .photo_alex h3 {
-    font-size: 18px;
-    top: 90px;
-  }
-
-  .photo_alex p {
-    font-size: 16px;
+  /* texte dans le flux + tes tailles */
+  .photo_alex h2{
+    position: static !important;
     width: 100%;
-    top: 15%;
+    font-size: 25px;   /* ta valeur */
+    margin-top: 8px;
   }
-  
-
-  .photo_alex .btn_box_real{
-    font-size: 16px;
-    width: 30%;
-    margin: -12% auto;
- 
-      
+  .photo_alex h3{
+    position: static !important;
+    width: 100%;
+    font-size: 14px;   /* ta valeur */
+    margin-top: 6px;
   }
-
-  .photo_alex .btn_box_contact {
-    
-    font-size: 16px;
-  
-    width: 30%; 
-     margin-left: 25%;
-     margin:-12% 20%;
- 
+  .photo_alex p{
+    position: static !important;
+    width: 100%;
+    font-size: 13px;   /* ta valeur */
+    margin: 10px auto 0;
+    text-align: justify;
   }
 
+  /* boutons */
+  .photo_alex .buttons_propos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 12px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .photo_alex .btn_box_real,
+  .photo_alex .btn_box_contact{
+    position: static !important;
+    font-size: 15px;  /* ta valeur */
+    width: 100%;
+    text-align: center;
+  }
 
-
-  .photo_alex {
-    background-size: 1000px 500px;
-    background-position: 80% 120%;
+  /* puzzle */
+  .photo_alex .puzzle-square{
+    width: 88vw;
+    height: calc(88vw * 1.3);
+    margin: 16px auto 0;
+    margin-left: 0;
+  }
 }
+
+
+/* ========= TABLETTE : 700–1199px ========= */
+@media screen and (min-width: 700px) and (max-width: 1199px){
+  .photo_alex{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+
+  .photo_alex h2{
+    position: static !important;
+    width: 100%;
+    font-size: 30px;   /* ta valeur */
+    margin-top: 12px;
+  }
+  .photo_alex h3{
+    position: static !important;
+    width: 100%;
+    font-size: 18px;   /* ta valeur */
+    margin-top: 8px;
+  }
+  .photo_alex p{
+    position: static !important;
+    width: 100%;
+    font-size: 16px;   /* ta valeur */
+    margin-top: 12px;
+    text-align: justify;
+  }
+
+  .photo_alex .buttons_propos{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+  .photo_alex .btn_box_real,
+  .photo_alex .btn_box_contact{
+    position: static !important;
+    font-size: 16px;   /* ta valeur */
+    width: auto;
+    min-width: 220px;
+  }
+
+  .photo_alex .puzzle-square{
+    width: 420px;
+    height: calc(420px * 1.3);
+    margin: 18px auto 0;
+    margin-left: 0;
+  }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
 
-  .photo_alex .btn_box_real{
+/* ========= DESKTOP MOYEN : 1200–1399px ========= */
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+  .photo_alex{
+    flex-direction: row;
+    align-items: flex-start;
+    height: 800px;
+  }
+
+  .photo_alex h2{ font-size: 50px; } /* garde ton style desktop */
+  .photo_alex h3{ font-size: 25px; }
+  .photo_alex p { font-size: 16px; }
+
+  .photo_alex .btn_box_real,
+  .photo_alex .btn_box_contact{
     font-size: 16px;
     width: 15%;
     margin: 3% 0;
-      
   }
 
-  .photo_alex .btn_box_contact {
-    
-    font-size: 16px;
-    width: 15%; 
-     margin-left: 25%;
-     margin:3% 5%;
- 
+  .photo_alex .puzzle-square{
+    width: 480px;
+    height: calc(480px * 1.3);
+    margin-left: 32px;
   }
-
-  .photo_alex {
-    background-size: 1200px 600px;
-    background-position: -30% 50%;
 }
 
 
+/* ========= GRAND DESKTOP : ≥1400px ========= */
+@media screen and (min-width: 1400px){
+  .photo_alex{
+    flex-direction: row;
+    align-items: flex-start;
+    height: 800px;
+  }
+
+  .photo_alex h2{ font-size: 50px; }
+  .photo_alex h3{ font-size: 25px; }
+  .photo_alex p { font-size: 16px; }
+
+  .photo_alex .btn_box_real,
+  .photo_alex .btn_box_contact{
+    font-size: 17px;
+  }
+
+  .photo_alex .puzzle-square{
+    width: 500px;
+    height: 650px;
+    margin-left: 40px;
+  }
 }
+

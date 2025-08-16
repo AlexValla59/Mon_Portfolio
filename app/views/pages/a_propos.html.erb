@@ -1,39 +1,64 @@
 <div class="container">
-  <%= render 'shared/navbar' %>
+  <%= render "shared/navbar" %>
 
   <div class="content_p">
     <div class="elements">
 
-      <!-- Wrapper de la section + calque image -->
+      <!-- Section profil -->
       <div class="photo_section">
+        <!-- calque de fond si tu l'utilises -->
         <div class="photo_bg" aria-hidden="true"></div>
 
-        <!-- Container de contenu, sans background -->
+        <!-- Conteneur FLEX : gauche = texte / droite = puzzle -->
         <div class="photo_alex">
-          <h2>Alexandre Valla.</h2>
-          <h3>Chargé de comm' & Graphiste</h3>
-          <p>
-J'accompagne les marques dans la création de supports visuels et éditoriaux qui captent l’attention et suscitent l’engagement.
-De la conception graphique au déploiement digital, j’allie créativité, stratégie et maîtrise technique pour renforcer l’image de marque et atteindre les objectifs de communication.
-Polyvalent et orienté résultats, je transforme une idée en projet abouti, alliant impact visuel, cohérence éditoriale et pertinence stratégique.
-Toujours en quête de nouveaux défis, j’aime concevoir des expériences visuelles qui marquent les esprits et créent un lien durable avec les publics.
-          </p>
-         
 
-          <div class="buttons_propos">
-            <div class="btn_box_real">
-              <span></span><span></span><span></span><span></span>
-              <%= link_to "Mon site pro", "https://alexpensif.fr/", class: "un", target: "_blank", rel: "noopener" %>
+          <!-- Colonne gauche : texte -->
+          <div class="apropos-text">
+            <h2>Alexandre Valla.</h2>
+            <h3>Chargé de comm' & Graphiste</h3>
+
+            <p>
+              J'accompagne les marques dans la création de supports visuels et éditoriaux qui
+              captent l’attention et suscitent l’engagement. De la conception graphique au
+              déploiement digital, j’allie créativité, stratégie et maîtrise technique pour
+              renforcer l’image de marque et atteindre les objectifs de communication. Polyvalent
+              et orienté résultats, je transforme une idée en projet abouti, alliant impact visuel,
+              cohérence éditoriale et pertinence stratégique. Toujours en quête de nouveaux défis,
+              j’aime concevoir des expériences visuelles qui marquent les esprits et créent un lien
+              durable avec les publics.
+            </p>
+
+            <div class="buttons_propos">
+              <div class="btn_box_real">
+                <span></span><span></span><span></span><span></span>
+                <%= link_to "Mon site pro", "https://alexpensif.fr/", class: "un", target: "_blank", rel: "noopener" %>
+              </div>
+
+              <div class="btn_box_contact">
+                <span></span><span></span><span></span><span></span>
+                <%= link_to "CV PDF et vidéo", video_path, class: "deux" %>
+              </div>
             </div>
 
-            <div class="btn_box_contact">
-              <span></span><span></span><span></span><span></span>
-              <%= link_to "CV PDF et vidéo", video_path, class: "deux" %>
-            </div>
+            <span class="home-imgHover"></span>
+          </div>
+          <!-- /apropos-text -->
+
+          <!-- Colonne droite : puzzle -->
+          <div class="apropos-puzzle">
+            <%= render "shared/puzzle" %>
+        
+
+
+            
           </div>
 
-          <span class="home-imgHover"></span>
+
+
+          <!-- /apropos-puzzle -->
+
         </div>
+        <!-- /photo_alex (flex container) -->
       </div>
       <!-- /photo_section -->
 
