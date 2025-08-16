@@ -1,0 +1,37 @@
+canvas.polypiece.dragging { transition: none !important; }
+  /* Carré responsive et centré */
+.puzzle-square{
+  position: relative;
+  width: 500px;
+  height: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+  /* Canvases et pièces */
+  .puzzle-square canvas,
+  .puzzle-square .polypiece{ position:absolute; }
+
+  .puzzle-square .polypiece.moving{
+    transition: top 1s linear, left 1s linear; /* anim de chute */
+  }
+
+  .puzzle-square img,
+.puzzle-square .gameCanvas {
+  display: none !important;
+}
+
+/* overlay qui bloque toute interaction quand le temps est écoulé */
+#puzzle-lock{
+  position:absolute;
+  inset:0;                 /* top/right/bottom/left:0 */
+  z-index:10001;           /* > canvases, < bouton */
+  pointer-events:auto;     /* capte les clics */
+  background: rgba(0,0,0,0);  /* mets .15 si tu veux assombrir légèrement */
+  display:none;
+}
+
+/* le bouton doit rester au-dessus du lock */
+#puzzle-restart{
+  z-index:10002;
+}
