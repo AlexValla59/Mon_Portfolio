@@ -88,18 +88,45 @@ function injectStylesOnce(){
 /* ==== UI helpers ==== */
 function ensureUI(container){
   let timer = document.getElementById(TIMER_ID);
-  if(!timer){ timer=document.createElement("div"); timer.id=TIMER_ID; container.appendChild(timer); }
-  let btn = document.getElementById(RESTART_BTN_ID);
-  if(!btn){ btn=document.createElement("button"); btn.id=RESTART_BTN_ID; btn.type="button"; btn.textContent="Restart"; container.appendChild(btn); }
-  let lock = document.getElementById(LOCK_ID);
-  if(!lock){ lock=document.createElement("div"); lock.id=LOCK_ID; container.appendChild(lock); }
+  if(!timer){ 
+    timer=document.createElement("div"); 
+    timer.id=TIMER_ID; 
+    container.appendChild(timer); 
+  }
 
-  // <<< AJOUT : élément message
+  let btn = document.getElementById(RESTART_BTN_ID);
+  if(!btn){ 
+    btn=document.createElement("button"); 
+    btn.id=RESTART_BTN_ID; 
+    btn.type="button"; 
+    btn.textContent="Restart"; 
+    container.appendChild(btn); 
+
+    // ✅ Fix iOS : capter aussi les taps tactiles
+    btn.addEventListener("touchstart", (e)=>{
+      e.preventDefault();   // évite double-événement
+      btn.click();          // déclenche le click classique
+    }, {passive:false});
+  }
+
+  let lock = document.getElementById(LOCK_ID);
+  if(!lock){ 
+    lock=document.createElement("div"); 
+    lock.id=LOCK_ID; 
+    container.appendChild(lock); 
+  }
+
+  // <<< AJOUT : élément message (succès/échec) >>>
   let msg = document.getElementById(MSG_ID);
-  if(!msg){ msg=document.createElement("div"); msg.id=MSG_ID; container.appendChild(msg); }
+  if(!msg){ 
+    msg=document.createElement("div"); 
+    msg.id=MSG_ID; 
+    container.appendChild(msg); 
+  }
 
   return { timer, btn, lock, msg };
 }
+
 function formatMMSS(ms){
   const s = Math.max(0, Math.ceil(ms/1000));
   const mm = String(Math.floor(s/60)).padStart(2,"0");
