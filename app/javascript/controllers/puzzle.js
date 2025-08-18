@@ -5,7 +5,7 @@
 const CONTAINER_ID       = "hero-puzzle";
 const NB_PIECES          = 12;
 const SHOW_DURATION      = 2600;     // durée d'affichage du visuel complet avant la chute
-const RESTART_DELAY_MS   = 5000;    // 30 secondes de jeu
+const RESTART_DELAY_MS   = 60000;    // 30 secondes de jeu
 const RESTART_BTN_ID     = "puzzle-restart";
 const TIMER_ID           = "puzzle-timer";
 const LOCK_ID            = "puzzle-lock";
