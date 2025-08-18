@@ -1,45 +1,54 @@
-canvas.polypiece.dragging { transition: none !important; }
-  /* Carré responsive et centré */
+/* === CONTAINER PUZZLE : crée son propre stacking context === */
 .puzzle-square{
   position: relative;
   width: 500px;
   height: 650px;
   margin: 0 auto;
   overflow: hidden;
+  isolation: isolate; /* empêche ses enfants de dépasser la nav */
+  z-index: 0;         /* le puzzle reste sous la nav */
+  
 }
 
-  /* Canvases et pièces */
-  .puzzle-square canvas,
-  .puzzle-square .polypiece{ position:absolute; }
+/* Canvases et pièces */
+.puzzle-square canvas,
+.puzzle-square .polypiece{ position:absolute; }
 
-  .puzzle-square .polypiece.moving{
-    transition: top 1s linear, left 1s linear; /* anim de chute */
-  }
+canvas.polypiece.dragging { transition: none !important; }
+.puzzle-square .polypiece.moving{
+  transition: top 1s linear, left 1s linear;
+}
 
-  .puzzle-square img,
+/* Cache le canvas source / image */
+.puzzle-square img,
 .puzzle-square .gameCanvas {
   display: none !important;
 }
 
-/* overlay qui bloque toute interaction quand le temps est écoulé */
+/* --- Overlays/controls du puzzle (z-index modestes) --- */
+#puzzle-timer{ z-index: 10 !important; }
+#puzzle-message{ z-index: 11 !important; }
+#puzzle-restart{ z-index: 12 !important; }
+
+/* Overlay qui bloque l’interaction quand le temps est écoulé */
 #puzzle-lock{
   position:absolute;
-  inset:0;                 /* top/right/bottom/left:0 */
-  z-index:10001;           /* > canvases, < bouton */
-  pointer-events:auto;     /* capte les clics */
-  background: rgba(0,0,0,0);  /* mets .15 si tu veux assombrir légèrement */
+  inset:0;
+  z-index: 9 !important;     /* sous le bouton, au-dessus des pièces */
+  pointer-events: auto;      /* il DOIT bloquer */
+  background: rgba(0,0,0,0); /* mets .15 si tu veux assombrir */
   display:none;
 }
 
-
-
-#puzzle-lock{
-  pointer-events: none;   /* ← très important : le lock ne bloque rien */
-}
-
+/* Assure que le bouton reste cliquable quand le lock est visible */
 #puzzle-restart{
-  pointer-events: auto;   /* ← s'assure que le bouton reste cliquable */
-  z-index: 10002;
-  position: relative;     /* au cas où il hérite d'un positionnement */
+  pointer-events: auto;
+  position: relative;
 }
 
+/* --- NAV MOBILE au-dessus du puzzle --- */
+.mobile-menu,
+.nav-overlay{
+  position: fixed;
+  z-index: 2000; /* > au puzzle */
+}

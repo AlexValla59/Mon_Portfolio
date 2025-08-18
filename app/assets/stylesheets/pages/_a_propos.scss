@@ -1,366 +1,234 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Oleo+Script+Swash+Caps&family=Poppins&display=swap');
 
+html, body { overflow-x: hidden; }
 
-html, body {
-  overflow-x: hidden;
+/* =================== ANIMATIONS =================== */
+/* rideau qui part vers la droite (comme ton showRight) */
+@keyframes showRight {
+  0%   { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
 }
 
-.photo_alex {
+/* variante pour les zones plus petites (équivalent d'intention à MooveRight) */
+@keyframes mooveRight {
+  0%   { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+/* =================== LAYOUT GENERAL =================== */
+.photo_alex{
+  position: relative;             /* pour l'overlay global */
   display: flex;
-  align-items: flex-start; /* aligne en haut */
-  justify-content: space-between; /* espace texte à gauche / puzzle à droite */
-  position: relative;
-  height: 800px;
-  width: 100%;
+  flex-direction: column;         /* pile par défaut */
+  gap: 16px;
+  align-items: stretch;
   padding: 20px;
 }
 
-.photo_alex .puzzle-square {
-  flex-shrink: 0; /* empêche le puzzle de rétrécir */
-  margin-left: 40px; /* espace avec le texte */
-}
-
-
-
-
+/* Overlay global (rideau – même style/couleur que l’original) */
 .photo_alex::before{
   content:"";
   position: absolute;
-  top:0;
-  right:0;
-  width:100vw;
-  height:100vh;
-  background: #081b29;
+  inset: 0;
+  background: #081b29;            /* ⬅ couleur d’origine */
   animation: showRight 1s ease forwards;
-  animation-delay: 0.1s;
+  animation-delay: .1s;
+  pointer-events: none;
+  z-index: 10;
 }
 
-.photo_alex h2 {
-  position: absolute;
-  top: 14%;
-  color: white;
-  font-size: 50px;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+/* Colonne gauche */
+.apropos-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 900px;
 }
 
-.photo_alex h2::before{
-  content:"";
-  position: absolute;
-  top:0;
-  right:800px;
-  width:100%;
-  height:100%;
-  background: #081b29;
-  animation: showRight 1s ease forwards;
-  animation-delay: 0.1s;
+/* Colonne droite */
+.apropos-puzzle{
+  position: relative;            /* clé ! */
+  display: flex;
+  justify-content: center;
+ 
 }
 
-
-.photo_alex h3 {
+#puzzle-timer{
   position: absolute;
-  top: 22%;
+  left: 50%;
+  top: 5% !important;
+  transform: translate(-50%, -100%); /* juste au-dessus ; mets -40px si tu préfères un écart fixe */
+  z-index: 10;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(0,0,0,.6);
+  color: #fff;
+  font: 600 14px/1.2 system-ui, sans-serif;
+  letter-spacing: .5px;
+  display: none;
+}
+
+/* Le puzzle ne rétrécit pas trop */
+.photo_alex .puzzle-square{
+  flex-shrink: 0;
+  width: 88vw;
+  height: calc(88vw * 0.8);
+  margin-left: 0;
+
+  
+}
+
+/* =================== TYPO =================== */
+.photo_alex h2,
+.photo_alex h3,
+.photo_alex p,
+.buttons_propos{
+  position: relative;             /* nécessaire pour leurs ::before animés */
+  overflow: hidden;               /* masque propre pendant l’anim */
+}
+
+.photo_alex h2{
+  color: #fff;
+  font: bold 50px/1.1 'Poppins', sans-serif;
+  margin: 0;
+}
+.photo_alex h3{
   color: #00b3ff;
-  font-size: 25px;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  font: bold 25px/1.2 'Poppins', sans-serif;
+  margin: 0;
 }
-
-.photo_alex h3::before{
-  content:"";
-  position: absolute;
-  top:2px;
-  right:700px;
-  width:100%;
-  height:100%;
-  background: #081b29;
-  animation: showRight 1s ease forwards;
-  animation-delay: 0.1s;
-}
-
 .photo_alex p{
-  position: absolute;
-  top: 28%;
-  color: white;
-  font-size: 16px;
-  width: 50%;
+  color: #fff;
+  font: 16px/1.6 'Poppins', sans-serif;
   text-align: justify;
-  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
-.photo_alex p::before{
+/* =================== BOUTONS =================== */
+.buttons_propos{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 12px;               /* sous le p */
+  z-index: 1;
+}
+.btn_box_real,
+.btn_box_contact{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  min-height: 50px;
+  min-width: 220px;
+  border: 1px solid #00b3ff;
+  font: 17px 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .3s, color .3s, border-color .3s;
+}
+.btn_box_real a,
+.btn_box_contact a{
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.btn_box_real:hover,
+.btn_box_contact:hover{
+  background:#00b3ff;
+  color:#fff;
+}
+
+/* =================== OVERLAYS D'OUVERTURE (éléments) =================== */
+/* Même principe que ton code original : un calque sombre glisse vers la droite */
+.photo_alex h2::before,
+.photo_alex h3::before,
+.photo_alex p::before,
+.photo_alex .buttons_propos::before{
   content:"";
   position: absolute;
-  top:0;
-  right:0px;
-  width:100%;
-  height:100%;
-  background: #081b29;
+  inset: 0;
+  background:#081b29;
   animation: showRight 1s ease forwards;
-  animation-delay: 0.1s;
+  pointer-events: none;           /* ne bloque JAMAIS les clics */
 }
 
-// -----------------------------------BOUTON MES REALISATIONS---------------------------------//
+/* décalage en cascade (h2 → h3 → p → boutons), comme avant */
+.photo_alex h2::before{ animation-delay: .20s; }
+.photo_alex h3::before{ animation-delay: .30s; }
+.photo_alex p::before{  animation-delay: .40s; }
+/* pour les boutons on utilise la variante mooveRight pour rappeler ton ancien "MooveRight" */
+.photo_alex .buttons_propos::before{ animation: mooveRight 1s ease forwards; animation-delay: .50s; }
 
-.photo_alex .btn_box_real {
-  color: white;
-  text-align: center;
-  position: absolute;
-  font-size: 17px;
-  text-decoration: none;
-  height: 50px;
-  padding: 12px;
-  top: 55%;
-  transition: background-color 0.3s, color 0.3s;
-  font-family: 'Poppins', sans-serif;
-  display: inline-block;
-  border: solid 1px #00b3ff;
-}
-
-.photo_alex .btn_box_real:hover {
-  background-color: #00b3ff;
-  color: white;
-  text-decoration: none; /* Assurez-vous que le texte n'est pas souligné */
-}
-
-.photo_alex .btn_box_real a {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.photo_alex .btn_box_real a:hover {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-
-
-.photo_alex .buttons_propos::before {
-  content: "";
-  position: absolute;
-  top: 420px;
-  right: 960px;
-  width: 30%;
-  height: 10%;
-  background: #081b29;
-  z-index: 1;
-  animation: MooveRight 1s ease forwards;
-  animation-delay: 0.1s;
-}
-
-@keyframes MooveRight {
-  0% {
-    opacity: 1;
-    transform: translateX(0); 
-  }
-  100% {
+/* =================== ACCESSIBILITE =================== */
+@media (prefers-reduced-motion: reduce){
+  .photo_alex::before,
+  .photo_alex h2::before,
+  .photo_alex h3::before,
+  .photo_alex p::before,
+  .photo_alex .buttons_propos::before{
+    animation: none !important;
     opacity: 0;
-    transform: translateX(100%); 
   }
 }
 
+/* =================== RESPONSIVE =================== */
 
+/* Petits écrans */
+@media (max-width: 699px){
+  .photo_alex{ padding: 20px 16px; }
+  .apropos-text{ margin-top: 0; }
 
-// -----------------------------------BOUTON CONTACTEZ MOI---------------------------------//
+  .photo_alex h2{ font-size: 28px; }
+  .photo_alex h3{ font-size: 16px; }
+  .photo_alex p { font-size: 14px; }
 
-.photo_alex .btn_box_contact{
-  color: white;
-  text-align: center;
-  position: absolute;
-  font-size: 17px;
-  overflow: hidden;
-  left: 15%;
-  height: 50px;
-  padding: 12px;
-  top:55%;
-  transition: background-color 0.3s, color 0.3s;
-  font-family: 'Poppins', sans-serif;
-  display: inline-block;
-  border: solid 1px #00b3ff;
-}
-
-
-
-.photo_alex .btn_box_contact:hover {
-  background-color: #00b3ff;
-  color: white;
-  text-decoration: none; /* Assurez-vous que le texte n'est pas souligné */
-}
-
-.photo_alex .btn_box_contact a {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.photo_alex .btn_box_contact a:hover {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-
-
-/* ========= MOBILE : 310–699px ========= */
-@media screen and (min-width: 310px) and (max-width: 699px){
-  .photo_alex{
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: auto;
-    padding: 20px 16px;
-    gap: 16px;
-  }
-
-  /* texte dans le flux + tes tailles */
-  .photo_alex h2{
-    position: static !important;
-    width: 100%;
-    font-size: 25px;   /* ta valeur */
-    margin-top: 8px;
-  }
-  .photo_alex h3{
-    position: static !important;
-    width: 100%;
-    font-size: 14px;   /* ta valeur */
-    margin-top: 6px;
-  }
-  .photo_alex p{
-    position: static !important;
-    width: 100%;
-    font-size: 13px;   /* ta valeur */
-    margin: 10px auto 0;
-    text-align: justify;
-  }
-
-  /* boutons */
-  .photo_alex .buttons_propos{
+  .buttons_propos{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px 12px;
-    width: 100%;
-    margin-top: 12px;
   }
-  .photo_alex .btn_box_real,
-  .photo_alex .btn_box_contact{
-    position: static !important;
-    font-size: 15px;  /* ta valeur */
+  .btn_box_real, .btn_box_contact{
+    min-width: 0;
     width: 100%;
-    text-align: center;
+    font-size: 15px;
   }
 
-  /* puzzle */
   .photo_alex .puzzle-square{
     width: 88vw;
     height: calc(88vw * 1.3);
     margin: 16px auto 0;
-    margin-left: 0;
   }
 }
 
-
-/* ========= TABLETTE : 700–1199px ========= */
-@media screen and (min-width: 700px) and (max-width: 1199px){
-  .photo_alex{
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: auto;
-    padding: 24px 20px;
-    gap: 20px;
-  }
-
-  .photo_alex h2{
-    position: static !important;
-    width: 100%;
-    font-size: 30px;   /* ta valeur */
-    margin-top: 12px;
-  }
-  .photo_alex h3{
-    position: static !important;
-    width: 100%;
-    font-size: 18px;   /* ta valeur */
-    margin-top: 8px;
-  }
-  .photo_alex p{
-    position: static !important;
-    width: 100%;
-    font-size: 16px;   /* ta valeur */
-    margin-top: 12px;
-    text-align: justify;
-  }
-
-  .photo_alex .buttons_propos{
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-    margin-top: 14px;
-  }
-  .photo_alex .btn_box_real,
-  .photo_alex .btn_box_contact{
-    position: static !important;
-    font-size: 16px;   /* ta valeur */
-    width: auto;
-    min-width: 220px;
-  }
+/* Tablette */
+@media (min-width: 700px) and (max-width: 1199px){
+  .photo_alex h2{ font-size: 36px; }
+  .photo_alex h3{ font-size: 20px; }
+  .photo_alex p { font-size: 16px; }
 
   .photo_alex .puzzle-square{
     width: 420px;
     height: calc(420px * 1.3);
     margin: 18px auto 0;
-    margin-left: 0;
   }
 }
 
-
-/* ========= DESKTOP MOYEN : 1200–1399px ========= */
-@media screen and (min-width: 1200px) and (max-width: 1399px){
+/* Desktop */
+@media (min-width: 1200px){
   .photo_alex{
-    flex-direction: row;
+    flex-direction: row;          /* texte à gauche, puzzle à droite */
     align-items: flex-start;
-    height: 800px;
   }
-
-  .photo_alex h2{ font-size: 50px; } /* garde ton style desktop */
-  .photo_alex h3{ font-size: 25px; }
-  .photo_alex p { font-size: 16px; }
-
-  .photo_alex .btn_box_real,
-  .photo_alex .btn_box_contact{
-    font-size: 16px;
-    width: 15%;
-    margin: 3% 0;
+  .apropos-text{
+    flex: 1;
+    max-width: 650px;
+    margin-top: 8%;             /* colonne gauche un peu plus basse */
   }
-
   .photo_alex .puzzle-square{
-    width: 480px;
-    height: calc(480px * 1.3);
-    margin-left: 32px;
-  }
-}
-
-
-/* ========= GRAND DESKTOP : ≥1400px ========= */
-@media screen and (min-width: 1400px){
-  .photo_alex{
-    flex-direction: row;
-    align-items: flex-start;
-    height: 800px;
-  }
-
-  .photo_alex h2{ font-size: 50px; }
-  .photo_alex h3{ font-size: 25px; }
-  .photo_alex p { font-size: 16px; }
-
-  .photo_alex .btn_box_real,
-  .photo_alex .btn_box_contact{
-    font-size: 17px;
-  }
-
-  .photo_alex .puzzle-square{
-    width: 500px;
-    height: 650px;
+    width: 550px;   /* au lieu de 550px */
+  height: 650px;  /* au lieu de 655px */
+    margin-top:5%;
     margin-left: 40px;
+  
   }
 }
-
