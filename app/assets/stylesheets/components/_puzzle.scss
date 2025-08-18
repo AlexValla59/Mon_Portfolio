@@ -1,54 +1,93 @@
-/* === CONTAINER PUZZLE : crée son propre stacking context === */
+/* === CONTAINER : crée un stacking context local et enferme le puzzle === */
 .puzzle-square{
   position: relative;
   width: 500px;
   height: 650px;
   margin: 0 auto;
   overflow: hidden;
-  isolation: isolate; /* empêche ses enfants de dépasser la nav */
-  z-index: 0;         /* le puzzle reste sous la nav */
-  
+  isolation: isolate; /* isole des éléments externes (nav, etc.) */
+  z-index: 0;         /* le puzzle reste sous la nav globale */
 }
 
-/* Canvases et pièces */
+/* === CANVASES & PIÈCES === */
 .puzzle-square canvas,
-.puzzle-square .polypiece{ position:absolute; }
+.puzzle-square .polypiece{
+  position: absolute;  /* nécessaire pour z-index et déplacements contrôlés */
+  top: 0;
+  left: 0;
+}
 
-canvas.polypiece.dragging { transition: none !important; }
+/* Pièce en drag : jamais de transition pour un ressenti fluide */
+canvas.polypiece.dragging{
+  transition: none !important;
+}
+
+/* Mouvement “chute / recentrage” doux (top/left animés par JS) */
 .puzzle-square .polypiece.moving{
   transition: top 1s linear, left 1s linear;
 }
 
-/* Cache le canvas source / image */
+/* === IMAGE SOURCE : jamais visible === */
 .puzzle-square img,
-.puzzle-square .gameCanvas {
+.puzzle-square .gameCanvas{
   display: none !important;
 }
 
-/* --- Overlays/controls du puzzle (z-index modestes) --- */
-#puzzle-timer{ z-index: 10 !important; }
-#puzzle-message{ z-index: 11 !important; }
-#puzzle-restart{ z-index: 12 !important; }
+/* === OVERLAYS / CONTROLS ===
+   Ordre voulu : pièces < lock < message < bouton
+*/
 
-/* Overlay qui bloque l’interaction quand le temps est écoulé */
+/* Verrou qui bloque les interactions (apparaît en fin de temps) */
 #puzzle-lock{
-  position:absolute;
-  inset:0;
-  z-index: 9 !important;     /* sous le bouton, au-dessus des pièces */
-  pointer-events: auto;      /* il DOIT bloquer */
-  background: rgba(0,0,0,0); /* mets .15 si tu veux assombrir */
-  display:none;
+  position: absolute;
+  inset: 0;
+  z-index: 900;          /* au-dessus des pièces, sous message/bouton */
+  pointer-events: auto;  /* capte les clics pour bloquer le jeu */
+  background: rgba(0,0,0,0); /* mets .15 pour assombrir si besoin */
+  display: none;
 }
 
-/* Assure que le bouton reste cliquable quand le lock est visible */
+/* Message de statut (“Failed” / “Well done”) */
+#puzzle-message{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;         /* au-dessus du lock */
+  pointer-events: none;  /* ne gêne pas le clic sur le bouton */
+}
+
+/* Bouton Restart (cliquable même quand le lock est visible) */
 #puzzle-restart{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1002;         /* au-dessus de tout dans le puzzle */
   pointer-events: auto;
-  position: relative;
 }
 
-/* --- NAV MOBILE au-dessus du puzzle --- */
+/* === TIMER ===
+   Tu le gardes à l’extérieur pour ne pas gêner.
+   Si toutefois il est inséré dans la page/puzzle, ce style reste sûr.
+*/
+#puzzle-timer{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%); /* au-dessus visuellement */
+  z-index: 10;            /* modeste : ne chevauche pas les overlays du puzzle */
+  display: none;
+}
+
+/* Variante “danger” (10s restantes) – couleurs laissées à ton JS/CSS existant */
+#puzzle-timer.danger{
+  /* exemple : background/texte ajustés par tes règles existantes */
+}
+
+/* === NAV MOBILE AU-DESSUS DE TOUT === */
 .mobile-menu,
 .nav-overlay{
   position: fixed;
-  z-index: 2000; /* > au puzzle */
+  z-index: 2000; /* > puzzle + overlays du puzzle */
 }
