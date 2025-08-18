@@ -91,19 +91,17 @@ function injectStylesOnce(){
 }
 /* ========================= */
 
-/* ==== UI helpers ==== */
 function ensureUI(container){
   // cible la colonne de droite si elle existe
   const host = container.closest('.apropos-puzzle') || container.parentElement || container;
 
+  // Timer (au-dessus du puzzle)
   let timer = document.getElementById(TIMER_ID);
   if(!timer){
     timer = document.createElement("div");
     timer.id = TIMER_ID;
-    host.appendChild(timer);           // ⬅️ le timer vit dans la colonne de droite
+    host.appendChild(timer);
   }
-
-}
 
 
   let btn = document.getElementById(RESTART_BTN_ID);
@@ -140,11 +138,12 @@ function ensureUI(container){
 }
 
 function formatMMSS(ms){
-  const s = Math.max(0, Math.ceil(ms/1000));
+  const s  = Math.max(0, Math.ceil(ms/1000));
   const mm = String(Math.floor(s/60)).padStart(2,"0");
   const ss = String(s%60).padStart(2,"0");
   return `${mm}:${ss}`;
 }
+
 // <<< AJOUT : helper affichage message éphémère
 function showMessage(el, text, duration=3000){
   el.textContent = text;
