@@ -5,11 +5,13 @@
 const CONTAINER_ID       = "hero-puzzle";
 const NB_PIECES          = 12;
 const SHOW_DURATION      = 2600;     // durée d'affichage du visuel complet avant la chute
-const RESTART_DELAY_MS   = 45000;    // 30 secondes de jeu
+const RESTART_DELAY_MS   = 60000;    // 30 secondes de jeu
 const RESTART_BTN_ID     = "puzzle-restart";
 const TIMER_ID           = "puzzle-timer";
 const LOCK_ID            = "puzzle-lock";
 const MSG_ID             = "puzzle-message"; // <<< AJOUT
+const PLAYFIELD_INSET = 24; // marge (px) tout autour à l’intérieur du puzzle
+
 /* ================= */
 
 /* ==== utils numériques ==== */
@@ -40,14 +42,18 @@ function injectStylesOnce(){
   st.id = "__puzzle_css__";
   st.textContent = `
 
+/* Timer centré au-dessus du puzzle, offset piloté par --timer-offset */
+#${TIMER_ID}{
+  position:absolute;
+  left:50%;
+  top:0;
+  transform: translate(-50%, calc(-100% + var(--timer-offset, 0px)));
+  z-index:10001;
+  padding:6px 10px; border-radius:8px;
+  background:rgba(0,0,0,.6); color:#fff; font:600 14px/1.2 system-ui, sans-serif;
+  letter-spacing:.5px; display:none;
+}
 
-    /* Timer en haut centré */
-    #${TIMER_ID}{
-      position:absolute; left:50%; top:50px; transform:translateX(-50%);
-      z-index:10001; padding:6px 10px; border-radius:8px;
-      background:rgba(0,0,0,.6); color:#fff; font:600 14px/1.2 system-ui, sans-serif;
-      letter-spacing:.5px; display:none;
-    }
 
     
   /* <<< AJOUT : style "danger" pour les 10 dernières secondes >>> */
@@ -87,12 +93,18 @@ function injectStylesOnce(){
 
 /* ==== UI helpers ==== */
 function ensureUI(container){
+  // cible la colonne de droite si elle existe
+  const host = container.closest('.apropos-puzzle') || container.parentElement || container;
+
   let timer = document.getElementById(TIMER_ID);
-  if(!timer){ 
-    timer=document.createElement("div"); 
-    timer.id=TIMER_ID; 
-    container.appendChild(timer); 
+  if(!timer){
+    timer = document.createElement("div");
+    timer.id = TIMER_ID;
+    host.appendChild(timer);           // ⬅️ le timer vit dans la colonne de droite
   }
+
+}
+
 
   let btn = document.getElementById(RESTART_BTN_ID);
   if(!btn){ 
